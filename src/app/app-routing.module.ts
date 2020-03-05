@@ -1,10 +1,36 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-const routes: Routes = [];
+import { MainPageComponent } from '@core/pages/main-page/main-page.component';
+import { Error404PageComponent } from '@core/pages/error404-page/error404-page.component';
+import { PhotographersListPageComponent } from '@photographers/pages/photographers-list-page/photographers-list-page.component';
+import { PhotographerDetailPageComponent } from '@photographers/pages/photographer-detail-page/photographer-detail-page.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  {
+    path: 'main',
+    component: MainPageComponent
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+  },
+  {
+    path: 'photographers',
+    loadChildren: () =>
+      import('./photographers/photographers.module').then(
+        m => m.PhotographersModule
+      )
+  },
+  { path: 'not-found', component: Error404PageComponent },
+  { path: '**', redirectTo: 'not-found' }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
