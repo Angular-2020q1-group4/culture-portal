@@ -3,8 +3,6 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { MainPageComponent } from '@core/pages/main-page/main-page.component';
 import { Error404PageComponent } from '@core/pages/error404-page/error404-page.component';
-import { PhotographersListPageComponent } from '@photographers/pages/photographers-list-page/photographers-list-page.component';
-import { PhotographerDetailPageComponent } from '@photographers/pages/photographer-detail-page/photographer-detail-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
