@@ -1,0 +1,17 @@
+<div class="header">
+  <h1>Культурный портал | Фотографы Беларуси</h1>
+
+  <mat-button-toggle-group
+    class="set-language"
+    name="fontStyle"
+    aria-label="Font Style"
+  >
+    <mat-button-toggle value="RU">RU</mat-button-toggle>
+    <mat-button-toggle value="BY">BY</mat-button-toggle>
+    <mat-button-toggle value="EN">EN</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<nav mat-tab-nav-bar mat-align-tabs="center">
+  <a mat-tab-link *ngFor="let link of navLinks">{{ link.label }}</a>
+</nav>

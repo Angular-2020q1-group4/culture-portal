@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
-import { HeaderComponent } from './pages/header/header.component';
 
 @NgModule({
-  declarations: [Error404PageComponent, MainPageComponent, HeaderComponent],
+  declarations: [Error404PageComponent, MainPageComponent],
   imports: [CommonModule],
-  exports: [HeaderComponent, MainPageComponent]
+  exports: [MainPageComponent]
 })
 export class CoreModule {}
