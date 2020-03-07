@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photographers-list-page.component.scss']
 })
 export class PhotographersListPageComponent implements OnInit {
+  cardArray = [1, 2, 3, 5, 6];
+
   constructor() {}
 
   ngOnInit(): void {}
