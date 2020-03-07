@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent],
-  imports: [CommonModule, MatButtonToggleModule, MatTabsModule],
+  imports: [CommonModule, RouterModule, MatButtonToggleModule, MatTabsModule],
   exports: [HeaderComponent]
 })
 export class SharedModule {}

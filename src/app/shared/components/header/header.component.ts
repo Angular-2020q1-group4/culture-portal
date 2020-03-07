@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
     { path: '/main', label: 'Главная' },
     { path: '/about', label: 'О проекте' }
   ];
+  activeLink = this.navLinks[0];
 
   constructor(private router: Router) {}
 
