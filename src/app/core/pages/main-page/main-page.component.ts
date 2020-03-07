@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
+  welcome = 'Добро пожаловать на культурный портал Беларуси';
+  todo = 'Todo';
+
   constructor() {}
 
   ngOnInit(): void {}

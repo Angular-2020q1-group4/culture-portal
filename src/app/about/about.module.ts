@@ -6,6 +6,7 @@ import { TeamPageComponent } from './pages/team-page/team-page.component';
 import { WorklogPageComponent } from './pages/worklog-page/worklog-page.component';
 import { StyleguidePageComponent } from './pages/styleguide-page/styleguide-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,6 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     StyleguidePageComponent,
     AboutPageComponent
   ],
-  imports: [CommonModule, AboutRoutingModule]
+  imports: [CommonModule, AboutRoutingModule, MatButtonModule]
 })
 export class AboutModule {}
