@@ -10,9 +10,27 @@
     margin: 9px;
     margin-left: 20px;
     color: white;
+
+    @media screen and (max-width: 490px) {
+      font-size: 17px;
+      line-height: 22px;
+    }
   }
 }
 
-.set-language {
+.mat-button-toggle-group {
+  min-width: 152px;
   margin-right: 10px;
+}
+
+::ng-deep .mat-button-toggle-label-content {
+  line-height: 36px !important;
+  padding: 0 16px !important;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 100;
 }

@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   navLinks = [
-    { path: '/photographers', label: 'Фотографы Беларуси' },
     { path: '/main', label: 'Главная' },
+    { path: '/photographers', label: 'Фотографы Беларуси' },
     { path: '/about', label: 'О проекте' }
   ];
   activeLink = this.navLinks[0];

@@ -1,0 +1,16 @@
+.photographers-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
+  list-style: none;
+}
+
+.list-element {
+  width: 300px;
+  min-width: 300px;
+  height: 375px;
+  margin: 30px 3% 0 3%;
+}
