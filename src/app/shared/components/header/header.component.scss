@@ -1,0 +1,18 @@
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(70, 70, 70);
+
+  h1 {
+    margin: 9px;
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+.set-language {
+  margin-right: 10px;
+}

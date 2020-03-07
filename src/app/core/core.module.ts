@@ -6,6 +6,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [Error404PageComponent, MainPageComponent],
-  imports: [CommonModule]
+  imports: [CommonModule],
+  exports: [MainPageComponent]
 })
 export class CoreModule {}
