@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error404-page.component.scss']
 })
 export class Error404PageComponent implements OnInit {
+  error = '404 - запрашиваемая страница не найдена';
+
   constructor() {}
 
   ngOnInit(): void {}
