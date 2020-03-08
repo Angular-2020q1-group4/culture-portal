@@ -7,14 +7,19 @@ import { PhotographerDetailPageComponent } from './pages/photographer-detail-pag
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
+import { MglTimelineModule } from 'angular-mgl-timeline.9';
+import { TimelineComponent } from './components/timeline/timeline.component';
+
 @NgModule({
   declarations: [
     PhotographersListPageComponent,
-    PhotographerDetailPageComponent
+    PhotographerDetailPageComponent,
+    TimelineComponent
   ],
   imports: [
     CommonModule,
     PhotographersRoutingModule,
+    MglTimelineModule,
     MatCardModule,
     MatButtonModule
   ]
