@@ -1,5 +1,8 @@
 <div class="header">
-  <h1>Культурный портал | Фотографы Беларуси</h1>
+  <div class=" headline">
+    <img class="icon" [src]="icon" alt="Culture Portal" />
+    <h1>Культурный портал | Фотографы Беларуси</h1>
+  </div>
 
   <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
     <mat-button-toggle value="RU">RU</mat-button-toggle>
@@ -8,7 +11,7 @@
   </mat-button-toggle-group>
 </div>
 
-<nav mat-tab-nav-bar mat-align-tabs="center" class="navbar">
+<nav mat-tab-nav-bar mat-align-tabs="center">
   <a
     mat-tab-link
     *ngFor="let link of navLinks"
