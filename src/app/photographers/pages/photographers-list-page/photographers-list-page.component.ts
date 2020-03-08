@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { response } from '../../../core/data/photographers';
+import { Author } from '../../../core/models/author.model';
 
 @Component({
   selector: 'app-photographers-list-page',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./photographers-list-page.component.scss']
 })
 export class PhotographersListPageComponent implements OnInit {
-  cardArray = [1, 2, 3, 5, 6, 8, 9, 1, 3, 8, 1, 2, 3, 5, 6, 8, 9, 1, 3, 8];
+  public cardArray: Author[] = response;
 
   constructor(private router: Router) {}
 
