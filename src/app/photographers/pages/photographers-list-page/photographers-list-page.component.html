@@ -3,7 +3,7 @@
     <div class="wrapper-card-1">
       <div class="wrapper-card-2">
         <div class="list-container">
-          <mat-card>
+          <mat-card (click)="onClick(card)">
             <img
               mat-card-image
               src="https://material.angular.io/assets/img/examples/shiba2.jpg"
@@ -13,9 +13,6 @@
               <mat-card-title>Имя Фамилия</mat-card-title>
               <mat-card-subtitle>дата</mat-card-subtitle>
             </mat-card-header>
-            <mat-card-actions>
-              <a mat-fab color="primary" routerLink="/photographers/card">→</a>
-            </mat-card-actions>
           </mat-card>
         </div>
       </div>
