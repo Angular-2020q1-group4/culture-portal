@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-page',
@@ -8,8 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
   welcome = 'Добро пожаловать на культурный портал Беларуси';
   todo = 'Todo';
-
-  constructor() {}
+  constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {}
 }
