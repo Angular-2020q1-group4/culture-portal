@@ -14,4 +14,8 @@ export class PhotographersListPageComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  onClick(id: number) {
+    this.router.navigateByUrl(`/photographers/${id}`);
+  }
 }

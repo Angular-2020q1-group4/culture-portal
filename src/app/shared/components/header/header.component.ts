@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  icon = '/assets/camera.svg';
+
   navLinks = [
     { path: '/main', label: 'Главная' },
     { path: '/photographers', label: 'Фотографы Беларуси' },
