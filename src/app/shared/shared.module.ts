@@ -8,6 +8,6 @@ import { AngularMaterialModule } from './angular-material.module';
 @NgModule({
   declarations: [HeaderComponent],
   imports: [CommonModule, RouterModule, AngularMaterialModule],
-  exports: [HeaderComponent, AngularMaterialModule]
+  exports: [CommonModule, HeaderComponent, AngularMaterialModule]
 })
 export class SharedModule {}
