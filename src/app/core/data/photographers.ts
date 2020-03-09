@@ -1,12 +1,5 @@
 import { Author } from '../models/author.model';
 
-export const response: Author[] = Array.from({ length: 6 }, (e, i) => {
-  return {
-    ...author,
-    id: author.id + i
-  };
-});
-
 const author: Author = {
   id: 1,
   firstName: 'Алексеев',
@@ -15,6 +8,7 @@ const author: Author = {
   avatarImage:
     'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Aliaksandr_Aliakseyeu.jpg/274px-Aliaksandr_Aliakseyeu.jpg',
   birthday: '1978-11-14',
+  placeOfBirth: 'Казань',
   biography: [
     {
       firstDate: '1978-11-14',
@@ -173,3 +167,11 @@ const author: Author = {
     }
   ]
 };
+
+export const response: Author[] = Array.from({ length: 6 }, (e, i) => {
+  return {
+    ...author,
+    id: author.id + i
+  };
+});
+

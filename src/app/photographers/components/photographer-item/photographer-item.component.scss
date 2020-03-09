@@ -1,0 +1,31 @@
+.list-element {
+  width: 300px;
+  margin: 20px 10px;
+}
+
+.list-element .mat-card-image {
+  margin: 5px auto;
+  width: 100%;
+  height: auto;
+}
+
+.mat-card-header {
+  margin: 10px 0;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.list-element__city {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mat-card .mat-card-actions {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  text-align: right;
+}
