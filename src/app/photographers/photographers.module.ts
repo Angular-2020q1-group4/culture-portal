@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { TimelineComponent } from './components/timeline/timeline.component';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [
     PhotographersListPageComponent,
@@ -24,7 +26,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     PhotographersRoutingModule,
     MglTimelineModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class PhotographersModule {}

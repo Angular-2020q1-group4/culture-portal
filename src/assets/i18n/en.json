@@ -1,4 +1,12 @@
 {
+  "label": {
+    "main": "Home",
+    "photographers": "Photographers of Belarus",
+    "about": "About"
+  },
+  "main": {
+    "title": "Cultural Portal | Photographers of Belarus"
+  },
   "HOME": {
     "TITLE": "Translate good",
     "TEXT": "Hello!",

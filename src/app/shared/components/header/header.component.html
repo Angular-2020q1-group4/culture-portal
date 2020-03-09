@@ -1,10 +1,14 @@
 <div class="header">
-  <h1>Культурный портал | Фотографы Беларуси</h1>
+  <h1>{{ 'main.title' | translate }}</h1>
 
   <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle value="RU">RU</mat-button-toggle>
-    <mat-button-toggle value="BY">BY</mat-button-toggle>
-    <mat-button-toggle value="EN">EN</mat-button-toggle>
+    <mat-button-toggle
+      #langselect
+      (click)="translate.use(langselect.value)"
+      [value]="lang"
+      *ngFor="let lang of translate.getLangs()"
+      >{{ lang }}</mat-button-toggle
+    >
   </mat-button-toggle-group>
 </div>
 
@@ -16,6 +20,6 @@
     routerLinkActive
     #rla="routerLinkActive"
     [active]="rla.isActive"
-    >{{ link.label }}</a
+    >{{ link.label | translate }}</a
   >
 </nav>

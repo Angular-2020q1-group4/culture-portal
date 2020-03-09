@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { response } from '../../../core/data/photographers';
 import { Author } from '../../../core/models/author.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-photographers-list-page',
@@ -9,9 +10,11 @@ import { Author } from '../../../core/models/author.model';
   styleUrls: ['./photographers-list-page.component.scss']
 })
 export class PhotographersListPageComponent implements OnInit {
-  public cardArray: Author[] = response;
+  public cardArray = 'items';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, public translate: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.cardArray);
+  }
 }

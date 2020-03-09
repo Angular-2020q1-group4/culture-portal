@@ -10,7 +10,13 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [HeaderComponent],
-  imports: [CommonModule, RouterModule, MatButtonToggleModule, MatTabsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatButtonToggleModule,
+    MatTabsModule,
+    TranslateModule
+  ],
   exports: [HeaderComponent, TranslateModule]
 })
 export class SharedModule {}
