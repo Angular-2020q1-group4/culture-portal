@@ -1,20 +1,21 @@
 <ul class="photographers-list">
   <li class="list-element" *ngFor="let card of cardArray">
-    <mat-card>
-      <img
-        mat-card-image
-        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-        alt=""
-      />
-      <mat-card-header>
-        <mat-card-title>Имя Фамилия</mat-card-title>
-        <mat-card-subtitle>дата</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-actions>
-        <a mat-raised-button color="primary" routerLink="/photographers/card"
-          >Подробнее</a
-        >
-      </mat-card-actions>
-    </mat-card>
+    <div class="wrapper-card-1">
+      <div class="wrapper-card-2">
+        <div class="list-container">
+          <mat-card (click)="onClick(card)">
+            <img
+              mat-card-image
+              src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+              alt=""
+            />
+            <mat-card-header>
+              <mat-card-title>Имя Фамилия</mat-card-title>
+              <mat-card-subtitle>дата</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+        </div>
+      </div>
+    </div>
   </li>
 </ul>
