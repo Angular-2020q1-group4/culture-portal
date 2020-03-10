@@ -1,8 +1,12 @@
-<ul class="photographers-list">
-  <app-photographer-item
-    class="photographers-card"
-    *ngFor="let card of cardArray"
-    [cardItem]="card"
-  >
-  </app-photographer-item>
-</ul>
+<div class="wrapper">
+  <app-search></app-search>
+
+  <ul class="photographers-list">
+    <app-photographer-item
+      class="photographers-card"
+      *ngFor="let card of cardArray"
+      [cardItem]="card"
+    >
+    </app-photographer-item>
+  </ul>
+</div>
