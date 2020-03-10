@@ -9,4 +9,8 @@ export class PhotographerDetailPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  public goBack(): void {
+    history.back();
+  }
 }
