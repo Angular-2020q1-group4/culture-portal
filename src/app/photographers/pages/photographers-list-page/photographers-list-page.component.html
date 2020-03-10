@@ -3,6 +3,7 @@
     class="photographers-card"
     *ngFor="let card of 'items' | translate"
     [cardItem]="card"
+    [itemDate]="card.birthday | dateTranslate"
   >
   </app-photographer-item>
 </ul>

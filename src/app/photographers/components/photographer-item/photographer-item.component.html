@@ -2,7 +2,7 @@
   <img mat-card-image [src]="cardItem.avatarImage" alt="" />
   <mat-card-header>
     <mat-card-title>
-      <h2>{{ 'item.firstName' | translate }}</h2>
+      <h2>{{ cardItem.firstName }}</h2>
       <h2>{{ cardItem.middleName }} {{ cardItem.lastName }}</h2>
     </mat-card-title>
     <mat-card-subtitle *ngIf="cardItem.death; else elseBlock">
@@ -13,7 +13,7 @@
       <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
     </mat-card-subtitle>
     <ng-template #elseBlock>
-      <label>Родился {{ cardItem.birthday | date: 'longDate' }}</label>
+      <label>Родился {{ itemDate }}</label>
       <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
     </ng-template>
   </mat-card-header>

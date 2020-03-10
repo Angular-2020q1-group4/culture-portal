@@ -16,10 +16,10 @@ export class HeaderComponent implements OnInit {
   activeLink = this.navLinks[0];
 
   constructor(private router: Router, public translate: TranslateService) {
-    translate.addLangs(['RU', 'BY', 'EN']);
-    translate.setDefaultLang('RU');
+    translate.addLangs(['ru', 'be', 'en']);
+    translate.setDefaultLang('ru');
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/RU|BY|EN/) ? browserLang : 'RU');
+    translate.use(browserLang.match(/ru|be|en/) ? browserLang : 'ru');
   }
 
   ngOnInit(): void {}

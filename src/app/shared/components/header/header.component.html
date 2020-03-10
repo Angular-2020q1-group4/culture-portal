@@ -7,7 +7,7 @@
       (click)="translate.use(langselect.value)"
       [value]="lang"
       *ngFor="let lang of translate.getLangs()"
-      >{{ lang }}</mat-button-toggle
+      >{{ lang.toUpperCase() }}</mat-button-toggle
     >
   </mat-button-toggle-group>
 </div>
