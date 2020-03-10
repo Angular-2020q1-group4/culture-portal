@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.users-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  margin: 30px 3% 10px 3%;
+}
