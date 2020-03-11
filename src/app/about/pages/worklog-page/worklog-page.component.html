@@ -1,1 +1,74 @@
-<p>worklog-page works!</p>
+<div class="self-evaluation">
+  <h2>Self evalucation</h2>
+  <div class="scope">
+    <h3>Min Scope</h3>
+    <mat-checkbox
+      ><b>10</b> Main page + page with a list of authors + author's page (only
+      pages with content without widgets)</mat-checkbox
+    >
+    <mat-checkbox
+      ><b>10</b> Page with team members + page with worklog</mat-checkbox
+    >
+    <mat-checkbox
+      ><b>10</b> Page with list of authors contains search widget</mat-checkbox
+    >
+    <mat-checkbox><b>20</b> Portal has two languages</mat-checkbox>
+  </div>
+
+  <div class="scope">
+    <h3>Normal Scope</h3>
+    <mat-checkbox><b>20</b> Portal has page with styleguide</mat-checkbox>
+    <mat-checkbox><b>10</b> Mobile version is okey</mat-checkbox>
+    <mat-checkbox><b>10</b> Ipad/tablet version is okey</mat-checkbox>
+    <mat-checkbox><b>10</b> Author's page contains timeline</mat-checkbox>
+    <mat-checkbox><b>10</b> Author's page contains video overlay</mat-checkbox>
+    <mat-checkbox><b>20</b> Author's page contains photo gallery</mat-checkbox>
+    <mat-checkbox
+      ><b>10</b> Author's page contains map (geowidget)</mat-checkbox
+    >
+    <mat-checkbox
+      >from <b>0</b> to <b>20</b> Design (typography, icons, colors, links +
+      buttons + input, ui components are styled)</mat-checkbox
+    >
+    <mat-checkbox><b>20</b> Material-ui / bootstrap is used</mat-checkbox>
+    <mat-checkbox><b>10</b> Portal has third language</mat-checkbox>
+  </div>
+
+  <div class="scope">
+    <h3>Extra Scope</h3>
+    <mat-checkbox
+      ><b>10</b> Confidence of the project presentation</mat-checkbox
+    >
+    <mat-checkbox><b>10</b> Project is made using scully</mat-checkbox>
+    <mat-checkbox
+      ><b>10</b> Contentful / netlify cms / other cms is used for content
+      management</mat-checkbox
+    >
+    <mat-checkbox
+      ><b>20</b> Animations / special effects like paralax</mat-checkbox
+    >
+    <mat-checkbox>up to <b>20</b> Outstanding design</mat-checkbox>
+    <mat-checkbox
+      ><b>20</b> Storybook/angularplayground/compodoc/other angulaer
+      styleguide/documentation tool usage for the page with styles</mat-checkbox
+    >
+  </div>
+
+  <div class="scope">
+    <h3>Fines</h3>
+    <mat-checkbox
+      ><b>-50</b> if there are less than 3 commits from each active team member.
+      Everyone should merge their own PRs</mat-checkbox
+    >
+    <mat-checkbox
+      >up to <b>-50</b> points for violations
+      stage2-tasks-requirements</mat-checkbox
+    >
+    <mat-checkbox><b>-40</b> if there is no worklog for team</mat-checkbox>
+    <mat-checkbox
+      ><b>-20</b> too primitive (ugly for 2020) design / UX</mat-checkbox
+    >
+  </div>
+
+  <h2>Total score: {{ totalScore }}</h2>
+</div>

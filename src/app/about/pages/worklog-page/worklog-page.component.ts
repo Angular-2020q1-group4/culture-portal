@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./worklog-page.component.scss']
 })
 export class WorklogPageComponent implements OnInit {
+  totalScore = 0;
+
   constructor() {}
 
   ngOnInit(): void {}
