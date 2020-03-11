@@ -2,7 +2,7 @@
   <img mat-card-image [src]="cardItem.avatarImage" alt="" />
   <mat-card-header>
     <mat-card-title>
-      <h2>{{ 'item.firstName' | translate }}</h2>
+      <h2>{{ cardItem.firstName }}</h2>
       <h2>{{ cardItem.middleName }} {{ cardItem.lastName }}</h2>
     </mat-card-title>
     <mat-card-subtitle *ngIf="cardItem.death; else elseBlock">

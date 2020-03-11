@@ -7,9 +7,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
+import { DateTranslatePipe } from './pipe/date-translate.pipe';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, DateTranslatePipe],
   imports: [
     CommonModule,
     RouterModule,
@@ -17,6 +18,6 @@ import { TranslateModule } from '@ngx-translate/core';
     MatTabsModule,
     TranslateModule
   ],
-  exports: [HeaderComponent, TranslateModule]
+  exports: [HeaderComponent, TranslateModule, DateTranslatePipe]
 })
 export class SharedModule {}

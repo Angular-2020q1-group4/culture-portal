@@ -14,7 +14,5 @@ export class PhotographersListPageComponent implements OnInit {
 
   constructor(private router: Router, public translate: TranslateService) {}
 
-  ngOnInit(): void {
-    console.log(this.cardArray);
-  }
+  ngOnInit(): void {}
 }
