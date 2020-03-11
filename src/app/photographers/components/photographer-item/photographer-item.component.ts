@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PhotographerItemComponent implements OnInit {
   @Input() public cardItem: Author;
-  @Input() public itemDate;
+  @Input() public itemDate: string;
 
   constructor(public translate: TranslateService) {}
 
