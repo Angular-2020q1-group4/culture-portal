@@ -13,5 +13,7 @@ export class PhotographerItemComponent implements OnInit {
 
   constructor(public translate: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.cardItem.id);
+  }
 }
