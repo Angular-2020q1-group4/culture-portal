@@ -6,14 +6,11 @@
       <h2>{{ cardItem.middleName }} {{ cardItem.lastName }}</h2>
     </mat-card-title>
     <mat-card-subtitle *ngIf="cardItem.death; else elseBlock">
-      <label
-        >{{ cardItem.birthday | date: 'longDate' }} -
-        {{ cardItem.death | date: 'longDate' }}</label
-      >
+      <label>{{ itemDate }} - {{ cardItem.death | date: 'longDate' }}</label>
       <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
     </mat-card-subtitle>
     <ng-template #elseBlock>
-      <label>Родился {{ cardItem.birthday | date: 'longDate' }}</label>
+      <label>Родился {{ itemDate }}</label>
       <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
     </ng-template>
   </mat-card-header>
