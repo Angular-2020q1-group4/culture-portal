@@ -44,11 +44,11 @@ export function FirestoreTranslationsLoaderFactory(db: AngularFirestore) {
 export function FbTransLoaderFactory(db: AngularFireDatabase) {
   return new FirestoreTransLoader(db);
 }
-
+/*
 export function MissingTranslationHandlerFactory(http: HttpClient) {
   return new FirestoreMissingTranslationHandler(http);
 }
-
+*/
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -67,13 +67,14 @@ export function MissingTranslationHandlerFactory(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: FbTransLoaderFactory,
         deps: [AngularFireDatabase]
-      },
-
+      }
+      /*
       missingTranslationHandler: {
         provide: MissingTranslationHandler,
         useFactory: MissingTranslationHandlerFactory,
         deps: [HttpClient]
       }
+*/
     })
   ],
   providers: [],

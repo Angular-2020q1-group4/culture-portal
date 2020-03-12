@@ -13,6 +13,13 @@ import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { TimelineComponent } from './components/timeline/timeline.component';
 
 import { SharedModule } from '../shared/shared.module';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { FirestoreTransLoader } from '@shared/firestore-trans-loader';
+
+export function FbTransLoaderFactory(db: AngularFireDatabase) {
+  return new FirestoreTransLoader(db);
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { SharedModule } from '../shared/shared.module';
     MglTimelineModule,
     MatCardModule,
     MatButtonModule,
-    SharedModule
+    SharedModule,
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: FbTransLoaderFactory,
+        deps: [AngularFireDatabase]
+      }
+    })
   ]
 })
 export class PhotographersModule {}

@@ -9,16 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PhotographerDetailPageComponent implements OnInit {
   public id: number;
-  public card;
+  public card: any;
 
-  constructor(private route: ActivatedRoute, translate: TranslateService) {
-    this.id = this.route.snapshot.params['id'];
-    translate
-      .get('items.' + (this.id - 1))
-      .subscribe((text: string) => (this.card = text));
-  }
+  constructor(
+    public route: ActivatedRoute,
+    public translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
-    //this.card = this.card;
+    this.id = this.route.snapshot.params['id'];
+    this.translate
+      .stream('items.' + (this.id - 1))
+      .subscribe((text: string) => (this.card = text));
   }
 }

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyACOj3eNIiv7hhPZfmee3InI9UUe0Pp-TY',
+    //apiKey: 'AIzaSyACOj3eNIiv7hhPZfmee3InI9UUe0Pp-TY',
     authDomain: 'culture-portal-ps.firebaseapp.com',
     databaseURL: 'https://culture-portal-ps.firebaseio.com',
     projectId: 'culture-portal-ps',
