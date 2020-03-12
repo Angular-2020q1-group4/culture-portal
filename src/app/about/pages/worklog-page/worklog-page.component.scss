@@ -1,21 +1,6 @@
-.self-evaluation {
-  width: 100%;
-  background-color: white;
-  opacity: 0.8;
-}
-
-.scope {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  opacity: 1;
-
-  h3 {
-    margin: 0 0 5px 10px;
-    font-weight: 700;
-  }
-}
-
-h2 {
-  margin-top: 30px;
+.separate {
+  width: 95%;
+  height: 1px;
+  margin: 10px 0;
+  background: grey;
 }
