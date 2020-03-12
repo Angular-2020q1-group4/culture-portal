@@ -1,9 +1,8 @@
 <ul class="photographers-list">
   <app-photographer-item
     class="photographers-card"
-    *ngFor="let card of 'items' | translate"
-    [cardItem]="card"
-    [itemDate]="card.birthday | dateTranslate"
+    *ngFor="let authorItem of authors"
+    [author]="authorItem"
   >
   </app-photographer-item>
 </ul>
