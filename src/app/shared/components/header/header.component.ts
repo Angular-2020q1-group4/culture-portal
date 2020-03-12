@@ -8,12 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  icon = '/assets/camera.svg';
+
   navLinks = [
-    { path: '/main', label: 'label.main' },
-    { path: '/photographers', label: 'label.photographers' },
-    { path: '/about', label: 'label.about' }
+    { path: '/main', label: 'interface.labels.main' },
+    { path: '/photographers', label: 'interface.labels.photographers' },
+    { path: '/about', label: 'interface.labels.about' }
   ];
-  activeLink = this.navLinks[0];
 
   constructor(private router: Router, public translate: TranslateService) {
     translate.addLangs(['ru', 'be', 'en']);
@@ -25,6 +26,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   public onClick(link: string) {
-    this.router.navigateByUrl(`/${link}`);
+    this.router.navigate([`${link}`]);
   }
 }

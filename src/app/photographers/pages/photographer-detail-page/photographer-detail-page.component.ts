@@ -2,14 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
+import { Author } from '@core/models';
+
 @Component({
   selector: 'app-photographer-detail-page',
   templateUrl: './photographer-detail-page.component.html',
   styleUrls: ['./photographer-detail-page.component.scss']
 })
 export class PhotographerDetailPageComponent implements OnInit {
-  public id: number;
-  public card: any;
+  public card: Author;
 
   constructor(
     public route: ActivatedRoute,
@@ -17,9 +18,13 @@ export class PhotographerDetailPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['id'];
-    this.translate
-      .stream('items.' + (this.id - 1))
-      .subscribe((text: string) => (this.card = text));
+    const id = this.route.snapshot.params.id;
+    this.translate.stream('photographers.' + (id - 1)).subscribe(text => {
+      this.card = text;
+    });
+  }
+
+  public goBack(): void {
+    history.back();
   }
 }

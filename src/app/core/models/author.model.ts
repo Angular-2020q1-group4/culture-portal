@@ -1,12 +1,13 @@
 export interface Author {
-  id: number; // уникальный id, можно сделать string, тогда их надо генерировать
+  id: string; // уникальный id, можно сделать string, тогда их надо генерировать
+  fullName: string;
   firstName: string; // имя
   middleName: string; // отчество
   lastName: string; // фамилия
   avatarImage: string;
   birthday: string; // data в виде чисел
   death?: string;
-  placeOfBirth: string;
+  birthplace: string;
   biography: Event[]; // каждое событие отображается в timeline
   workList: Event[];
   galleryImages?: string[]; // можно оставить только ссылки на фото

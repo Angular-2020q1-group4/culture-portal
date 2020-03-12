@@ -1,7 +1,6 @@
 import { TranslateLoader } from '@ngx-translate/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 
 export class FirestoreTransLoader implements TranslateLoader {
   constructor(private db: AngularFireDatabase) {}

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Author } from '../../../core/models/author.model';
-import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+
+import { Author } from '@core/models';
 
 @Component({
   selector: 'app-photographer-item',
@@ -8,12 +9,14 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./photographer-item.component.scss']
 })
 export class PhotographerItemComponent implements OnInit {
-  @Input() public cardItem: Author;
-  @Input() public itemDate: string;
+  @Input() public author: Author;
+  @Input() public birthday: string;
 
-  constructor(public translate: TranslateService) {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    console.log(this.cardItem.id);
+  ngOnInit(): void {}
+
+  onClick(id: number): void {
+    this.router.navigateByUrl(`/photographers/${id}`);
   }
 }
