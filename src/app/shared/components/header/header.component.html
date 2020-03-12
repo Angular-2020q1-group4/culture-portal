@@ -1,12 +1,10 @@
 <div class="header">
-  <h1>{{ 'main.title' | translate }}</h1>
+  <h1>{{ 'interface.main.title' | translate }}</h1>
 
   <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
     <mat-button-toggle
-      #langselect
-      (click)="translate.use(langselect.value)"
-      [value]="lang"
       *ngFor="let lang of translate.getLangs()"
+      (click)="translate.use(lang)"
       >{{ lang.toUpperCase() }}</mat-button-toggle
     >
   </mat-button-toggle-group>
