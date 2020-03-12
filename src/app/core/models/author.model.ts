@@ -7,7 +7,7 @@ export interface Author {
   avatarImage: string;
   birthday: string; // data в виде чисел
   death?: string;
-  placeOfBirth: string;
+  birthplace: string;
   biography: Event[]; // каждое событие отображается в timeline
   workList: Event[];
   galleryImages?: string[]; // можно оставить только ссылки на фото

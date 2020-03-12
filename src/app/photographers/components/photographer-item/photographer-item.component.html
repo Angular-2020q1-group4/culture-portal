@@ -5,19 +5,18 @@
         <img mat-card-image [src]="author.avatarImage" alt="" />
         <mat-card-header>
           <mat-card-title>
-            <h2>{{ author.firstName }}</h2>
-            <h2>{{ author.middleName }} {{ author.lastName }}</h2>
+            <h2>{{ author.fullName }}</h2>
           </mat-card-title>
           <mat-card-subtitle *ngIf="author.death; else elseBlock">
             <label
               >{{ author.birthday | date: 'longDate' }} -
               {{ author.death | date: 'longDate' }}</label
             >
-            <p class="list-element__city">{{ author.placeOfBirth }}</p>
+            <p class="list-element__city">{{ author.birthplace }}</p>
           </mat-card-subtitle>
           <ng-template #elseBlock>
-            <label>Родился {{ author.birthday | date: 'longDate' }}</label>
-            <p class="list-element__city">{{ author.placeOfBirth }}</p>
+            <label>Родился {{ birthday }}</label>
+            <p class="list-element__city">{{ author.birthplace }}</p>
           </ng-template>
         </mat-card-header>
       </mat-card>

@@ -10,6 +10,7 @@ import { Author } from '@core/models';
 })
 export class PhotographerItemComponent implements OnInit {
   @Input() public author: Author;
+  @Input() public birthday: string;
 
   constructor(private router: Router) {}
 

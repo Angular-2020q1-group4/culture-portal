@@ -19,9 +19,8 @@ export class PhotographerDetailPageComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.params.id;
-    this.translate.stream('items.' + (id - 1)).subscribe(text => {
+    this.translate.stream('photographers.' + (id - 1)).subscribe(text => {
       this.card = text;
-      console.log(text);
     });
   }
 

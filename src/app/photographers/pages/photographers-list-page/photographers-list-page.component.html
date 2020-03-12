@@ -6,6 +6,7 @@
       class="photographers-card"
       *ngFor="let authorItem of authors"
       [author]="authorItem"
+      [birthday]="authorItem.birthday | dateTranslate"
     >
     </app-photographer-item>
   </ul>
