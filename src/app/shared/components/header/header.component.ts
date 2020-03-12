@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  icon = '/assets/camera.svg';
+
   navLinks = [
     { path: '/main', label: 'interface.labels.main' },
     { path: '/photographers', label: 'interface.labels.photographers' },

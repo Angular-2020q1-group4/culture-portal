@@ -1,23 +1,26 @@
-<mat-card class="list-element">
-  <img mat-card-image [src]="author.avatarImage" alt="" />
-  <mat-card-header>
-    <mat-card-title>
-      <h2>{{ author.fullName }}</h2>
-      <h2>{{ author.firstName }}</h2>
-      <h2>{{ author.middleName }} {{ author.lastName }}</h2>
-    </mat-card-title>
-    <mat-card-subtitle *ngIf="author.death; else elseBlock">
-      <label>{{ author }} - {{ author.death | date: 'longDate' }}</label>
-      <p class="list-element__city">{{ author.placeOfBirth }}</p>
-    </mat-card-subtitle>
-    <ng-template #elseBlock>
-      <label>Родился {{ author }}</label>
-      <p class="list-element__city">{{ author.placeOfBirth }}</p>
-    </ng-template>
-  </mat-card-header>
-  <mat-card-actions>
-    <a mat-raised-button color="primary" routerLink="{{ author.id }}"
-      >Подробнее</a
-    >
-  </mat-card-actions>
-</mat-card>
+<div class="list-container">
+  <div class="wrapper-card-1">
+    <div class="wrapper-card-2" (click)="onClick(1)">
+      <mat-card class="list-element">
+        <img mat-card-image [src]="author.avatarImage" alt="" />
+        <mat-card-header>
+          <mat-card-title>
+            <h2>{{ author.firstName }}</h2>
+            <h2>{{ author.middleName }} {{ author.lastName }}</h2>
+          </mat-card-title>
+          <mat-card-subtitle *ngIf="author.death; else elseBlock">
+            <label
+              >{{ author.birthday | date: 'longDate' }} -
+              {{ author.death | date: 'longDate' }}</label
+            >
+            <p class="list-element__city">{{ author.placeOfBirth }}</p>
+          </mat-card-subtitle>
+          <ng-template #elseBlock>
+            <label>Родился {{ author.birthday | date: 'longDate' }}</label>
+            <p class="list-element__city">{{ author.placeOfBirth }}</p>
+          </ng-template>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

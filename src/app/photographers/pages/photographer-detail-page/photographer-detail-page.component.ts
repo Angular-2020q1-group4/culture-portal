@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+
 import { Author } from '@core/models';
 
 @Component({
@@ -9,7 +10,6 @@ import { Author } from '@core/models';
   styleUrls: ['./photographer-detail-page.component.scss']
 })
 export class PhotographerDetailPageComponent implements OnInit {
-  public id: number;
   public card: Author;
 
   constructor(
@@ -18,10 +18,14 @@ export class PhotographerDetailPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params.id;
-    this.translate.stream('items.' + (this.id - 1)).subscribe(text => {
+    const id = this.route.snapshot.params.id;
+    this.translate.stream('items.' + (id - 1)).subscribe(text => {
       this.card = text;
       console.log(text);
     });
+  }
+
+  public goBack(): void {
+    history.back();
   }
 }

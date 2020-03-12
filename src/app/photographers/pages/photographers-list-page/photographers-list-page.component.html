@@ -1,8 +1,12 @@
-<ul class="photographers-list">
-  <app-photographer-item
-    class="photographers-card"
-    *ngFor="let authorItem of authors"
-    [author]="authorItem"
-  >
-  </app-photographer-item>
-</ul>
+<div class="wrapper">
+  <app-search class="search-input"></app-search>
+
+  <ul class="photographers-list">
+    <app-photographer-item
+      class="photographers-card"
+      *ngFor="let authorItem of authors"
+      [author]="authorItem"
+    >
+    </app-photographer-item>
+  </ul>
+</div>

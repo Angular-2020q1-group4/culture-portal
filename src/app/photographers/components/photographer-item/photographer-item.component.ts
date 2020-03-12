@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Author } from '@core/models';
 
@@ -10,7 +11,11 @@ import { Author } from '@core/models';
 export class PhotographerItemComponent implements OnInit {
   @Input() public author: Author;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  onClick(id: number): void {
+    this.router.navigateByUrl(`/photographers/${id}`);
+  }
 }

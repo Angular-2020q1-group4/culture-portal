@@ -20,4 +20,8 @@ export class PhotographersListPageComponent implements OnInit {
       console.log(authors);
     });
   }
+
+  onClick(id: number) {
+    this.router.navigateByUrl(`/photographers/${id}`);
+  }
 }
