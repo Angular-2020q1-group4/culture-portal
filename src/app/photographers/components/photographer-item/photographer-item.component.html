@@ -15,7 +15,9 @@
             <p class="list-element__city">{{ author.birthplace }}</p>
           </mat-card-subtitle>
           <ng-template #elseBlock>
-            <label>Родился {{ birthday }}</label>
+            <label
+              >{{ 'interface.card.born' | translate }} {{ birthday }}</label
+            >
             <p class="list-element__city">{{ author.birthplace }}</p>
           </ng-template>
         </mat-card-header>

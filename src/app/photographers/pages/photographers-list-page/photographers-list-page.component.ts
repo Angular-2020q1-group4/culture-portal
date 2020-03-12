@@ -17,7 +17,7 @@ export class PhotographersListPageComponent implements OnInit {
   ngOnInit(): void {
     this.translate.stream('photographers').subscribe((authors: Author[]) => {
       this.authors = authors;
-      console.log(authors);
+      console.log(this.authors);
     });
   }
 
