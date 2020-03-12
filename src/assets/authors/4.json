@@ -1,0 +1,167 @@
+{
+  "id": 4,
+  "firstName": " Валерий",
+  "middleName": "Валентинович",
+  "lastName": "Ведренко",
+  "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Valery_Vedrenko_2014.jpg/548px-Valery_Vedrenko_2014.jpg",
+  "birthday": "1956-08-19",
+  "death": "",
+  "biography": [
+    {
+      "firstDate": "1956-08-19",
+      "lastDate": "",
+      "nameWork": "Родился в Минске"
+    },
+    {
+      "firstDate": "1975",
+      "lastDate": "",
+      "nameWork": "окончил Минский архитектурно-строительный техникум по специальности «Архитектура»"
+    },
+    {
+      "firstDate": "1975",
+      "lastDate": "1977",
+      "nameWork": "служба в армии"
+    },
+    {
+      "firstDate": "1977",
+      "lastDate": "1984",
+      "nameWork": "работал в Белорусском государственном музее народной архитектуры и быта"
+    },
+    {
+      "firstDate": "1987",
+      "lastDate": "1991",
+      "nameWork": "учился в Московском государственном институте культуры на режиссёра кино-, фото-, видеостудии"
+    },
+    {
+      "firstDate": "1994",
+      "lastDate": "2004",
+      "nameWork": "занимался проектированием и оформлением краеведческих музеев в Беларуси"
+    },
+    {
+      "firstDate": "2005",
+      "lastDate": "",
+      "nameWork": "с появлением цифровой фотографии сотрудничал с фотопорталом ZНЯТА как фотограф, критик, публицист, переводчик"
+    },
+    {
+      "firstDate": "1982",
+      "lastDate": "",
+      "nameWork": "была организована любительская киностудия"
+    },
+    {
+      "firstDate": "1990",
+      "lastDate": "",
+      "nameWork": "участвовал в первой белорусской выставке неформального искусства «Панорама» в Минске в составе сообщества «БЛО»"
+    },
+    {
+      "firstDate": "1996",
+      "lastDate": "",
+      "nameWork": "в Музее Янки Купалы (Минск) у Ведренко открылась первая персональная выставка живописи, графики и скульптуры «Надежда без надежды»"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "2006",
+      "nameWork": "фотовыставка «Заславль», Историко-краеведческий музей города Заславль"
+    },
+    {
+      "firstDate": "2007",
+      "nameWork": "фотовыставка «Фотопластика», галерея «Мир фото»"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "фотовыставка «Пространство времени», г. Люблин Польша"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "«Фотопластика 06-08», к-р Победа"
+    },
+    {
+      "firstDate": "2009",
+      "nameWork": "фотовыставка «Минский альбом № 1», галерея «Мир фото»"
+    },
+    {
+      "firstDate": "2009",
+      "nameWork": "фотовыставка «Апостолы Гервят», Костёл Святого Симеона и Святой Елены"
+    },
+    {
+      "firstDate": "2010",
+      "nameWork": "фотовыставка «Апостолы Гервят», Университет им. А. Мицкевича, г. Познань Польша"
+    },
+    {
+      "firstDate": "2010",
+      "nameWork": "фотовыставка «Минский альбом № 2», галерея Zнята"
+    },
+    {
+      "firstDate": "2011",
+      "nameWork": "фотовыставка «Архив», Клуб «МИНСК»"
+    },
+    {
+      "firstDate": "2012",
+      "nameWork": "фотовыставка «Мистерии Гервят», галерея ТUT.BY"
+    },
+    {
+      "firstDate": "2013",
+      "nameWork": "фотовыставка «Поклон Гауди», Клуб «МИНСК»"
+    },
+    {
+      "firstDate": "2014",
+      "nameWork": "фотовыставка «Свет Вязынки», Музей Янки Купалы"
+    }
+  ],
+  "galleryImages": [
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-04.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-06.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-07.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-08.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-09.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-2.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-3-1.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-4-1.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-5.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-6.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-7.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-8.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-9.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-10.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-13-1.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-14.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-15.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-16.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-17.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-18.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-19.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-27.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-30.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-32.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-33-2.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-42.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-43.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-48.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-52.jpg",
+    "https://znyata.com/images/stories/interview/vedrenko/vvv-legenda-64.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=AcUnog6x9Qk",
+    "https://www.youtube.com/watch?v=2oCtd1YhKls",
+    "https://www.youtube.com/watch?v=A6HoWxyFruY",
+    "https://www.youtube.com/watch?v=fIiXBcdGyLg",
+    "https://www.youtube.com/watch?v=k1gwV4PcXPg"
+  ],
+  "mapPlace": [
+    {
+      "latitude": 53.901145,
+      "longitude": 27.549264,
+      "title": "Минск - место рождения в 1956"
+    },
+    {
+      "latitude": 51.237556,
+      "longitude": 22.566473,
+      "title": "Люблин, Польша - фотовыставка «Пространство времени» 2008"
+    },
+    {
+      "latitude": 52.413603,
+      "longitude": 16.926343,
+      "title": "Познань Польша - фотовыставка «Апостолы Гервят», Университет им. А. Мицкевича 2010"
+    }
+  ]
+}
