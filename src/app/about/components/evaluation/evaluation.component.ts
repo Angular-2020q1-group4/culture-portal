@@ -9,13 +9,12 @@ import { Scope } from '@about/models/self-evalucation.model';
 export class EvaluationComponent implements OnInit {
   totalScore = 0;
 
-  checked = true;
-
   minScope: Scope[] = [
     {
       done: true,
       point: 10,
-      label: `10 Main page + page with a list of authors + author's page (only pages with content without widgets)`
+      label: `10 Main page + page with a list of authors + author's page
+              (only pages with content without widgets)`
     },
     { point: 10, label: `10 Page with team members + page with worklog` },
     { point: 10, label: `10 Page with list of authors contains search widget` },
@@ -32,7 +31,8 @@ export class EvaluationComponent implements OnInit {
     { point: 10, label: `10 Author's page contains map (geowidget)` },
     {
       point: 20,
-      label: `from 0 to 20 Design (typography, icons, colors, links + buttons + input, ui components are styled)`
+      label: `from 0 to 20 Design (typography, icons, colors, links + buttons + input,
+              ui components are styled)`
     },
     { point: 20, label: `20 Material-ui / bootstrap is used` },
     { point: 10, label: `10 Portal has third language` }
@@ -50,14 +50,15 @@ export class EvaluationComponent implements OnInit {
     {
       point: 20,
       label: `20 Storybook/angularplayground/compodoc/
-                        other angulaer styleguide/documentation tool usage for the page with styles`
+              other angulaer styleguide/documentation tool usage for the page with styles`
     }
   ];
 
   fines: Scope[] = [
     {
       point: -50,
-      label: `-50 if there are less than 3 commits from each active team member. Everyone should merge their own PRs`
+      label: `-50 if there are less than 3 commits from each active team member.
+              Everyone should merge their own PRs`
     },
     {
       point: -50,
@@ -72,7 +73,7 @@ export class EvaluationComponent implements OnInit {
   ngOnInit(): void {}
 
   onToggle(val: number, event) {
-    const checked = !event.path[1].control.checked;
+    const checked = event.checked;
     if (checked) {
       this.totalScore += val;
     } else {

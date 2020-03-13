@@ -1,11 +1,10 @@
 <div class="self-evaluation">
-  <h2>Self evaluation</h2>
   <div class="scope">
     <h3>Min Scope</h3>
     <mat-checkbox
       *ngFor="let item of minScope"
       color="primary"
-      (click)="onToggle(item.point, $event)"
+      (change)="onToggle(item.point, $event)"
       >{{ item.label }}</mat-checkbox
     >
   </div>
@@ -15,7 +14,7 @@
     <mat-checkbox
       *ngFor="let item of normalScope"
       color="primary"
-      (click)="onToggle(item.point, $event)"
+      (change)="onToggle(item.point, $event)"
       >{{ item.label }}</mat-checkbox
     >
   </div>
@@ -25,7 +24,7 @@
     <mat-checkbox
       *ngFor="let item of extraScope"
       color="primary"
-      (click)="onToggle(item.point, $event)"
+      (change)="onToggle(item.point, $event)"
       >{{ item.label }}</mat-checkbox
     >
   </div>
@@ -35,7 +34,7 @@
     <mat-checkbox
       *ngFor="let item of fines"
       color="primary"
-      (click)="onToggle(item.point, $event)"
+      (change)="onToggle(item.point, $event)"
       >{{ item.label }}</mat-checkbox
     >
   </div>
