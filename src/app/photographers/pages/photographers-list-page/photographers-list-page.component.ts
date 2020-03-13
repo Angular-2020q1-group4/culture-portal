@@ -11,15 +11,18 @@ import { Author } from '@core/models';
 })
 export class PhotographersListPageComponent implements OnInit {
   public authors: Author[] = [];
+  public ready: boolean = false;
 
-  constructor(private router: Router, private translate: TranslateService) {}
-
-  ngOnInit(): void {
+  constructor(private router: Router, private translate: TranslateService) {
     this.translate.stream('photographers').subscribe((authors: Author[]) => {
       this.authors = authors;
-      console.log(this.authors);
+      if (typeof this.authors !== 'string') {
+        this.ready = true;
+      }
     });
   }
+
+  ngOnInit(): void {}
 
   onClick(id: number) {
     this.router.navigateByUrl(`/photographers/${id}`);

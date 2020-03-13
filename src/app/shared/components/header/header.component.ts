@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { LocalLangService } from '../../../core/service/local-lang.service';
 
 @Component({
   selector: 'app-header',
@@ -16,11 +17,22 @@ export class HeaderComponent implements OnInit {
     { path: '/about', label: 'interface.labels.about' }
   ];
 
-  constructor(private router: Router, public translate: TranslateService) {
+  constructor(
+    private router: Router,
+    public translate: TranslateService,
+    public _localSettings: LocalLangService
+  ) {
     translate.addLangs(['ru', 'be', 'en']);
     translate.setDefaultLang('ru');
-    const browserLang = translate.getBrowserLang();
+
+    let browserLang = translate.getBrowserLang();
+    let storedLang: string = _localSettings.getLanguage();
+    if (storedLang !== '') {
+      browserLang = storedLang;
+    }
+
     translate.use(browserLang.match(/ru|be|en/) ? browserLang : 'ru');
+    _localSettings.setLanguage(browserLang);
   }
 
   ngOnInit(): void {}

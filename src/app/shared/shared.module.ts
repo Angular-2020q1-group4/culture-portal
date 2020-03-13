@@ -8,6 +8,8 @@ import { AngularMaterialModule } from './angular-material.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { DateTranslatePipe } from './pipe/date-translate.pipe';
 
+import { LocalLangService } from '../core/service/local-lang.service';
+
 @NgModule({
   declarations: [HeaderComponent, DateTranslatePipe],
   imports: [CommonModule, TranslateModule, RouterModule, AngularMaterialModule],
@@ -17,6 +19,7 @@ import { DateTranslatePipe } from './pipe/date-translate.pipe';
     HeaderComponent,
     AngularMaterialModule,
     DateTranslatePipe
-  ]
+  ],
+  providers: [LocalLangService]
 })
 export class SharedModule {}

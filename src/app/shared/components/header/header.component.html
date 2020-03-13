@@ -8,6 +8,7 @@
     <mat-button-toggle
       *ngFor="let lang of translate.getLangs()"
       (click)="translate.use(lang)"
+      (change)="_localSettings.setLanguage(lang)"
       >{{ lang.toUpperCase() }}</mat-button-toggle
     >
   </mat-button-toggle-group>
