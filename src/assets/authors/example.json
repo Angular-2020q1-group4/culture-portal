@@ -1,0 +1,35 @@
+{
+  "id": "",
+  "snippet": {
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "avatarImage": "",
+    "birthplace": "",
+    "birthday": "",
+    "dayOfDeath": "",
+    "shortDescription": ""
+  },
+  "biography": [
+    {
+      "firstDate": "",
+      "lastDate": "",
+      "title": ""
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "",
+      "title": ""
+    }
+  ],
+  "galleryImages": ["url"],
+  "galleryVideo": ["url"],
+  "mapPlace": [
+    {
+      "latitude": 0,
+      "longitude": 0,
+      "title": ""
+    }
+  ]
+}
