@@ -1,14 +1,14 @@
 <div class="header">
   <div class=" headline">
-    <img class="icon" [src]="icon" alt="Culture Portal" />
+    <img class="icon" [src]="iconUrl" alt="Culture Portal" />
     <h1>{{ 'interface.main.title' | translate }}</h1>
   </div>
 
   <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
     <mat-button-toggle
-      *ngFor="let lang of translate.getLangs()"
-      (click)="translate.use(lang)"
-      >{{ lang.toUpperCase() }}</mat-button-toggle
+      *ngFor="let lang of languages"
+      (change)="changeLanguage(lang)"
+      >{{ lang.toLocaleString().toLocaleUpperCase() }}</mat-button-toggle
     >
   </mat-button-toggle-group>
 </div>

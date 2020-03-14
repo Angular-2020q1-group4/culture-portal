@@ -28,7 +28,7 @@
     "@schuchard/prettier": "^3.1.0",
     "angular-mgl-timeline.9": "^0.3.5",
     "angularfire2": "^5.4.2",
-    "firebase": "^7.10.0",
+    "firebase": "^7.11.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
