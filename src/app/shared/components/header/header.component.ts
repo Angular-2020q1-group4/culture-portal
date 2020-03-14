@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
-import { LocalLangService } from '../../../core/service/local-lang.service';
+
+import {
+  LanguageSettingsService,
+  LOCALES
+} from '@core/services/language-settings.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +11,10 @@ import { LocalLangService } from '../../../core/service/local-lang.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  icon = '/assets/camera.svg';
+  iconUrl = '/assets/camera.svg';
+
+  public languages;
+  public currentLanguage;
 
   navLinks = [
     { path: '/main', label: 'interface.labels.main' },
@@ -17,27 +22,15 @@ export class HeaderComponent implements OnInit {
     { path: '/about', label: 'interface.labels.about' }
   ];
 
-  constructor(
-    private router: Router,
-    public translate: TranslateService,
-    public _localSettings: LocalLangService
-  ) {
-    translate.addLangs(['ru', 'be', 'en']);
-    translate.setDefaultLang('ru');
+  constructor(private localSettings: LanguageSettingsService) {}
 
-    let browserLang = translate.getBrowserLang();
-    let storedLang: string = _localSettings.getLanguage();
-    if (storedLang !== '') {
-      browserLang = storedLang;
-    }
-
-    translate.use(browserLang.match(/ru|be|en/) ? browserLang : 'ru');
-    _localSettings.setLanguage(browserLang);
+  ngOnInit(): void {
+    this.languages = this.localSettings.getAllLangs();
+    this.currentLanguage = this.localSettings.getLanguage();
   }
 
-  ngOnInit(): void {}
-
-  public onClick(link: string) {
-    this.router.navigate([`${link}`]);
+  public changeLanguage(lang: LOCALES) {
+    this.localSettings.setLanguage(lang);
+    this.currentLanguage = lang;
   }
 }

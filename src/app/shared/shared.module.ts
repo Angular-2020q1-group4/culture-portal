@@ -19,7 +19,6 @@ import { LocalLangService } from '../core/service/local-lang.service';
     HeaderComponent,
     AngularMaterialModule,
     DateTranslatePipe
-  ],
-  providers: [LocalLangService]
+  ]
 })
 export class SharedModule {}
