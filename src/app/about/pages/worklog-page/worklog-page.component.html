@@ -1,12 +1,14 @@
-<h2>Журнал</h2>
+<h2>{{ worklogMembers.worklogHeadline }}</h2>
 <app-worklog
   class="worklog"
-  *ngFor="let item of worklogList"
+  *ngFor="let item of worklogMembers.worklogMembers"
   [worklogMember]="item"
 ></app-worklog>
 
-<h2>Возникшие трудности</h2>
-<p>Абзац о том как нам было тяжело делать это задание</p>
+<h2>{{ worklogMembers.difficultiesHeadline }}</h2>
+<div class="difficulties" *ngFor="let item of worklogMembers.difficulties">
+  <p>{{ item }}</p>
+</div>
 
-<h2>Самооценка</h2>
+<h2>{{ worklogMembers.evaluationHeadline }}</h2>
 <app-evaluation></app-evaluation>

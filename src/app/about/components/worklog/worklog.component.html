@@ -23,14 +23,18 @@
       </ng-container>
 
       <ng-container matColumnDef="task">
-        <th mat-header-cell *matHeaderCellDef>Название задачи</th>
+        <th mat-header-cell *matHeaderCellDef>
+          {{ 'interface.table.taskNameCol' | translate }}
+        </th>
         <td class="table-task" mat-cell *matCellDef="let element">
           {{ element.task }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="spent">
-        <th mat-header-cell *matHeaderCellDef>Затраченное время</th>
+        <th mat-header-cell *matHeaderCellDef>
+          {{ 'interface.table.spentTimeCol' | translate }}
+        </th>
         <td class="table-spent" mat-cell *matCellDef="let element">
           {{ element.spent }}
         </td>

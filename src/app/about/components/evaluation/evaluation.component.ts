@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Scope } from '@about/models/self-evalucation.model';
+import { Scope } from '@about/models/self-evaluation.model';
 
 @Component({
   selector: 'app-evaluation',

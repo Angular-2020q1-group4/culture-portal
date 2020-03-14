@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorklogMember } from '@about/models/worklog-member';
-import { MembersWorklogList } from '../../members';
+import { WorklogService } from '@about/services/worklog.service';
 
 @Component({
   selector: 'app-worklog-page',
@@ -8,9 +7,11 @@ import { MembersWorklogList } from '../../members';
   styleUrls: ['./worklog-page.component.scss']
 })
 export class WorklogPageComponent implements OnInit {
-  worklogList: WorklogMember[] = MembersWorklogList;
+  worklogMembers;
 
-  constructor() {}
+  constructor(private worklogService: WorklogService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.worklogMembers = this.worklogService.getWorklogData();
+  }
 }
