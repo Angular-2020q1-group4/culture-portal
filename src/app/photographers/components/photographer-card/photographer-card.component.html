@@ -1,0 +1,18 @@
+<mat-card class="author-info">
+  <img
+    mat-card-avatar
+    class="avatar"
+    [src]="author?.avatarImage"
+    alt="photographers photo"
+  />
+  <mat-card-title
+    >{{ author?.firstName }} {{ author?.middleName }}
+    {{ author?.lastName }}</mat-card-title
+  >
+  <mat-card-subtitle
+    >{{ author?.birthday }} – {{ author?.death || '...' }}</mat-card-subtitle
+  >
+  <mat-card-content class="caption">
+    {{ author.placeOfBirth }}
+  </mat-card-content>
+</mat-card>

@@ -9,6 +9,7 @@ import { PhotographerItemComponent } from './components/photographer-item/photog
 import { PhotographersListPageComponent } from './pages/photographers-list-page/photographers-list-page.component';
 import { PhotographerDetailPageComponent } from './pages/photographer-detail-page/photographer-detail-page.component';
 import { SearchComponent } from './components/search/search.component';
+import { PhotographerCardComponent } from './components/photographer-card/photographer-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchComponent } from './components/search/search.component';
     PhotographersListPageComponent,
     PhotographerDetailPageComponent,
     PhotographerItemComponent,
-    SearchComponent
+    SearchComponent,
+    PhotographerCardComponent
   ],
   imports: [SharedModule, PhotographersRoutingModule, MglTimelineModule]
 })
