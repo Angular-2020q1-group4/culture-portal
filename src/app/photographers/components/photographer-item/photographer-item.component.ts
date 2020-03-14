@@ -10,13 +10,12 @@ import { Author } from '@core/models';
 })
 export class PhotographerItemComponent implements OnInit {
   @Input() public author: Author;
-  @Input() public birthday: string;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
-  onClick(id: number): void {
-    this.router.navigateByUrl(`/photographers/${id}`);
+  onClick(id: string): void {
+    this.router.navigate(['/photographers', `${id}`]);
   }
 }
