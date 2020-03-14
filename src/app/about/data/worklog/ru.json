@@ -1,10 +1,11 @@
 {
   "worklogHeadline": "Журнал",
-  "worklogMembers": [
+  "teamMembers": [
     {
       "avatar": "https://avatars1.githubusercontent.com/u/26903136?s=400&u=f2e1cd442dabb732074e0259729aa3f4c7284ccb&v=4",
       "name": "Алёна Васильченко",
       "role": "Front-End разработчик",
+      "gitHub": "https://github.com/amoebiusss",
       "worklog": [
         {
           "task": "todo",

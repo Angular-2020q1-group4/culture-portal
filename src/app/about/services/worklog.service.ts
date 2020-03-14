@@ -1,6 +1,8 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import { WorklogModel } from '@about/models/worklog.model';
 import { WorklogData } from '@about/data/worklog-ru';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +14,7 @@ export class WorklogService {
 
   worklogData: WorklogModel = WorklogData;
 
-  constructor() {}
+  constructor(private translateService: TranslateService) {}
 
   getWorklogData(): WorklogModel {
     return this.worklogData;

@@ -1,6 +1,6 @@
 export interface WorklogModel {
   worklogHeadline: string;
-  worklogMembers: WorklogMember[];
+  worklogMembers: TeamMember[];
   difficultiesHeadline: string;
   difficulties: string[];
   evaluationHeadline: string;
@@ -8,10 +8,11 @@ export interface WorklogModel {
   evaluation: Evaluation[];
 }
 
-export interface WorklogMember {
+export interface TeamMember {
   avatar: string;
   name: string;
   role: string;
+  gitHub: string;
   worklog: Worklog[];
 }
 
