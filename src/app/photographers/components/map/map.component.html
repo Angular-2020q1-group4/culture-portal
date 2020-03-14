@@ -1,0 +1,15 @@
+<div class="container">
+  <angular-yandex-map
+    *ngIf="placeMarks"
+    [center]="calculateCenter()"
+    [zoom]="4"
+  >
+    <angular-yandex-placemark
+      *ngFor="let mark of placeMarks"
+      [geometry]="[mark.latitude, mark.longitude]"
+      [properties]="{ balloonContent: mark.title }"
+      (mouse)="onMarkerHover($event)"
+    >
+    </angular-yandex-placemark>
+  </angular-yandex-map>
+</div>
