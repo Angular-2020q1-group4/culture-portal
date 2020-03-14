@@ -2,17 +2,18 @@
   <img
     mat-card-avatar
     class="avatar"
-    [src]="author?.avatarImage"
+    [src]="author?.snippet.avatarImage"
     alt="photographers photo"
   />
-  <mat-card-title
-    >{{ author?.firstName }} {{ author?.middleName }}
-    {{ author?.lastName }}</mat-card-title
-  >
-  <mat-card-subtitle
-    >{{ author?.birthday }} – {{ author?.death || '...' }}</mat-card-subtitle
-  >
+  <mat-card-title>
+    {{ author?.snippet.firstName }} {{ author?.snippet.middleName }}
+    {{ author?.snippet.lastName }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{ author?.snippet.birthday }} – {{ author?.snippet.death || '...' }}
+    {{ author?.snippet.birthplace }}
+  </mat-card-subtitle>
   <mat-card-content class="caption">
-    {{ author.placeOfBirth }}
+    {{ author?.snippet.shortDescription }}
   </mat-card-content>
 </mat-card>

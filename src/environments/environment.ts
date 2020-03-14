@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    authDomain: 'culture-portal-ps.firebaseapp.com',
+    databaseURL: 'https://culture-portal-ps.firebaseio.com',
+    projectId: 'culture-portal-ps',
+    storageBucket: 'culture-portal-ps.appspot.com',
+    messagingSenderId: '34522916040',
+    appId: '1:34522916040:web:b252f5c1280458c8dcf1fd'
+  }
 };
 
 /*

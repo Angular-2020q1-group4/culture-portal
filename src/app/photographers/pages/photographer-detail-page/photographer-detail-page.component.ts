@@ -1,24 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { Author } from '../../../core/models/author.model';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+
+import { Author } from '@core/models';
+import { PhotographerService } from '@photographers/photographer.service';
 
 @Component({
   selector: 'app-photographer-detail-page',
   templateUrl: './photographer-detail-page.component.html',
   styleUrls: ['./photographer-detail-page.component.scss']
 })
-export class PhotographerDetailPageComponent implements OnInit {
-  author = {
-    firstName: 'Name',
-    middleName: 'MidName',
-    lastName: 'LastName',
-    birthday: '2020',
-    avatarImage: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-    placeOfBirth: 'Minsk'
-  } as Author;
+export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
+  public author: Author;
+  private subscription: Subscription;
 
-  constructor() {}
+  constructor(
+    public route: ActivatedRoute,
+    public photographerService: PhotographerService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const id = this.route.snapshot.params.id;
+    this.subscription = this.photographerService
+      .getAuthorById(id)
+      .subscribe(author => {
+        this.author = author;
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 
   public goBack(): void {
     history.back();

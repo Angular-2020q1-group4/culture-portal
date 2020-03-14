@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Author } from '../../../core/models/author.model';
 import { Router } from '@angular/router';
+
+import { Author } from '@core/models';
 
 @Component({
   selector: 'app-photographer-item',
@@ -8,13 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./photographer-item.component.scss']
 })
 export class PhotographerItemComponent implements OnInit {
-  @Input() public cardItem: Author;
+  @Input() public author: Author;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
-  onClick(id: number): void {
-    this.router.navigateByUrl(`/photographers/${id}`);
+  onClick(id: string): void {
+    this.router.navigate(['/photographers', `${id}`]);
   }
 }
