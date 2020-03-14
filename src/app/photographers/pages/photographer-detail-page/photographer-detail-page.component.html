@@ -4,10 +4,15 @@
   </button>
 
   <app-photographer-card [author]="author"></app-photographer-card>
-  <ng-image-slider
-    *ngIf="author?.galleryImages"
-    [images]="imageObjects"
-  ></ng-image-slider>
+
+  <div class="gallery-wrapper">
+    <ng-image-slider
+      class="gallery"
+      *ngIf="author?.galleryImages"
+      [images]="imageObjects"
+    >
+    </ng-image-slider>
+  </div>
 
   <app-timeline [biography]="author?.biography"></app-timeline>
   <app-map [placeMarks]="author?.mapPlace"></app-map>
