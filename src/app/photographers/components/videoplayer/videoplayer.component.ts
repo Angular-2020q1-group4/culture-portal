@@ -43,7 +43,12 @@ export class VideoplayerComponent implements OnInit, AfterViewInit, OnDestroy {
   };
 
   extractVideoId(url: string): string {
-    return url.replace('https://www.youtube.com/watch?v=', '');
+    let videoId = url.split('v=')[1];
+    const ampersandPosition = videoId.indexOf('&');
+    if (ampersandPosition !== -1) {
+      videoId = videoId.substring(0, ampersandPosition);
+    }
+    return videoId;
   }
 
   ngOnDestroy(): void {
