@@ -1,11 +1,12 @@
 <div class="wrapper">
   <app-search class="search-input"></app-search>
 
-  <ul class="photographers-list">
+  <ul class="photographers-list" *ngIf="ready">
     <app-photographer-item
       class="photographers-card"
-      *ngFor="let card of cardArray"
-      [cardItem]="card"
+      *ngFor="let authorItem of authors"
+      [author]="authorItem"
+      [birthday]="authorItem.birthday | dateTranslate"
     >
     </app-photographer-item>
   </ul>

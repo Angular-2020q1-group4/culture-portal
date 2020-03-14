@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { response } from '../../../core/data/photographers';
-import { Author } from '../../../core/models/author.model';
+import { TranslateService } from '@ngx-translate/core';
+
+import { Author } from '@core/models';
 
 @Component({
   selector: 'app-photographers-list-page',
@@ -9,9 +10,17 @@ import { Author } from '../../../core/models/author.model';
   styleUrls: ['./photographers-list-page.component.scss']
 })
 export class PhotographersListPageComponent implements OnInit {
-  public cardArray: Author[] = response;
+  public authors: Author[] = [];
+  public ready: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {
+    this.translate.stream('photographers').subscribe((authors: Author[]) => {
+      this.authors = authors;
+      if (typeof this.authors !== 'string') {
+        this.ready = true;
+      }
+    });
+  }
 
   ngOnInit(): void {}
 
