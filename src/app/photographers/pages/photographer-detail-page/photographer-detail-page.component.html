@@ -1,5 +1,21 @@
-<button class="back-button" mat-fab color="primary" (click)="goBack()">
-  &lt;
-</button>
+<div class="inner-page-wrapper">
+  <button class="back-button" mat-fab color="primary" (click)="goBack()">
+    &lt;
+  </button>
 
-<app-timeline></app-timeline>
+  <app-photographer-card [author]="author"></app-photographer-card>
+
+  <div class="gallery-wrapper">
+    <ng-image-slider
+      class="gallery"
+      *ngIf="author?.galleryImages"
+      [images]="imageObjects"
+    >
+    </ng-image-slider>
+  </div>
+
+  <app-timeline [biography]="author?.biography"></app-timeline>
+  <app-map [placeMarks]="author?.mapPlace"></app-map>
+  <app-worklist [workList]="author?.workList"></app-worklist>
+  <app-videoplayer [videoSrc]="(author?.galleryVideo)[0]"></app-videoplayer>
+</div>

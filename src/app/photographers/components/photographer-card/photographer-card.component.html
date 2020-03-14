@@ -1,0 +1,28 @@
+<mat-card class="author-info">
+  <img
+    mat-card-image
+    *ngIf="author?.snippet.avatarImage"
+    class="avatar"
+    [src]="author?.snippet.avatarImage"
+    alt="photographers photo"
+  />
+
+  <mat-card-title class="author-name">
+    {{ author?.snippet.firstName }} {{ author?.snippet.middleName }}
+    {{ author?.snippet.lastName }}
+  </mat-card-title>
+
+  <mat-card-subtitle>
+    <p class="author-dates">
+      {{ author?.snippet.birthday | dateTranslate }}
+      <span *ngIf="author?.snippet.death">
+        – {{ author?.snippet.death | dateTranslate }}</span
+      >
+    </p>
+    <p class="author-birthplace">{{ author?.snippet.birthplace }}</p>
+  </mat-card-subtitle>
+
+  <mat-card-content class="caption">
+    {{ author?.snippet.shortDescription }}
+  </mat-card-content>
+</mat-card>
