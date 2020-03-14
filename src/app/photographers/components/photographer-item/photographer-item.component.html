@@ -6,7 +6,9 @@
         <mat-card-header>
           <mat-card-title>
             <h2 class="list-element__name">{{ author.snippet.lastName }}</h2>
-            <h2 class="list-element__name">{{ author.snippet.firstName }}</h2>
+            <h2 class="list-element__name">
+              &nbsp;{{ author.snippet.firstName }}
+            </h2>
             <h2>{{ author.snippet.middleName }}</h2>
           </mat-card-title>
           <mat-card-subtitle
@@ -14,14 +16,15 @@
             class="list-element__date"
           >
             <label class="list-element__birth">
-              {{ author.snippet.birthday | date: 'longDate' }} -
-              {{ author.snippet.dayOfDeath | date: 'longDate' }}
+              {{ author.snippet.birthday | dateTranslate }} -
+              {{ author.snippet.dayOfDeath | dateTranslate }}
             </label>
             <p class="list-element__city">{{ author.snippet.birthplace }}</p>
           </mat-card-subtitle>
           <ng-template #elseBlock>
             <label class="list-element__birth"
-              >Родился {{ author.snippet.birthday }}</label
+              >{{ 'interface.card.born' | translate }}
+              {{ author.snippet.birthday | dateTranslate }}</label
             >
             <p class="list-element__city">{{ author.snippet.birthplace }}</p>
           </ng-template>
