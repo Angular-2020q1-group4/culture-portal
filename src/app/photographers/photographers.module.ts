@@ -16,6 +16,7 @@ import { FbTransLoaderFactory } from '../firebase.module';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { MapComponent } from './components/map/map.component';
 import { environment } from 'src/environments/environment';
+import { WorklistComponent } from './components/worklist/worklist.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { environment } from 'src/environments/environment';
     PhotographerItemComponent,
     SearchComponent,
     PhotographerCardComponent,
-    MapComponent
+    MapComponent,
+    WorklistComponent
   ],
   imports: [
     SharedModule,
