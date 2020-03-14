@@ -1,10 +1,23 @@
 .author-info {
   width: 50%;
   margin: 10px auto;
-  padding: 15px 20px;
+  padding: 20px;
   text-align: center;
 
   .avatar {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
     margin-bottom: 25px;
+    margin-top: 5px;
+  }
+
+  .author-name {
+    margin-bottom: 20px;
+  }
+
+  .author-dates,
+  .author-birthplace {
+    margin-bottom: 5px;
   }
 }
