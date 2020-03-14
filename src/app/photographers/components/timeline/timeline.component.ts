@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Event } from '../../../core/models';
+import { Event } from '@core/models';
 
 @Component({
   selector: 'app-timeline',

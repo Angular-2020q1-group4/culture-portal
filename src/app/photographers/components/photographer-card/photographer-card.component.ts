@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Author } from '../../../core/models/author.model';
+import { Author } from '@core/models';
 
 @Component({
   selector: 'app-photographer-card',

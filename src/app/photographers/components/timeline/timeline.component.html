@@ -10,16 +10,16 @@
 
     <mgl-timeline-entry-content>
       <!-- temporary content, cause there's no other content -->
-      {{ item.firstDate }}
-      <span *ngIf="item.lastDate"> – {{ item.lastDate }}</span>
+      {{ item.firstDate | dateTranslate }}
+      <span *ngIf="item.lastDate"> – {{ item.lastDate | dateTranslate }}</span>
     </mgl-timeline-entry-content>
 
     <mgl-timeline-entry-dot size="40" style="background-color: #3f51b5">
     </mgl-timeline-entry-dot>
 
     <mgl-timeline-entry-side>
-      {{ item.firstDate }}
-      <span *ngIf="item.lastDate"> – {{ item.lastDate }}</span>
+      {{ item.firstDate | dateTranslate }}
+      <span *ngIf="item.lastDate"> – {{ item.lastDate | dateTranslate }}</span>
     </mgl-timeline-entry-side>
   </mgl-timeline-entry>
 </mgl-timeline>

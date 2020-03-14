@@ -1,7 +1,7 @@
 <mat-card class="author-info">
   <img
-    *ngIf="author?.snippet.avatarImage"
     mat-card-image
+    *ngIf="author?.snippet.avatarImage"
     class="avatar"
     [src]="author?.snippet.avatarImage"
     alt="photographers photo"
@@ -14,7 +14,10 @@
 
   <mat-card-subtitle>
     <p class="author-dates">
-      {{ author?.snippet.birthday }} – {{ author?.snippet.death || '...' }}
+      {{ author?.snippet.birthday | dateTranslate }}
+      <span *ngIf="author?.snippet.death">
+        – {{ author?.snippet.death | dateTranslate }}</span
+      >
     </p>
     <p class="author-birthplace">{{ author?.snippet.birthplace }}</p>
   </mat-card-subtitle>
