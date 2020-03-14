@@ -5,13 +5,17 @@ export const WorklogData: WorklogModel = {
   worklogMembers: [
     {
       avatar:
-        'https://avatars0.githubusercontent.com/u/39223580?s=400&u=c6a5e520e37b99901880f86cf41d8f1f07574842&v=4',
-      name: 'Павел Гайдукевич',
+        'https://avatars1.githubusercontent.com/u/26903136?s=400&u=f2e1cd442dabb732074e0259729aa3f4c7284ccb&v=4',
+      name: 'Алёна Васильченко',
       role: 'Front-End разработчик',
       worklog: [
         {
-          task: 'Страница WorkLog',
-          spent: '10h'
+          task: 'todo',
+          spent: '1h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
         },
         {
           task: 'todo',
@@ -46,10 +50,72 @@ export const WorklogData: WorklogModel = {
           spent: '1h'
         }
       ]
+    },
+    {
+      avatar:
+        'https://avatars0.githubusercontent.com/u/39223580?s=400&u=c6a5e520e37b99901880f86cf41d8f1f07574842&v=4',
+      name: 'Павел Гайдукевич',
+      role: 'Front-End разработчик',
+      worklog: [
+        {
+          task: 'Страница WorkLog',
+          spent: '10h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
+        }
+      ]
+    },
+    {
+      avatar: 'https://avatars3.githubusercontent.com/u/30769404?s=400&v=4',
+      name: 'Пётр Сецко',
+      role: 'Front-End разработчик',
+      worklog: [
+        {
+          task: 'todo',
+          spent: '1h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
+        },
+        {
+          task: 'todo',
+          spent: '1h'
+        }
+      ]
+    },
+    {
+      avatar:
+        'https://avatars3.githubusercontent.com/u/19832659?s=400&u=5cf17e6ceb6120da0776470e8a396a7cb87ca50d&v=4',
+      name: 'Руслан Минюков',
+      role: 'Front-End разработчик',
+      worklog: [
+        {
+          task: 'Интерфейс данных о фотографе',
+          spent: '1h'
+        },
+        {
+          task: 'Поиск данных о фотографах',
+          spent: '10h'
+        }
+      ]
     }
   ],
   difficultiesHeadline: 'Возникшие трудности',
-  difficulties: ['Первая трудность', 'Вторая трудность', 'Третья трудность'],
+  difficulties: [
+    'Первой проблемой, с которой столкнулась наша команда в ходе разработки была реализация перевода приложения на разные языки. В ходе обсуждения были предложены 2 варианта реализации. В итоге мы остановились на использовании библиотеки NGX-Translate.',
+    'Следующей трудностью стал выбор способа хранения данных. Для этих целей было решено использовать базу данных Google Firebase.'
+  ],
   evaluationHeadline: 'Самооценка',
   evaluationScore: 'Итого:',
   evaluation: [

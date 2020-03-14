@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output, EventEmitter } from '@angular/core';
 import { WorklogModel } from '@about/models/worklog.model';
 import { WorklogData } from '@about/data/worklog-ru';
 
@@ -6,7 +6,9 @@ import { WorklogData } from '@about/data/worklog-ru';
   providedIn: 'root'
 })
 export class WorklogService {
-  totalScore = 0;
+  @Output() totalScore: EventEmitter<number> = new EventEmitter();
+
+  score = 0;
 
   worklogData: WorklogModel = WorklogData;
 
@@ -16,16 +18,14 @@ export class WorklogService {
     return this.worklogData;
   }
 
-  getTotalScore(): number {
-    return this.totalScore;
-  }
-
   calculateScore(val: number, event): void {
     const checked = event.checked;
     if (checked) {
-      this.totalScore += val;
+      this.score += val;
+      this.totalScore.emit(this.score);
     } else {
-      this.totalScore -= val;
+      this.score -= val;
+      this.totalScore.emit(this.score);
     }
   }
 }
