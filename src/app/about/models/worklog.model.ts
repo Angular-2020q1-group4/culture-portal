@@ -4,11 +4,8 @@ export interface WorklogModel {
   difficultiesHeadline: string;
   difficulties: string[];
   evaluationHeadline: string;
-  evaluationMin: string;
-  evaluationNormal: string;
-  evaluationExtra: string;
-  evaluationFines: string;
-  evaluation: Evaluation;
+  evaluationScore: string;
+  evaluation: Evaluation[];
 }
 
 export interface WorklogMember {
@@ -24,10 +21,8 @@ export interface Worklog {
 }
 
 export interface Evaluation {
-  minScope: Scope[];
-  normalScope: Scope[];
-  extraScope: Scope[];
-  fines: Scope[];
+  scopeName: string;
+  scope: Scope[];
 }
 
 export interface Scope {

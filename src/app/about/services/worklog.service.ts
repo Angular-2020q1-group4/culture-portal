@@ -6,11 +6,26 @@ import { WorklogData } from '@about/data/worklog-ru';
   providedIn: 'root'
 })
 export class WorklogService {
+  totalScore = 0;
+
   worklogData: WorklogModel = WorklogData;
 
   constructor() {}
 
-  getWorklogData() {
+  getWorklogData(): WorklogModel {
     return this.worklogData;
+  }
+
+  getTotalScore(): number {
+    return this.totalScore;
+  }
+
+  calculateScore(val: number, event): void {
+    const checked = event.checked;
+    if (checked) {
+      this.totalScore += val;
+    } else {
+      this.totalScore -= val;
+    }
   }
 }

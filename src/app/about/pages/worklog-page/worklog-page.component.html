@@ -11,4 +11,11 @@
 </div>
 
 <h2>{{ worklogMembers.evaluationHeadline }}</h2>
-<app-evaluation></app-evaluation>
+<div class="self-evaluation">
+  <app-evaluation
+    *ngFor="let item of worklogMembers.evaluation"
+    [evaluation]="item"
+  ></app-evaluation>
+
+  <h2>{{ worklogMembers.evaluationScore }} {{ totalScore }}</h2>
+</div>

@@ -7,11 +7,13 @@ import { WorklogService } from '@about/services/worklog.service';
   styleUrls: ['./worklog-page.component.scss']
 })
 export class WorklogPageComponent implements OnInit {
+  totalScore;
   worklogMembers;
 
   constructor(private worklogService: WorklogService) {}
 
   ngOnInit(): void {
     this.worklogMembers = this.worklogService.getWorklogData();
+    this.totalScore = this.worklogService.getTotalScore();
   }
 }
