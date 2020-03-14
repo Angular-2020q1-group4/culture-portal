@@ -1,25 +1,27 @@
-<mat-card class="list-element">
-  <img mat-card-image [src]="cardItem.avatarImage" alt="" />
-  <mat-card-header>
-    <mat-card-title>
-      <h2>{{ cardItem.firstName }}</h2>
-      <h2>{{ cardItem.middleName }} {{ cardItem.lastName }}</h2>
-    </mat-card-title>
-    <mat-card-subtitle *ngIf="cardItem.death; else elseBlock">
-      <label
-        >{{ cardItem.birthday | date: 'longDate' }} -
-        {{ cardItem.death | date: 'longDate' }}</label
-      >
-      <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
-    </mat-card-subtitle>
-    <ng-template #elseBlock>
-      <label>Родился {{ cardItem.birthday | date: 'longDate' }}</label>
-      <p class="list-element__city">{{ cardItem.placeOfBirth }}</p>
-    </ng-template>
-  </mat-card-header>
-  <mat-card-actions>
-    <a mat-raised-button color="primary" routerLink="/photographers/card"
-      >Подробнее</a
-    >
-  </mat-card-actions>
-</mat-card>
+<div class="list-container">
+  <div class="wrapper-card-1">
+    <div class="wrapper-card-2" (click)="onClick(author.id)">
+      <mat-card class="list-element">
+        <img mat-card-image [src]="author.snippet.avatarImage" alt="" />
+        <mat-card-header>
+          <mat-card-title>
+            <h2>{{ author.snippet.firstName }}</h2>
+            <h2>{{ author.snippet.middleName }}</h2>
+            <h2>{{ author.snippet.lastName }}</h2>
+          </mat-card-title>
+          <mat-card-subtitle *ngIf="author.snippet.dayOfDeath; else elseBlock">
+            <label
+              >{{ author.snippet.birthday | date: 'longDate' }} -
+              {{ author.snippet.dayOfDeath | date: 'longDate' }}</label
+            >
+            <p class="list-element__city">{{ author.snippet.birthplace }}</p>
+          </mat-card-subtitle>
+          <ng-template #elseBlock>
+            <label>Родился {{ author.snippet.birthday }}</label>
+            <p class="list-element__city">{{ author.snippet.birthplace }}</p>
+          </ng-template>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

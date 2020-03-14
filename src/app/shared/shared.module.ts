@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { HeaderComponent } from './components/header/header.component';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatTabsModule } from '@angular/material/tabs';
 import { RouterModule } from '@angular/router';
 
+import { HeaderComponent } from './components/header/header.component';
+import { AngularMaterialModule } from './angular-material.module';
+
+import { TranslateModule } from '@ngx-translate/core';
+import { DateTranslatePipe } from './pipe/date-translate.pipe';
+
 @NgModule({
-  declarations: [HeaderComponent],
-  imports: [CommonModule, RouterModule, MatButtonToggleModule, MatTabsModule],
-  exports: [HeaderComponent]
+  declarations: [HeaderComponent, DateTranslatePipe],
+  imports: [CommonModule, TranslateModule, RouterModule, AngularMaterialModule],
+  exports: [
+    CommonModule,
+    TranslateModule,
+    HeaderComponent,
+    AngularMaterialModule,
+    DateTranslatePipe
+  ]
 })
 export class SharedModule {}
