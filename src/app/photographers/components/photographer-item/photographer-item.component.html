@@ -1,8 +1,8 @@
 <div class="list-container">
   <div class="wrapper-card-1">
-    <div class="wrapper-card-2" (click)="onClick(1)">
+    <div class="wrapper-card-2" (click)="onClick(author.id)">
       <mat-card class="list-element">
-        <img mat-card-image [src]="author.avatarImage" alt="" />
+        <img mat-card-image [src]="author.snippet.avatarImage" alt="" />
         <mat-card-header>
           <mat-card-title>
             <h2>{{ author.snippet.firstName }}</h2>

@@ -1,10 +1,14 @@
 {
-  "label": {
-    "main": "Дамоу",
-    "photographers": "Photographers of Belarus",
-    "about": "About"
+  "labels": {
+    "main": "Галоўная",
+    "photographers": "Фатографы Беларусі",
+    "about": "Аб праекце"
+  },
+  "buttons": {
+    "more": "Больш падрабязна",
+    "back": "Назад"
   },
   "main": {
-    "title": "Культура | Photographers of Belarus"
+    "title": "Культурны партал | Фатографы Беларусі"
   }
 }
