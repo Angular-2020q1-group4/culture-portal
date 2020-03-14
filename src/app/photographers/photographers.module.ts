@@ -45,7 +45,8 @@ import { environment } from 'src/environments/environment';
         provide: TranslateLoader,
         useFactory: FbTransLoaderFactory,
         deps: [AngularFireDatabase]
-      }
+      },
+      extend: true
     })
   ]
 })
