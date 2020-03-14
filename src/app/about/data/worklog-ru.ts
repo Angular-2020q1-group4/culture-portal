@@ -8,6 +8,7 @@ export const WorklogData: WorklogModel = {
         'https://avatars1.githubusercontent.com/u/26903136?s=400&u=f2e1cd442dabb732074e0259729aa3f4c7284ccb&v=4',
       name: 'Алёна Васильченко',
       role: 'Front-End разработчик',
+      gitHub: 'https://github.com/amoebiusss',
       worklog: [
         {
           task: 'todo',
@@ -32,6 +33,7 @@ export const WorklogData: WorklogModel = {
         'https://avatars3.githubusercontent.com/u/43645356?s=400&u=05de8f4f60c2799f0278598a34294ad309b9f5b7&v=4',
       name: 'Владимир Тягунов',
       role: 'Front-End разработчик',
+      gitHub: 'https://github.com/amoebiusss',
       worklog: [
         {
           task: 'todo',
@@ -56,6 +58,7 @@ export const WorklogData: WorklogModel = {
         'https://avatars0.githubusercontent.com/u/39223580?s=400&u=c6a5e520e37b99901880f86cf41d8f1f07574842&v=4',
       name: 'Павел Гайдукевич',
       role: 'Front-End разработчик',
+      gitHub: 'https://github.com/amoebiusss',
       worklog: [
         {
           task: 'Страница WorkLog',
@@ -75,6 +78,7 @@ export const WorklogData: WorklogModel = {
       avatar: 'https://avatars3.githubusercontent.com/u/30769404?s=400&v=4',
       name: 'Пётр Сецко',
       role: 'Front-End разработчик',
+      gitHub: 'https://github.com/amoebiusss',
       worklog: [
         {
           task: 'todo',
@@ -99,6 +103,7 @@ export const WorklogData: WorklogModel = {
         'https://avatars3.githubusercontent.com/u/19832659?s=400&u=5cf17e6ceb6120da0776470e8a396a7cb87ca50d&v=4',
       name: 'Руслан Минюков',
       role: 'Front-End разработчик',
+      gitHub: 'https://github.com/amoebiusss',
       worklog: [
         {
           task: 'Интерфейс данных о фотографе',
