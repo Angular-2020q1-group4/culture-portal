@@ -1,21 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { response } from '../../../core/data/photographers';
-import { Author } from '../../../core/models/author.model';
+import { Subscription } from 'rxjs';
+
+import { Author } from '@core/models';
+import { PhotographerService } from '@photographers/photographer.service';
 
 @Component({
   selector: 'app-photographers-list-page',
   templateUrl: './photographers-list-page.component.html',
   styleUrls: ['./photographers-list-page.component.scss']
 })
-export class PhotographersListPageComponent implements OnInit {
-  public cardArray: Author[] = response;
+export class PhotographersListPageComponent implements OnInit, OnDestroy {
+  public authors: Author[] = [];
+  private subscription: Subscription;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private photographerService: PhotographerService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.subscription = this.photographerService
+      .getAuthors()
+      .subscribe((authors: Author[]) => {
+        this.authors = authors;
+      });
+  }
 
-  onClick(id: number) {
-    this.router.navigateByUrl(`/photographers/${id}`);
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
