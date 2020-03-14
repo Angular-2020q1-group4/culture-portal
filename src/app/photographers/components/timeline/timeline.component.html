@@ -1,20 +1,25 @@
-<mgl-timeline focusOnOpen="true" mobileWidthThreshold="800">
-  <mgl-timeline-entry *ngFor="let entry of testEntries">
+<mgl-timeline
+  *ngIf="biography?.length"
+  focusOnOpen="true"
+  mobileWidthThreshold="800"
+>
+  <mgl-timeline-entry *ngFor="let item of biography">
     <mgl-timeline-entry-header>
-      {{ entry.title }}
+      {{ item.title }}
     </mgl-timeline-entry-header>
 
     <mgl-timeline-entry-content>
-      <p>{{ entry.description }}</p>
-      <p>{{ entry.description }}</p>
-      <p>{{ entry.description }}</p>
+      <!-- temporary content, cause there's no other content -->
+      {{ item.firstDate }}
+      <span *ngIf="item.lastDate"> – {{ item.lastDate }}</span>
     </mgl-timeline-entry-content>
 
     <mgl-timeline-entry-dot size="40" style="background-color: #3f51b5">
     </mgl-timeline-entry-dot>
 
     <mgl-timeline-entry-side>
-      {{ entry.year }}
+      {{ item.firstDate }}
+      <span *ngIf="item.lastDate"> – {{ item.lastDate }}</span>
     </mgl-timeline-entry-side>
   </mgl-timeline-entry>
 </mgl-timeline>

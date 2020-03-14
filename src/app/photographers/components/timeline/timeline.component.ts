@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Event } from '../../../core/models';
 
 @Component({
   selector: 'app-timeline',
@@ -6,18 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-  testEntries = [
-    {
-      title: 'Title 1',
-      description: 'Some description here 1',
-      year: '2020'
-    },
-    {
-      title: 'Title 2',
-      description: 'Some description here 2',
-      year: '2020'
-    }
-  ];
+  @Input() biography: Event[];
 
   constructor() {}
 
