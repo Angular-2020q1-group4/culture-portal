@@ -11,8 +11,8 @@
           </mat-card-title>
           <mat-card-subtitle *ngIf="author.snippet.dayOfDeath; else elseBlock">
             <label
-              >{{ author.snippet.birthday | dateTranslate }} -
-              {{ author.snippet.dayOfDeath | dateTranslate }}</label
+              >{{ author.snippet.birthday | dateTranslate: 'longDate' }} -
+              {{ author.snippet.dayOfDeath | dateTranslate: 'longDate' }}</label
             >
             <p class="list-element__city">{{ author.snippet.birthplace }}</p>
           </mat-card-subtitle>
