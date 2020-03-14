@@ -19,23 +19,40 @@
 
 .list-element .mat-card-image {
   margin: 5px auto;
-  width: 100%;
-  height: auto;
+  object-fit: cover;
+  width: 300px;
+  height: 350px;
 }
 
 .mat-card-header {
   margin: 10px 0;
-  text-align: center;
+  text-align: left;
 
   h2 {
     margin: 0;
-    text-align: left;
   }
+
+  .list-element__name {
+    display: inline;
+  }
+
+  .mat-card-subtitle {
+    margin: 0;
+  }
+}
+
+.list-element__birth {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .list-element__city {
   font-weight: bold;
+  text-align: center;
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .mat-card .mat-card-actions {
