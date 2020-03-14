@@ -1,0 +1,112 @@
+{
+  "id": "6",
+  "snippet": {
+    "firstName": "Valery",
+    "middleName": "Dzmitrievich",
+    "lastName": "Lobko",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%B9_%D0%9B%D0%BE%D0%B1%D0%BA%D0%BE.jpg/548px-%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%B9_%D0%9B%D0%BE%D0%B1%D0%BA%D0%BE.jpg",
+    "birthplace": "Rava-Ruska, Lviv oblast, Ukraine",
+    "birthday": "1951-07-12",
+    "dayOfDeath": "",
+    "shortDescription": "Photographer, critic, former Chairman of the Union of photographers of Belarus, the author of the original methods and technologies in the field of tubeless photography."
+  },
+  "biography": [
+    {
+      "firstDate": "1951-07-12",
+      "lastDate": "",
+      "nameWork": "Born in Rava-Ruskaya, Lviv region, Ukraine"
+    },
+    {
+      "firstDate": "1990",
+      "lastDate": "",
+      "nameWork": "He was elected Chairman of the Board in the newly created Union of artists of the BSSR (the photo club «Minsk» since 1960-ies)"
+    },
+    {
+      "firstDate": "1984",
+      "lastDate": "",
+      "nameWork": "Published in Minsk the book «Your „green hedgehogs“ », which to this day remains a reference book of numerous lovers of cacti and nerds"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "1974",
+      "nameWork": "Participation in all-Union exhibition 'Svema-74' (Diplomas: E. Koszul, V. Lobko) — Shostka"
+    },
+    {
+      "firstDate": "1986",
+      "nameWork": "Exhibition of V. Lobko in Grodno"
+    },
+    {
+      "firstDate": "1986",
+      "nameWork": "Participation in the second International exhibition of photography (Riga)"
+    },
+    {
+      "firstDate": "1993",
+      "nameWork": "Exhibition of Three from Minsk (Three from Minsk). Gotlands Konstmuseum. Visby (Sweden)"
+    },
+    {
+      "firstDate": "1991",
+      "nameWork": "Exhibition Photo Manifesto: Contemporary Photography in the USSR. Museum for Contemporary Art, Baltimore, Maryland, USA"
+    },
+    {
+      "firstDate": "1994",
+      "nameWork": "The exhibition Fotografie aus Minsk at the gallery «Ifa» in Berlin"
+    },
+    {
+      "firstDate": "2006",
+      "nameWork": "The exhibition «Second wave». Collective exhibition — Valery Lobko and his disciples. Minsk"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "The exhibition «Photography from Minsk: Valery Lobko», Vilnius"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "A memorial exhibition of photographs by Valery Lobko «the Return... the second Step.» (Minsk)"
+    }
+  ],
+  "galleryImages": [
+    "http://journalby.com/files/3_small.jpg",
+    "http://journalby.com/files/11_small.jpg",
+    "http://journalby.com/files/9_small.jpg",
+    "http://journalby.com/files/10_small.jpg",
+    "http://4.bp.blogspot.com/-iqpBjEOgf0g/TqgwcV1ZeNI/AAAAAAAAA1E/H1gFPT4TSQc/s1600/Monolog_resize.jpg",
+    "https://g1.dcdn.lt/images/pix/file17223022_vyst_06.09_3.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9172.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9174.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9180.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9181.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9183.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9186.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2076.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2078.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2079.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2080.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2082.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2083.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2084.jpg"
+  ],
+  "galleryVideo": ["https://www.youtube.com/watch?v=8HxhuamYDNY"],
+  "mapPlace": [
+    {
+      "latitude": 50.232849,
+      "longitude": 23.63675,
+      "title": "Rava-Ruska, Lviv oblast, Ukraine - born"
+    },
+    {
+      "latitude": 52.50887,
+      "longitude": 13.410833,
+      "title": "Berlin - Exhibition Fotografie aus Minsk at the gallery «Ifa» 1994"
+    },
+    {
+      "latitude": 57.635816,
+      "longitude": 18.294167,
+      "title": "Visby, Sweden - Exhibition of Three from Minsk 1993"
+    },
+    {
+      "latitude": 54.700985,
+      "longitude": 25.283091,
+      "title": "Vilnius - the Exhibition «Photography from Minsk: Valery Lobko» 2008"
+    }
+  ]
+}

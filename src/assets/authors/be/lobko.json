@@ -1,0 +1,112 @@
+{
+  "id": "6",
+  "snippet": {
+    "firstName": "Валерый",
+    "middleName": "Дзмітрыевіч",
+    "lastName": "Лабко",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%B9_%D0%9B%D0%BE%D0%B1%D0%BA%D0%BE.jpg/548px-%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%B9_%D0%9B%D0%BE%D0%B1%D0%BA%D0%BE.jpg",
+    "birthplace": "Рава-Руская, Львоўская вобласць, Украіна",
+    "birthday": "1951-07-12",
+    "dayOfDeath": "",
+    "shortDescription": "Фатограф, крытык, былы старшыня Саюза фотамастакоў Беларусі, аўтар арыгінальных метадаў і тэхналогій у галіне бескамернай фатаграфіі."
+  },
+  "biography": [
+    {
+      "firstDate": "1951-07-12",
+      "lastDate": "",
+      "nameWork": "Нарадзіўся ў г. Рава-Руская, Львоўская вобласць, Украіна"
+    },
+    {
+      "firstDate": "1990",
+      "lastDate": "",
+      "nameWork": "Быў абраны старшынёй праўлення ў створаным Саюзе фотамастакоў БССР (фотаклуб «Мінск» з 1960-х гадоў)"
+    },
+    {
+      "firstDate": "1984",
+      "lastDate": "",
+      "nameWork": "Апублікаваў у Мінску кнігу «Вашы „зялёныя вожыкі“», якая і да сённяшняга дня застаецца настольнай кнігай шматлікіх аматараў кактусаў і батанікаў"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "1974",
+      "nameWork": "Удзел ва Ўсесаюзнай выставе «Свема-74» (Дыпломы: Е. Козюля, В. Лабко) — Шостка"
+    },
+    {
+      "firstDate": "1986",
+      "nameWork": "Выстава В. Лабко ў Гродне"
+    },
+    {
+      "firstDate": "1986",
+      "nameWork": "Удзел у другой Міжнароднай выставе фотамастацтва (Рыга)"
+    },
+    {
+      "firstDate": "1993",
+      "nameWork": "Выстава Three from Minsk (Трое з Мінска). Gotlands Konstmuseum. Visby (Швецыя)"
+    },
+    {
+      "firstDate": "1991",
+      "nameWork": "Выстава Photo Manifesto: Contemporary Photography in the USSR. Museum for Contemporary Art, Балтымор, штат Мэрыленд, ЗША"
+    },
+    {
+      "firstDate": "1994",
+      "nameWork": "Выстава Fotografie aus Minsk у галерэі «Ifa» у Берліне"
+    },
+    {
+      "firstDate": "2006",
+      "nameWork": "Выстава «Другая хваля». Калектыўная выстава — Валерый Лабко і яго вучні. Мінск"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "Выстава «Фатаграфія з Мінску: Валерый Лабко», Вільня"
+    },
+    {
+      "firstDate": "2008",
+      "nameWork": "Мемарыяльная выстава фотаздымкаў Валерыя Лабко «Вяртанне... Крок другі.» (Мінск)"
+    }
+  ],
+  "galleryImages": [
+    "http://journalby.com/files/3_small.jpg",
+    "http://journalby.com/files/11_small.jpg",
+    "http://journalby.com/files/9_small.jpg",
+    "http://journalby.com/files/10_small.jpg",
+    "http://4.bp.blogspot.com/-iqpBjEOgf0g/TqgwcV1ZeNI/AAAAAAAAA1E/H1gFPT4TSQc/s1600/Monolog_resize.jpg",
+    "https://g1.dcdn.lt/images/pix/file17223022_vyst_06.09_3.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9172.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9174.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9180.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9181.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9183.jpg",
+    "https://citydog.by//content/editor_images/2016/09_september/23_mfm/1G8A9186.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2076.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2078.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2079.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2080.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2082.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2083.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/07/664W2084.jpg"
+  ],
+  "galleryVideo": ["https://www.youtube.com/watch?v=8HxhuamYDNY"],
+  "mapPlace": [
+    {
+      "latitude": 50.232849,
+      "longitude": 23.63675,
+      "title": "г. Рава-Руская, Львоўская вобласць, Украіна - нарадзіўся"
+    },
+    {
+      "latitude": 52.50887,
+      "longitude": 13.410833,
+      "title": "Берлін - Выстава Fotografie aus Minsk у галерэі «Ifa» 1994"
+    },
+    {
+      "latitude": 57.635816,
+      "longitude": 18.294167,
+      "title": "Visby, Швецыя - Выстава Three from Minsk 1993"
+    },
+    {
+      "latitude": 54.700985,
+      "longitude": 25.283091,
+      "title": "Вільня - Выстава «Фатаграфія з Мінску: Валерый Лабко» 2008"
+    }
+  ]
+}
