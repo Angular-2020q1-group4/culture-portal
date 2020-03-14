@@ -6,9 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AngularMaterialModule } from './angular-material.module';
 
 import { TranslateModule } from '@ngx-translate/core';
-import { DateTranslatePipe } from './pipe/date-translate.pipe';
-
-import { LocalLangService } from '../core/service/local-lang.service';
+import { DateTranslatePipe } from './pipes/date-translate.pipe';
 
 @NgModule({
   declarations: [HeaderComponent, DateTranslatePipe],
