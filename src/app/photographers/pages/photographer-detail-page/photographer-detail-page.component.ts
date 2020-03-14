@@ -13,6 +13,7 @@ import { PhotographerService } from '@photographers/photographer.service';
 export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
   public author: Author;
   private subscription: Subscription;
+  imageObjects: Array<{}> = [];
 
   constructor(
     public route: ActivatedRoute,
@@ -25,6 +26,9 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
       .getAuthorById(id)
       .subscribe(author => {
         this.author = author;
+        author.galleryImages.forEach(im =>
+          this.imageObjects.push({ image: im, thumbImage: im })
+        );
       });
   }
 

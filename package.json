@@ -31,6 +31,7 @@
     "angular8-yandex-maps": "^1.11.0",
     "angularfire2": "^5.4.2",
     "firebase": "^7.10.0",
+    "ng-image-slider": "^2.4.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

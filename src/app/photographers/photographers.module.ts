@@ -5,6 +5,7 @@ import { PhotographersRoutingModule } from './photographers-routing.module';
 import { MglTimelineModule } from 'angular-mgl-timeline.9';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { PhotographersListPageComponent } from './pages/photographers-list-page/photographers-list-page.component';
 import { PhotographerDetailPageComponent } from './pages/photographer-detail-page/photographer-detail-page.component';
@@ -37,6 +38,7 @@ import { environment } from 'src/environments/environment';
     PhotographersRoutingModule,
     MglTimelineModule,
     YouTubePlayerModule,
+    NgImageSliderModule,
     AngularYandexMapsModule.forRoot(environment.ymapsApiKey),
     TranslateModule.forChild({
       loader: {

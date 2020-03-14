@@ -4,6 +4,11 @@
   </button>
 
   <app-photographer-card [author]="author"></app-photographer-card>
+  <ng-image-slider
+    *ngIf="author?.galleryImages"
+    [images]="imageObjects"
+  ></ng-image-slider>
+
   <app-timeline [biography]="author?.biography"></app-timeline>
   <app-map [placeMarks]="author?.mapPlace"></app-map>
   <app-worklist [workList]="author?.workList"></app-worklist>
