@@ -9,7 +9,10 @@
             <h2 class="list-element__name">{{ author.snippet.firstName }}</h2>
             <h2>{{ author.snippet.middleName }}</h2>
           </mat-card-title>
-          <mat-card-subtitle *ngIf="author.snippet.dayOfDeath; else elseBlock">
+          <mat-card-subtitle
+            *ngIf="author.snippet.dayOfDeath; else elseBlock"
+            class="list-element__date"
+          >
             <label class="list-element__birth">
               {{ author.snippet.birthday | date: 'longDate' }} -
               {{ author.snippet.dayOfDeath | date: 'longDate' }}

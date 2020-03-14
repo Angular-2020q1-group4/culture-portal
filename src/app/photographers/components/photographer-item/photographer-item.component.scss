@@ -10,6 +10,7 @@
 .list-element {
   width: 300px;
   margin: 20px 0px;
+  min-height: 525px;
 
   :hover {
     box-shadow: none;
@@ -36,8 +37,9 @@
     display: inline;
   }
 
-  .mat-card-subtitle {
-    margin: 0;
+  .list-element__date {
+    margin: 0 auto;
+    width: 280px;
   }
 }
 
