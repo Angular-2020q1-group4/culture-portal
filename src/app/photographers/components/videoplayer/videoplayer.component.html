@@ -1,1 +1,9 @@
-<youtube-player [videoId]="extractVideoId(videoSrc)"></youtube-player>
+<div #videoPlayer class="wrapper">
+  <youtube-player
+    *ngIf="videoSrc"
+    class="player"
+    [width]="videoWidth"
+    [height]="videoHeight"
+    [videoId]="extractVideoId(videoSrc)"
+  ></youtube-player>
+</div>
