@@ -26,6 +26,7 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
       .subscribe(author => {
         this.author = author;
       });
+    console.log(this.author);
   }
 
   ngOnDestroy(): void {

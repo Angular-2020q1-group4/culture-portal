@@ -32,6 +32,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
         deps: [AngularFireDatabase]
       }
     })
-  ]
+  ],
+  exports: [PhotographerItemComponent]
 })
 export class PhotographersModule {}
