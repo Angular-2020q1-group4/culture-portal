@@ -30,7 +30,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
         provide: TranslateLoader,
         useFactory: FbTransLoaderFactory,
         deps: [AngularFireDatabase]
-      }
+      },
+      extend: true
     })
   ]
 })
