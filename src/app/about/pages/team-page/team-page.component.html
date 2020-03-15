@@ -1,5 +1,11 @@
-<h2>{{ title }}</h2>
+<div class="wrapper">
+  <h2>{{ title }}</h2>
 
-<ul>
-  <li></li>
-</ul>
+  <div class="users-container">
+    <app-team-member-card
+      class="user-card"
+      *ngFor="let item of teamMembers"
+      [teamMember]="item"
+    ></app-team-member-card>
+  </div>
+</div>
