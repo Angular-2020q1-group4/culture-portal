@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
-import { TeamMember } from '@about/models/worklog.model';
 import { filter } from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class TeamUsersService {
+import { TranslateService } from '@ngx-translate/core';
+import { TeamMember } from '@about/models';
+
+@Injectable({ providedIn: 'root' })
+export class TeamService {
   constructor(private translateService: TranslateService) {}
 
   getTeamMembers(): Observable<TeamMember[]> {
     return this.translateService
       .stream('team')
-      .pipe(filter(value => typeof value !== 'string'));
+      .pipe(filter(team => typeof team !== 'string'));
   }
 }

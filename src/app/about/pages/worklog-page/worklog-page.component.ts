@@ -1,8 +1,10 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { WorklogService } from '@about/services/worklog.service';
-import { TeamUsersService } from '@about/services/team-users.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TeamMember } from '@about/models/worklog.model';
+
+import { WorklogService } from '@about/services/worklog.service';
+import { TeamService } from '@about/services/team.service';
+import { Evaluation, TeamMember } from '@about/models';
+import { EvaluationService } from '@about/services/evaluation.service';
 
 @Component({
   selector: 'app-worklog-page',
@@ -10,27 +12,38 @@ import { TeamMember } from '@about/models/worklog.model';
   styleUrls: ['./worklog-page.component.scss']
 })
 export class WorklogPageComponent implements OnInit, OnDestroy {
-  private subscription: Subscription;
+  private teamSub: Subscription;
+  private evalSub: Subscription;
+
+  public teamMembers: TeamMember[] = [];
+  public evaluations: Evaluation[] = [];
+
   totalScore = 0;
-  worklogMembers;
-  teamMembers: TeamMember[] = [];
 
   constructor(
     private worklogService: WorklogService,
-    private teamUsers: TeamUsersService
+    private teamService: TeamService,
+    private evaluationService: EvaluationService
   ) {}
 
   ngOnInit(): void {
-    this.worklogMembers = this.worklogService.getWorklogData();
-    this.subscription = this.teamUsers
-      .getTeamMembers()
-      .subscribe((member: TeamMember[]) => (this.teamMembers = member));
+    this.teamSub = this.teamService.getTeamMembers().subscribe(team => {
+      this.teamMembers = team;
+    });
+
+    this.evalSub = this.evaluationService
+      .getEvaluation()
+      .subscribe(evaluations => {
+        this.evaluations = evaluations;
+      });
+
     this.worklogService.totalScore.subscribe(
       value => (this.totalScore = value)
     );
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    this.teamSub.unsubscribe();
+    this.evalSub.unsubscribe();
   }
 }

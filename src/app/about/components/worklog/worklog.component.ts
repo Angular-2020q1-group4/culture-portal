@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TeamMember } from '@about/models/worklog.model';
+
+import { TeamMember } from '@about/models';
 
 @Component({
   selector: 'app-worklog',
@@ -7,7 +8,7 @@ import { TeamMember } from '@about/models/worklog.model';
   styleUrls: ['./worklog.component.scss']
 })
 export class WorklogComponent implements OnInit {
-  @Input() worklogMember: TeamMember;
+  @Input() teamMember: TeamMember;
 
   displayedColumns: string[] = ['position', 'task', 'spent'];
 

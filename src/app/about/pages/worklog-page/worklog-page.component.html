@@ -1,21 +1,18 @@
-<h2>{{ worklogMembers.worklogHeadline }}</h2>
+<h2>{{ 'interface.worklog.headline' | translate }}</h2>
 <app-worklog
   class="worklog"
   *ngFor="let item of teamMembers"
-  [worklogMember]="item"
+  [teamMember]="item"
 ></app-worklog>
 
-<h2>{{ worklogMembers.difficultiesHeadline }}</h2>
-<div class="difficulties" *ngFor="let item of worklogMembers.difficulties">
-  <p>{{ item }}</p>
-</div>
+<app-difficulties></app-difficulties>
 
-<h2>{{ worklogMembers.evaluationHeadline }}</h2>
+<h2>{{ 'interface.evaluation.headline' | translate }}</h2>
 <div class="self-evaluation">
   <app-evaluation
-    *ngFor="let item of worklogMembers.evaluation"
+    *ngFor="let item of evaluations"
     [evaluation]="item"
   ></app-evaluation>
 
-  <h2>{{ worklogMembers.evaluationScore }} {{ totalScore }}</h2>
+  <h2>{{ 'interface.evaluation.score' | translate }} {{ totalScore }}</h2>
 </div>
