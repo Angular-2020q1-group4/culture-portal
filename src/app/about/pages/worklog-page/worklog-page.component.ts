@@ -3,7 +3,8 @@ import { Subscription } from 'rxjs';
 
 import { WorklogService } from '@about/services/worklog.service';
 import { TeamService } from '@about/services/team.service';
-import { TeamMember } from '@about/models';
+import { Evaluation, TeamMember } from '@about/models';
+import { EvaluationService } from '@about/services/evaluation.service';
 
 @Component({
   selector: 'app-worklog-page',
@@ -11,21 +12,31 @@ import { TeamMember } from '@about/models';
   styleUrls: ['./worklog-page.component.scss']
 })
 export class WorklogPageComponent implements OnInit, OnDestroy {
-  private subscription: Subscription;
+  private teamSub: Subscription;
+  private evalSub: Subscription;
+
   public teamMembers: TeamMember[] = [];
+  public evaluations: Evaluation[] = [];
 
   totalScore = 0;
   worklogMembers;
 
   constructor(
     private worklogService: WorklogService,
-    private teamService: TeamService
+    private teamService: TeamService,
+    private evaluationService: EvaluationService
   ) {}
 
   ngOnInit(): void {
-    this.subscription = this.teamService.getTeamMembers().subscribe(team => {
+    this.teamSub = this.teamService.getTeamMembers().subscribe(team => {
       this.teamMembers = team;
     });
+
+    this.evalSub = this.evaluationService
+      .getEvaluation()
+      .subscribe(evaluations => {
+        this.evaluations = evaluations;
+      });
 
     this.worklogMembers = this.worklogService.getWorklogData();
     this.worklogService.totalScore.subscribe(
@@ -34,6 +45,7 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    this.teamSub.unsubscribe();
+    this.evalSub.unsubscribe();
   }
 }
