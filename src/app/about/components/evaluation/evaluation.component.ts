@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { WorklogService } from '@about/services/worklog.service';
-import { Evaluation } from '@about/models/worklog.model';
+import { Evaluation } from '@about/models';
 
 @Component({
   selector: 'app-evaluation',

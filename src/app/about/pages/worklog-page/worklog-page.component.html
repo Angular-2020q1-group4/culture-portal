@@ -7,14 +7,12 @@
 
 <app-difficulties></app-difficulties>
 
-<h2>{{ 'interface.worklog.evaluation.headline' | translate }}</h2>
+<h2>{{ 'interface.evaluation.headline' | translate }}</h2>
 <div class="self-evaluation">
   <app-evaluation
     *ngFor="let item of evaluations"
     [evaluation]="item"
   ></app-evaluation>
 
-  <h2>
-    {{ 'interface.worklog.evaluation.score' | translate }} {{ totalScore }}
-  </h2>
+  <h2>{{ 'interface.evaluation.score' | translate }} {{ totalScore }}</h2>
 </div>

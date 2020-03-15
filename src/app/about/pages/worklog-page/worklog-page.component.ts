@@ -19,7 +19,6 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
   public evaluations: Evaluation[] = [];
 
   totalScore = 0;
-  worklogMembers;
 
   constructor(
     private worklogService: WorklogService,
@@ -38,7 +37,6 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
         this.evaluations = evaluations;
       });
 
-    this.worklogMembers = this.worklogService.getWorklogData();
     this.worklogService.totalScore.subscribe(
       value => (this.totalScore = value)
     );

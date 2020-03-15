@@ -1,2 +1,2 @@
-export * from './teamMember';
+export * from './teamMember.model';
 export * from './evaluation.model';
