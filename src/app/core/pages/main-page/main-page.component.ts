@@ -12,16 +12,10 @@ import { Author } from '@core/models';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit, OnDestroy {
-  welcome = 'Добро пожаловать на культурный портал Беларуси';
-  todo = 'Todo';
-
   public author: Author;
   private subscription: Subscription;
 
-  constructor(
-    private translate: TranslateService,
-    public photographerService: PhotographerService
-  ) {}
+  constructor(public photographerService: PhotographerService) {}
 
   ngOnInit(): void {
     this.subscription = this.photographerService
