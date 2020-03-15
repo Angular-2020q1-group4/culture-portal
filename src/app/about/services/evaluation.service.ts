@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { filter, tap } from 'rxjs/operators';
 
-import { Evaluation, Scope } from '@about/models';
+import { Evaluation } from '@about/models';
 
 @Injectable({ providedIn: 'root' })
 export class EvaluationService {
@@ -30,15 +30,11 @@ export class EvaluationService {
   setInitialScore(evaluations: Evaluation[]) {
     this.setScore(0);
 
-    let scopes: Scope[] = [];
-
     evaluations.forEach(evaluation => {
-      scopes = [...scopes, ...evaluation.scope];
+      evaluation.scope
+        .filter(scope => scope.done)
+        .forEach(scp => this.calculateScore(scp.point, scp.done));
     });
-
-    scopes
-      .filter(scope => scope.done)
-      .forEach(scp => this.calculateScore(scp.point, scp.done));
   }
 
   setScore(score: number) {
