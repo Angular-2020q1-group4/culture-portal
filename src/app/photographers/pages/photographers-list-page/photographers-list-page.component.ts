@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
-import { PhotographerService } from '@photographers/photographer.service';
+import { PhotographerService } from '@photographers/services/photographer.service';
 import { SearchService } from '@core/services/search.service';
 
 @Component({
