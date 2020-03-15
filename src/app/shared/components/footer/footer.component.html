@@ -1,0 +1,11 @@
+<div class="footer">
+  <p class="frooter__text">RSSchool 2020</p>
+  <div class="footer__link">
+    <a
+      *ngFor="let link of 'team' | translate"
+      href="{{ link.contacts.github }}"
+      target="_blank"
+      ><img class="footer__img" [src]="link.avatar" alt=""
+    /></a>
+  </div>
+</div>

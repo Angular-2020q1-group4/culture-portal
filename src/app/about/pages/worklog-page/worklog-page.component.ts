@@ -1,7 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { WorklogService } from '@about/services/worklog.service';
 import { TeamService } from '@about/services/team.service';
 import { Evaluation, TeamMember } from '@about/models';
 import { EvaluationService } from '@about/services/evaluation.service';
@@ -21,7 +20,6 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
   totalScore = 0;
 
   constructor(
-    private worklogService: WorklogService,
     private teamService: TeamService,
     private evaluationService: EvaluationService
   ) {}
@@ -37,7 +35,7 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
         this.evaluations = evaluations;
       });
 
-    this.worklogService.totalScore.subscribe(
+    this.evaluationService.totalScore.subscribe(
       value => (this.totalScore = value)
     );
   }

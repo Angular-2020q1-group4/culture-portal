@@ -10,6 +10,7 @@ import { WorklogPageComponent } from '@about/pages/worklog-page/worklog-page.com
 import { TeamPageComponent } from '@about/pages/team-page/team-page.component';
 import { EvaluationComponent } from '@about/components/evaluation/evaluation.component';
 import { WorklogComponent } from '@about/components/worklog/worklog.component';
+import { TeamMemberCardComponent } from '@about/components/team-member-card/team-member-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WorklogComponent } from '@about/components/worklog/worklog.component';
     WorklogPageComponent,
     EvaluationComponent,
     WorklogComponent,
-    DifficultiesComponent
+    DifficultiesComponent,
+    TeamMemberCardComponent
   ],
   imports: [AboutRoutingModule, SharedModule]
 })
