@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
 import { PhotographerService } from '@photographers/photographer.service';
+import { SearchService } from '@core/services/search.service';
 
 @Component({
   selector: 'app-photographers-list-page',
@@ -13,10 +13,11 @@ import { PhotographerService } from '@photographers/photographer.service';
 export class PhotographersListPageComponent implements OnInit, OnDestroy {
   public authors: Author[] = [];
   private subscription: Subscription;
+  keyWord = '';
 
   constructor(
-    private router: Router,
-    private photographerService: PhotographerService
+    private photographerService: PhotographerService,
+    private searchService: SearchService
   ) {}
 
   ngOnInit(): void {
@@ -25,6 +26,8 @@ export class PhotographersListPageComponent implements OnInit, OnDestroy {
       .subscribe((authors: Author[]) => {
         this.authors = authors;
       });
+
+    this.searchService.searchWord.subscribe(word => (this.keyWord = word));
   }
 
   ngOnDestroy(): void {
