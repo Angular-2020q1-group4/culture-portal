@@ -1,0 +1,14 @@
+{
+  "worklog": {
+    "headline": "Work Log"
+  },
+  "evaluation": {
+    "headline": "Evaluation",
+    "score": "Total score:"
+  },
+  "difficulties": {
+    "headline": "Difficulties",
+    "translation": "The first problem faced by our team during the development was the implementation of the translation of the application into different languages. During the discussion, were offered 2 options for implementation. In the end we settled on the use of the library NGX-Translate.",
+    "database": "The next challenge was the choice of the method of data storage. For this purpose it was decided to use the database Google Firebase."
+  }
+}

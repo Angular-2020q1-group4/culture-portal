@@ -1,0 +1,51 @@
+<mat-card class="card">
+  <mat-card-header>
+    <img mat-card-avatar [src]="teamMember.avatar" />
+    <mat-card-title>{{ teamMember.name }}</mat-card-title>
+    <mat-card-subtitle>{{ teamMember.role }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <table
+      mat-table
+      [dataSource]="teamMember.worklog"
+      class="mat-elevation-z8 table"
+    >
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td
+          class="table-number"
+          mat-cell
+          *matCellDef="let element; let i = index"
+        >
+          {{ i + 1 }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="task">
+        <th mat-header-cell *matHeaderCellDef>
+          {{ 'interface.table.taskNameCol' | translate }}
+        </th>
+        <td class="table-task" mat-cell *matCellDef="let element">
+          {{ element.task }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="spent">
+        <th mat-header-cell *matHeaderCellDef>
+          {{ 'interface.table.spentTimeCol' | translate }}
+        </th>
+        <td class="table-spent" mat-cell *matCellDef="let element">
+          {{ element.spent }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr
+        class="table-row"
+        mat-row
+        *matRowDef="let row; columns: displayedColumns"
+      ></tr>
+    </table>
+  </mat-card-content>
+</mat-card>
