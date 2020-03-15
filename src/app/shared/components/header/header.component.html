@@ -8,6 +8,7 @@
     <mat-button-toggle
       *ngFor="let lang of languages"
       (change)="changeLanguage(lang)"
+      [checked]="lang === currentLanguage"
       >{{ lang.toLocaleString().toLocaleUpperCase() }}</mat-button-toggle
     >
   </mat-button-toggle-group>
