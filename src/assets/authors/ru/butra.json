@@ -1,14 +1,14 @@
 {
-  "id": "Bazan",
+  "id": "Butra",
   "snippet": {
-    "firstName": "Владимир",
-    "middleName": "Сергеевич",
-    "lastName": "Базан",
+    "firstName": "Виктор",
+    "middleName": "Александрович",
+    "lastName": "Бутра",
     "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Victor_Butra_2012.jpg/548px-Victor_Butra_2012.jpg",
     "birthplace": "Сарапул, Удмуртская АССР",
     "birthday": "1944-04-07",
     "dayOfDeath": "",
-    "shortDescription": "Белорусский художник, дизайнер, поэт, культуролог, искусствовед."
+    "shortDescription": "Белорусский фотограф-документалист, врач. Член Белорусского общественного объединения фотографов."
   },
   "biography": [
     {
@@ -52,7 +52,7 @@
     },
     {
       "firstDate": "1977",
-      "title": "1-й Международный салон фотоискусства (Бухарест/Румыния, Sala Dalles)"
+      "title": "1-й Международный салон фотоискусства (Бухарест/Румыния, Даллес Холл)"
     },
     {
       "firstDate": "1979",
@@ -60,7 +60,7 @@
     },
     {
       "firstDate": "1980",
-      "title": "5-я международная фотовыставка INTERCLUB’80 (Potsdam/DDR)"
+      "title": "5-я международная фотовыставка INTERCLUB’80 (Потсдам / ГДР)"
     },
     {
       "firstDate": "1981",
@@ -68,7 +68,7 @@
     },
     {
       "firstDate": "1982",
-      "title": "28th International Exhibition of Photography (Colombo/Sri Lanka, Lionel Wendt Memorial Gallery)"
+      "title": "28-я международная фотовыставка (Коломбо / Шри- Ланка, мемориальная Галерея Лайонела Вендта)"
     },
     {
       "firstDate": "1990",
@@ -76,7 +76,7 @@
     },
     {
       "firstDate": "1992",
-      "title": "Twinned Cities Exhibition (Nottingham/Great Britain)"
+      "title": "Выставка Городов- Побратимов (Ноттингем/Великобритания)"
     },
     {
       "firstDate": "2000",
@@ -88,11 +88,11 @@
     },
     {
       "firstDate": "2002",
-      "title": "Беларускi шлях Яна Булгака (Warszawa/Polska)"
+      "title": "Белорусский путь Яна Булгака (Варшава / Польша)"
     },
     {
       "firstDate": "2007",
-      "title": "NOVA TOP 40 (Минск, галерея NOVA)"
+      "title": "NOVA ТОП 40 (Минск, галерея NOVA)"
     },
     {
       "firstDate": "2014",
@@ -100,11 +100,11 @@
     },
     {
       "firstDate": "2018",
-      "title": "Архiў цела/цела архiва (Мiнск)"
+      "title": "Архив тел (Минск)"
     },
     {
       "firstDate": "2018",
-      "title": "Дзявочы вечар (Мiнск)"
+      "title": "Дзявочы вечар (Минск)"
     },
     {
       "firstDate": "2018",
