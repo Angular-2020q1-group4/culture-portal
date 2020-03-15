@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
-import { PhotographerService } from '@photographers/photographer.service';
+import { PhotographerService } from '@photographers/services/photographer.service';
 
 @Component({
   selector: 'app-photographer-detail-page',
@@ -17,10 +17,27 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
 
   constructor(
     public route: ActivatedRoute,
-    public photographerService: PhotographerService
+    private photographerService: PhotographerService
   ) {}
 
   ngOnInit(): void {
+    this.author = this.route.snapshot.data.author;
+    this.author.galleryImages.forEach(im =>
+      this.imageObjects.push({ image: im, thumbImage: im })
+    );
+
+    this.subscribe();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  public goBack(): void {
+    history.back();
+  }
+
+  private subscribe() {
     const id = this.route.snapshot.params.id;
     this.subscription = this.photographerService
       .getAuthorById(id)
@@ -30,13 +47,5 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
           this.imageObjects.push({ image: im, thumbImage: im })
         );
       });
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
-
-  public goBack(): void {
-    history.back();
   }
 }
