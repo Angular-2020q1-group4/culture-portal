@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { WorklogService } from '@about/services/worklog.service';
 import { Evaluation } from '@about/models';
+import { EvaluationService } from '@about/services/evaluation.service';
 
 @Component({
   selector: 'app-evaluation',
@@ -13,11 +13,17 @@ export class EvaluationComponent implements OnInit {
 
   itemScope;
 
-  constructor(private worklogService: WorklogService) {}
+  constructor(private evaluationService: EvaluationService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    for (let i of this.evaluation.scope) {
+      if (i.done) {
+        this.evaluationService.calculateScore(i.point, i.done);
+      }
+    }
+  }
 
   onToggle(val: number, event) {
-    this.worklogService.calculateScore(val, event);
+    this.evaluationService.calculateScore(val, event.checked);
   }
 }
