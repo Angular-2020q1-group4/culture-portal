@@ -20,6 +20,7 @@ import { MapComponent } from './components/map/map.component';
 import { WorklistComponent } from './components/worklist/worklist.component';
 import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
 import { environment } from 'src/environments/environment';
+import { SearchPipe } from '@core/pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { environment } from 'src/environments/environment';
     PhotographerCardComponent,
     MapComponent,
     WorklistComponent,
-    VideoplayerComponent
+    VideoplayerComponent,
+    SearchPipe
   ],
   imports: [
     SharedModule,
