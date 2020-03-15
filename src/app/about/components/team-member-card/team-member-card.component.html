@@ -1,27 +1,30 @@
 <div class="card-wrapper">
   <div class="wrapper-card-1">
     <div class="wrapper-card-2">
-      <a class="list-container" [href]="" target="_blank">
-        <mat-card>
-          <img mat-card-image [src]="teamMember.avatar" alt="" />
-          <mat-card-header>
-            <mat-card-title>{{ teamMember.name }}</mat-card-title>
-            <mat-card-subtitle>{{ teamMember.role }}</mat-card-subtitle>
-            <a
-              mat-card-subtitle
-              [href]="teamMember.contacts.github"
-              target="_blank"
-              >Гитхаб аккаунт</a
-            >
-            <a
-              mat-card-subtitle
-              [href]="teamMember.contacts.telegram"
-              target="_blank"
-              >Телеграм аккаунт</a
-            >
-          </mat-card-header>
-        </mat-card>
-      </a>
+      <mat-card class="card-element">
+        <img mat-card-image [src]="teamMember.avatar" alt="" />
+        <mat-card-header>
+          <mat-card-title>{{ teamMember.name }}</mat-card-title>
+          <mat-card-subtitle>{{ teamMember.role }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <div class="contacts">
+          <a
+            mat-card-subtitle
+            [href]="teamMember.contacts.github"
+            target="_blank"
+          >
+            <img class="contacts-icon" [src]="githubIcon" />
+          </a>
+          <a
+            mat-card-subtitle
+            [href]="teamMember.contacts.telegram"
+            target="_blank"
+          >
+            <img class="contacts-icon" [src]="telegramIcon" />
+          </a>
+        </div>
+      </mat-card>
     </div>
   </div>
 </div>

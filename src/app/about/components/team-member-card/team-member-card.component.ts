@@ -7,6 +7,9 @@ import { TeamMember } from '@about/models';
   styleUrls: ['./team-member-card.component.scss']
 })
 export class TeamMemberCardComponent implements OnInit {
+  githubIcon = '/assets/github.svg';
+  telegramIcon = '/assets/telegram.svg';
+
   @Input() teamMember: TeamMember;
   constructor() {}
 

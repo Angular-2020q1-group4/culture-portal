@@ -1,22 +1,48 @@
 .card-wrapper {
   width: 300px;
   min-width: 300px;
-  margin: 1rem auto;
   transition: all 0.5s;
 
   :hover {
-    cursor: pointer;
     box-shadow: 0px 0px 50px 0px rgba(79, 79, 79, 0.7);
-    transform: rotate(3deg);
+    transform: rotate(1.8deg);
     transition: all 0.5s;
   }
 }
 
-.list-container {
+.card-element {
   text-decoration: none;
+  margin: 20px 0px;
 
   :hover {
     box-shadow: none;
     transform: rotate(0deg);
   }
+}
+
+.card-element .mat-card-image {
+  margin: 5px auto;
+  object-fit: cover;
+  width: 267px;
+  height: 267px;
+}
+
+a {
+  margin-bottom: 0;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.contacts-icon {
+  width: 40px;
+  margin: 5px 10px;
 }
