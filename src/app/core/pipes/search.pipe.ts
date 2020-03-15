@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Author } from '@core/models';
 
 @Pipe({
-  name: 'searchPipe'
+  name: 'search'
 })
 export class SearchPipe implements PipeTransform {
   constructor() {}
