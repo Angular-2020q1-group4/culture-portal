@@ -11,6 +11,8 @@ import { Evaluation } from '@about/models';
 export class EvaluationComponent implements OnInit {
   @Input() evaluation: Evaluation;
 
+  itemScope;
+
   constructor(private worklogService: WorklogService) {}
 
   ngOnInit(): void {}

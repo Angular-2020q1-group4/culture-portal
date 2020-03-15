@@ -11,7 +11,7 @@ export class EvaluationService {
 
   getEvaluation(): Observable<Evaluation[]> {
     return this.translateService
-      .stream('evaluations')
+      .stream('evaluation')
       .pipe(filter(value => typeof value !== 'string'));
   }
 }
