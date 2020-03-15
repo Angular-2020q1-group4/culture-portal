@@ -3,6 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@about/*": ["src/app/about/*"],
+      "@photographers/*": ["src/app/photographers/*"],
+      "@core/*": ["src/app/core/*"],
+      "@shared/*": ["src/app/shared/*"]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,

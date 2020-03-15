@@ -1,0 +1,26 @@
+<div class="header">
+  <div class=" headline">
+    <img class="icon" [src]="iconUrl" alt="Culture Portal" />
+    <h1>{{ 'interface.main.title' | translate }}</h1>
+  </div>
+
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle
+      *ngFor="let lang of languages"
+      (change)="changeLanguage(lang)"
+      >{{ lang.toLocaleString().toLocaleUpperCase() }}</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
+
+<nav mat-tab-nav-bar mat-align-tabs="center">
+  <a
+    mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.path"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [active]="rla.isActive"
+    >{{ link.label | translate }}</a
+  >
+</nav>

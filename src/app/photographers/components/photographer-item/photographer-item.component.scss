@@ -1,0 +1,64 @@
+.list-container {
+  :hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 50px 0px rgba(79, 79, 79, 0.7);
+    transform: rotate(1.5deg);
+    transition: all 0.5s;
+  }
+}
+
+.list-element {
+  width: 300px;
+  margin: 20px 0px;
+  min-height: 525px;
+
+  :hover {
+    box-shadow: none;
+    transform: rotate(0deg);
+  }
+}
+
+.list-element .mat-card-image {
+  margin: 5px auto;
+  object-fit: cover;
+  width: 300px;
+  height: 350px;
+}
+
+.mat-card-header {
+  margin: 10px 0;
+  text-align: left;
+
+  h2 {
+    margin: 0;
+  }
+
+  .list-element__name {
+    display: inline;
+  }
+
+  .list-element__date {
+    margin: 0 auto;
+    width: 280px;
+  }
+}
+
+.list-element__birth {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.list-element__city {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-card .mat-card-actions {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  text-align: right;
+}
