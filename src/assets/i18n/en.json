@@ -1,0 +1,18 @@
+{
+  "labels": {
+    "main": "Home",
+    "photographers": "Photographers of Belarus",
+    "about": "About"
+  },
+  "buttons": {
+    "more": "More...",
+    "back": "Back"
+  },
+  "main": {
+    "title": "Cultural Portal | Photographers of Belarus"
+  },
+  "table": {
+    "taskNameCol": "Function",
+    "spentTimeCol": "Time"
+  }
+}

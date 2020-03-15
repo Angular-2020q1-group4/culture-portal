@@ -1,0 +1,142 @@
+[
+  {
+    "scopeName": "Min scope",
+    "scope": [
+      {
+        "done": true,
+        "point": 10,
+        "label": "Main page + page with a list of authors + author's page (only pages with content without widgets)"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 10 Page with team members + page with worklog"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Page with list of authors contains search widget"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "20 Portal has two languages"
+      }
+    ]
+  },
+  {
+    "scopeName": "Normal scope",
+    "scope": [
+      {
+        "done": false,
+        "point": 20,
+        "label": "20 Portal has page with styleguide"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Mobile version is okey"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Ipad/tablet version is okey"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Author's page contains timeline"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Author's page contains video overlay"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "20 Author's page contains photo gallery"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Author's page contains map (geowidget)"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "from 0 to 20 Design (typography, icons, colors, links + buttons + input, ui components are styled)"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "20 Material-ui / bootstrap is used"
+      },
+      {
+        "done": true,
+        "point": 10,
+        "label": "10 Portal has third language"
+      }
+    ]
+  },
+  {
+    "scopeName": "Extra scope",
+    "scope": [
+      {
+        "done": false,
+        "point": 10,
+        "label": "10 Confidence of the project presentation"
+      },
+      {
+        "done": false,
+        "point": 10,
+        "label": "10 Project is made using scully"
+      },
+      {
+        "done": false,
+        "point": 10,
+        "label": "10 Contentful / netlify cms / other cms is used for content management"
+      },
+      {
+        "done": false,
+        "point": 20,
+        "label": "20 Animations / special effects like paralax"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "up to 20 Outstanding design"
+      },
+      {
+        "done": true,
+        "point": 20,
+        "label": "20 Storybook/angularplayground/compodoc/other angulaer styleguide/documentation tool usage for the page with styles"
+      }
+    ]
+  },
+  {
+    "scopeName": "Fines",
+    "scope": [
+      {
+        "done": false,
+        "point": -50,
+        "label": "-50 if there are less than 3 commits from each active team member. Everyone should merge their own PRs"
+      },
+      {
+        "done": false,
+        "point": -50,
+        "label": "up to -50 points for violations stage2-tasks-requirements"
+      },
+      {
+        "done": false,
+        "point": -40,
+        "label": "-40 if there is no worklog for team"
+      },
+      {
+        "done": false,
+        "point": -20,
+        "label": "-20 too primitive (ugly for 2020) design / UX"
+      }
+    ]
+  }
+]

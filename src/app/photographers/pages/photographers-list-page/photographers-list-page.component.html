@@ -4,8 +4,8 @@
   <ul class="photographers-list">
     <app-photographer-item
       class="photographers-card"
-      *ngFor="let card of cardArray"
-      [cardItem]="card"
+      *ngFor="let authorItem of authors | search: keyWord"
+      [author]="authorItem"
     >
     </app-photographer-item>
   </ul>

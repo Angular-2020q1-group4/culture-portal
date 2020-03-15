@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "culture-portal-ps": {
+      "hosting": {
+        "culture-portal": [
+          "culture-portal-ps"
+        ]
+      }
+    }
+  }
+}
