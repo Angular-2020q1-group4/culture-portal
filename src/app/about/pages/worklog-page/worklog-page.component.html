@@ -1,8 +1,8 @@
 <h2>{{ worklogMembers.worklogHeadline }}</h2>
 <app-worklog
   class="worklog"
-  *ngFor="let item of worklogMembers.worklogMembers"
-  [worklogMember]="item"
+  *ngFor="let item of teamMembers"
+  [teamMember]="item"
 ></app-worklog>
 
 <h2>{{ worklogMembers.difficultiesHeadline }}</h2>

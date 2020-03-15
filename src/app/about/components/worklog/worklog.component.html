@@ -1,14 +1,14 @@
 <mat-card class="card">
   <mat-card-header>
-    <img mat-card-avatar [src]="worklogMember.avatar" />
-    <mat-card-title>{{ worklogMember.name }}</mat-card-title>
-    <mat-card-subtitle>{{ worklogMember.role }}</mat-card-subtitle>
+    <img mat-card-avatar [src]="teamMember.avatar" />
+    <mat-card-title>{{ teamMember.name }}</mat-card-title>
+    <mat-card-subtitle>{{ teamMember.role }}</mat-card-subtitle>
   </mat-card-header>
 
   <mat-card-content>
     <table
       mat-table
-      [dataSource]="worklogMember.worklog"
+      [dataSource]="teamMember.worklog"
       class="mat-elevation-z8 table"
     >
       <ng-container matColumnDef="position">
