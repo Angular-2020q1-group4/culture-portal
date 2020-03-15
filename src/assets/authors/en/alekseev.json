@@ -1,0 +1,148 @@
+{
+  "biography": {
+    "0": {
+      "firstDate": "1978-11-14",
+      "title": "Born in Kazan"
+    },
+    "1": {
+      "firstDate": "1979",
+      "title": "The family moves to Belarus"
+    },
+    "2": {
+      "firstDate": "2000",
+      "title": "Graduated from the Faculty of Management, Belarusian State Economic University"
+    },
+    "3": {
+      "firstDate": "2001",
+      "title": "He started working on Belarusian television. He was the lead and director of the program «Filmed!»"
+    },
+    "4": {
+      "firstDate": "2003",
+      "title": "In collaboration with Oleg Lukashevich, he implements the art project «Heritage of Belarus»"
+    },
+    "5": {
+      "firstDate": "2004",
+      "title": "Defended a thesis of a candidate of economic sciences"
+    },
+    "6": {
+      "firstDate": "2005",
+      "title": "Became the Laureate of the Prize of the President of the Republic of Belarus «For Spiritual Revival»"
+    },
+    "7": {
+      "firstDate": "2007",
+      "title": "Becomes a Belarusian publisher"
+    },
+    "8": {
+      "firstDate": "2011-05",
+      "title": "He became deputy head of the National Pavilion of the Republic of Belarus at the Cannes Film Festival"
+    },
+    "9": {
+      "firstDate": "2012",
+      "title": "He began working in the Belarusian documentary as a director"
+    },
+    "10": {
+      "firstDate": "2014",
+      "title": "He graduated from the Belarusian State Academy of Arts with a degree in director"
+    }
+  },
+  "galleryImages": [
+    "https://img.tyt.by/720x720s/n/kultura/05/6/alex_kusturitsa_t_1_.jpg",
+    "https://img.tyt.by/720x720s/n/kultura/02/4/alex_waida_t_1_.jpg",
+    "http: //xn--80aal0bhl9b6a.xn--90ais/assets/album_spadchyna_belarusi.png",
+    "http: //xn--80aal0bhl9b6a.xn--90ais/assets/aliakseyeu_lukashevich_2015.jpg",
+    "http://www.ctv.by/sites/default/files/inarticle/vystavka_2_13.jpg",
+    "http://www.ctv.by/sites/default/files/imcefiles/art_zabor_2017_2.png",
+    "http://www.ctv.by/sites/default/files/inarticle/spadchyna_belarusi6.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=t9lbUWcN0O8",
+    "https://www.youtube.com/watch?v=S0wNJkC9Wgo&feature"
+  ],
+  "id": "Alekseev",
+  "mapPlace": {
+    "0": {
+      "title": "Kazan. Born"
+    },
+    "1": {
+      "title": "Minsk. Life and creation"
+    },
+    "2": {
+      "title": "Paris. Exhibition «Heritage of Belarus»"
+    },
+    "3": {
+      "title": "London. Exhibition as part of the «Discover Belarus» campaign"
+    }
+  },
+  "snippet": {
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Aliaksandr_Aliakseyeu.jpg/274px-Aliaksandr_Aliakseyeu.jpg",
+    "birthday": "1978-11-14",
+    "birthplace": "Kazan, Russia",
+    "dayOfDeath": "",
+    "firstName": "Alexander",
+    "lastName": "Alekseev",
+    "middleName": "Alexeyevich",
+    "shortDescription": "Belarusian photographer, publisher, designer, journalist, director, candidate of economic sciences."
+  },
+  "workList": {
+    "0": {
+      "firstDate": "2003",
+      "title": "Museum of Modern Art. Opening of the project with a series of photo exhibitions: «Temples of Belarus», «Manors and Town Halls of Belarus», «Palaces and Castles of Belarus»"
+    },
+    "1": {
+      "firstDate": "2004",
+      "title": "Book-album «The Legacy of Belarus»"
+    },
+    "2": {
+      "firstDate": "2004",
+      "title": "UNESCO Headquarters in Paris. Exhibition «The Legacy of Belarus» in honor of the 50th anniversary of the entry of the Republic of Belarus into UNESCO"
+    },
+    "3": {
+      "firstDate": "2004",
+      "title": "National Academy of St. Cecilia in Rome, exhibition in the framework of the Days of Culture of the Republic of Belarus"
+    },
+    "4": {
+      "firstDate": "2005",
+      "title": "The book-album «The Legacy of Belarus»"
+    },
+    "5": {
+      "firstDate": "2007",
+      "title": "Book-album «The Legacy of Belarus. Wealth»"
+    },
+    "6": {
+      "firstDate": "2008",
+      "title": "Pushkin House in London, an exhibition as part of the «Discover Belarus» campaign"
+    },
+    "7": {
+      "firstDate": "2009",
+      "title": "Book-album «Treasures of Belarus»"
+    },
+    "8": {
+      "firstDate": "2013",
+      "title": "Book-album «Treasures of Belarus»"
+    },
+    "9": {
+      "firstDate": "2014",
+      "title": "At the art fence of the Chelyuskintsev open-air park in Minsk. Photo exhibition consisting of 60 photos"
+    },
+    "10": {
+      "firstDate": "2015",
+      "title": "Book-album «The Legacy of Belarus»"
+    },
+    "11": {
+      "firstDate": "2015",
+      "title": "Book-album «National Historical Museum of the Republic of Belarus»"
+    },
+    "12": {
+      "firstDate": "2015",
+      "title": "Book-album «Nesvizh. Palace and Park Ensemble»"
+    },
+    "13": {
+      "firstDate": "2017",
+      "title": "The art project «The Legacy of Belarus» presented in Brussels, Berlin, Minsk, Prague and Vienna"
+    },
+    "14": {
+      "firstDate": "2018",
+      "title": "Art project «The Legacy of Belarus» presented in Budapest"
+    }
+  }
+}
