@@ -11,17 +11,9 @@ import { EvaluationService } from '@about/services/evaluation.service';
 export class EvaluationComponent implements OnInit {
   @Input() evaluation: Evaluation;
 
-  itemScope;
-
   constructor(private evaluationService: EvaluationService) {}
 
-  ngOnInit(): void {
-    for (let i of this.evaluation.scope) {
-      if (i.done) {
-        this.evaluationService.calculateScore(i.point, i.done);
-      }
-    }
-  }
+  ngOnInit(): void {}
 
   onToggle(val: number, event) {
     this.evaluationService.calculateScore(val, event.checked);
