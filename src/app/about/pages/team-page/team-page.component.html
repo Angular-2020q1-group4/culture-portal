@@ -2,6 +2,9 @@
   <h2>{{ title }}</h2>
 
   <div class="users-container">
-    <app-team-member-card></app-team-member-card>
+    <app-team-member-card
+      *ngFor="let item of teamMembers"
+      [teamMember]="item"
+    ></app-team-member-card>
   </div>
 </div>

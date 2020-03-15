@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  box-shadow: none;
+}
+
+.card {
+  box-shadow: none;
+  width: 90%;
+  padding: 2rem 5%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+tr.table-row:not(.example-expanded-row):hover {
+  background: #683ab71c;
+}
+
+.table-number {
+  width: 10%;
+}
+
+.table-task {
+  width: 70%;
+}
+
+.table-spent {
+  width: 20%;
+}

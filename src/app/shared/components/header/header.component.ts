@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
+import {
+  LanguageSettingsService,
+  LOCALES
+} from '@core/services/language-settings.service';
 
 @Component({
   selector: 'app-header',
@@ -7,20 +11,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  icon = '/assets/camera.svg';
+  iconUrl = '/assets/camera.svg';
+
+  public languages;
+  public currentLanguage;
 
   navLinks = [
-    { path: '/main', label: 'Главная' },
-    { path: '/photographers', label: 'Фотографы Беларуси' },
-    { path: '/about', label: 'О проекте' }
+    { path: '/main', label: 'interface.labels.main' },
+    { path: '/photographers', label: 'interface.labels.photographers' },
+    { path: '/about', label: 'interface.labels.about' }
   ];
-  activeLink = this.navLinks[0];
 
-  constructor(private router: Router) {}
+  constructor(private localSettings: LanguageSettingsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.languages = this.localSettings.getAllLangs();
+    this.currentLanguage = this.localSettings.getLanguage();
+  }
 
-  public onClick(link: string) {
-    this.router.navigateByUrl(`/${link}`);
+  public changeLanguage(lang: LOCALES) {
+    this.localSettings.setLanguage(lang);
+    this.currentLanguage = lang;
   }
 }

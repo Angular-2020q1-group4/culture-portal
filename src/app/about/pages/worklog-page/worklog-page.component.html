@@ -1,1 +1,18 @@
-<p>worklog-page works!</p>
+<h2>{{ 'interface.worklog.headline' | translate }}</h2>
+<app-worklog
+  class="worklog"
+  *ngFor="let item of teamMembers"
+  [teamMember]="item"
+></app-worklog>
+
+<app-difficulties></app-difficulties>
+
+<h2>{{ 'interface.evaluation.headline' | translate }}</h2>
+<div class="self-evaluation">
+  <app-evaluation
+    *ngFor="let item of evaluations"
+    [evaluation]="item"
+  ></app-evaluation>
+
+  <h2>{{ 'interface.evaluation.score' | translate }} {{ totalScore }}</h2>
+</div>
