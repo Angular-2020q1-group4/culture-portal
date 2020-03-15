@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { WorklogService } from '@about/services/worklog.service';
 import { Subscription } from 'rxjs';
+
+import { WorklogService } from '@about/services/worklog.service';
 import { TeamService } from '@about/services/team.service';
 import { TeamMember } from '@about/models';
 

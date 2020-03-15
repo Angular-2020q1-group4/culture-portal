@@ -5,10 +5,7 @@
   [teamMember]="item"
 ></app-worklog>
 
-<h2>{{ worklogMembers.difficultiesHeadline }}</h2>
-<div class="difficulties" *ngFor="let item of worklogMembers.difficulties">
-  <p>{{ item }}</p>
-</div>
+<app-difficulties></app-difficulties>
 
 <h2>{{ worklogMembers.evaluationHeadline }}</h2>
 <div class="self-evaluation">
