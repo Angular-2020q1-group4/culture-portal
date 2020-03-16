@@ -1,0 +1,141 @@
+[
+  {
+    "avatar": "https://avatars1.githubusercontent.com/u/26903136?s=400&u=f2e1cd442dabb732074e0259729aa3f4c7284ccb&v=4",
+    "name": "Alena Vasilchenko",
+    "role": "Front-End developer",
+    "contacts": {
+      "telegram": "",
+      "github": "https://github.com/amoebiusss"
+    },
+    "worklog": [
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      }
+    ]
+  },
+  {
+    "avatar": "https://avatars3.githubusercontent.com/u/43645356?s=400&u=05de8f4f60c2799f0278598a34294ad309b9f5b7&v=4",
+    "name": "Vladimir Tyagunov",
+    "role": "Front-End developer",
+    "contacts": {
+      "telegram": "",
+      "github": "https://github.com/VladimirTyagunov"
+    },
+    "worklog": [
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      }
+    ]
+  },
+  {
+    "avatar": "https://avatars0.githubusercontent.com/u/39223580?s=400&u=c6a5e520e37b99901880f86cf41d8f1f07574842&v=4",
+    "name": "Pavel Haidukevich",
+    "role": "Front-End developer",
+    "contacts": {
+      "telegram": "",
+      "github": "https://github.com/pavel232"
+    },
+    "worklog": [
+      {
+        "task": "WorkLog Page",
+        "spent": "10h"
+      },
+      {
+        "task": "Card component",
+        "spent": "1h"
+      },
+      {
+        "task": "Team page",
+        "spent": "5h"
+      },
+      {
+        "task": "Translate information about Lobko Valery Dzmitrievich",
+        "spent": "0.5h"
+      },
+      {
+        "task": "Photoraphers list page",
+        "spent": "3h"
+      },
+      {
+        "task": "Search component",
+        "spent": "2h"
+      },
+      {
+        "task": "Site style",
+        "spent": "20h"
+      }
+    ]
+  },
+  {
+    "avatar": "https://avatars3.githubusercontent.com/u/30769404?s=400&v=4",
+    "name": "Piotr Setsko",
+    "role": "Front-End developer",
+    "contacts": {
+      "telegram": "",
+      "github": "https://github.com/Piotr-Setsko"
+    },
+    "worklog": [
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      },
+      {
+        "task": "todo",
+        "spent": "1h"
+      }
+    ]
+  },
+  {
+    "avatar": "https://avatars3.githubusercontent.com/u/19832659?s=400&u=5cf17e6ceb6120da0776470e8a396a7cb87ca50d&v=4",
+    "name": "Ruslan Minukov",
+    "role": "Front-End developer",
+    "contacts": {
+      "telegram": "",
+      "github": "https://github.com/maxrusmr2011"
+    },
+    "worklog": [
+      {
+        "task": "Photographer Data Interface",
+        "spent": "1h"
+      },
+      {
+        "task": "Search data about photographers",
+        "spent": "10h"
+      }
+    ]
+  }
+]
