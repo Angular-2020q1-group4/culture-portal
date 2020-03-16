@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PhotographersListPageComponent } from './pages/photographers-list-page/photographers-list-page.component';
-import { PhotographerDetailPageComponent } from './pages/photographer-detail-page/photographer-detail-page.component';
+import { PhotographersListPageComponent } from '@photographers/pages';
+import { PhotographerDetailPageComponent } from '@photographers/pages';
+import { PhotographerResolver } from '@photographers/services';
 
 const routes: Routes = [
   { path: '', component: PhotographersListPageComponent },
-  { path: ':id', component: PhotographerDetailPageComponent }
+  {
+    path: ':id',
+    component: PhotographerDetailPageComponent,
+    resolve: {
+      author: PhotographerResolver
+    }
+  }
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

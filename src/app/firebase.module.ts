@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FirestoreTransLoader } from '@shared/firestore-trans-loader';
 import {
   AngularFireDatabase,
   AngularFireDatabaseModule
 } from 'angularfire2/database';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { FirestoreTransLoader } from '@shared/firestore-trans-loader';
 
 export function FbTransLoaderFactory(db: AngularFireDatabase) {
   return new FirestoreTransLoader(db);

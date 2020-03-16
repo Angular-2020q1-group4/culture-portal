@@ -1,0 +1,30 @@
+<div class="card-wrapper">
+  <div class="wrapper-card-1">
+    <div class="wrapper-card-2">
+      <mat-card class="card-element">
+        <img mat-card-image [src]="teamMember.avatar" alt="" />
+        <mat-card-header>
+          <mat-card-title>{{ teamMember.name }}</mat-card-title>
+          <mat-card-subtitle>{{ teamMember.role }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <div class="contacts">
+          <a
+            mat-card-subtitle
+            [href]="teamMember.contacts.github"
+            target="_blank"
+          >
+            <img class="contacts-icon" [src]="githubIcon" />
+          </a>
+          <a
+            mat-card-subtitle
+            [href]="teamMember.contacts.telegram"
+            target="_blank"
+          >
+            <img class="contacts-icon" [src]="telegramIcon" />
+          </a>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

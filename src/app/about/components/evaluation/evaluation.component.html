@@ -1,0 +1,10 @@
+<div class="scope">
+  <h3>{{ evaluation.scopeName }}</h3>
+  <mat-checkbox
+    *ngFor="let item of evaluation.scope"
+    color="primary"
+    [checked]="item.done"
+    (change)="onToggle(item.point, $event)"
+    >{{ item.label }}</mat-checkbox
+  >
+</div>

@@ -1,26 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
 import {
   LanguageSettingsService,
   LOCALES
-} from '@core/services/language-settings.service';
+} from '@shared/services/language-settings.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  iconUrl = '/assets/camera.svg';
-
+export class FooterComponent implements OnInit {
   public languages;
   public currentLanguage;
-
-  navLinks = [
-    { path: '/main', label: 'interface.labels.main' },
-    { path: '/photographers', label: 'interface.labels.photographers' },
-    { path: '/about', label: 'interface.labels.about' }
-  ];
 
   constructor(private localSettings: LanguageSettingsService) {}
 

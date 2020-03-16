@@ -1,0 +1,21 @@
+<div class="footer">
+  <p class="frooter__text">RSSchool 2020</p>
+
+  <div class="footer__link">
+    <a
+      *ngFor="let link of 'team' | translate"
+      href="{{ link.contacts.github }}"
+      target="_blank"
+      ><img class="footer__img" [src]="link.avatar" alt=""
+    /></a>
+  </div>
+
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle
+      *ngFor="let lang of languages"
+      (change)="changeLanguage(lang)"
+      [checked]="lang === currentLanguage"
+      >{{ lang.toLocaleString().toLocaleUpperCase() }}</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>

@@ -1,0 +1,20 @@
+<div class="header">
+  <div class=" headline">
+    <img class="icon" [src]="iconUrl" alt="Culture Portal" />
+    <h1>{{ 'interface.main.title' | translate }}</h1>
+  </div>
+</div>
+
+<div class="navigation-container">
+  <nav mat-tab-nav-bar>
+    <a
+      mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [active]="rla.isActive"
+      >{{ link.label | translate }}</a
+    >
+  </nav>
+</div>
