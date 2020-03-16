@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
-import { PhotographerService } from '@photographers/services/photographer.service';
-import { SearchService } from '@core/services/search.service';
+import { PhotographerService } from '@photographers/services';
+import { SearchService } from '@shared/services';
 
 @Component({
   selector: 'app-photographers-list-page',

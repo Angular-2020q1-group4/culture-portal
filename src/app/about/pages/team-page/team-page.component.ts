@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TeamMember } from '@about/models';
-import { TeamService } from '@about/services/team.service';
 import { Subscription } from 'rxjs';
+
+import { TeamService } from '@about/services';
+import { TeamMember } from '@about/models';
 
 @Component({
   selector: 'app-team-page',

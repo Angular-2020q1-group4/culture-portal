@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@shared/shared.module';
-import { Error404PageComponent } from './pages/error404-page/error404-page.component';
-import { MainPageComponent } from './pages/main-page/main-page.component';
-import { PhotographersModule } from '@photographers/photographers.module';
+import { Error404PageComponent, MainPageComponent } from '@core/pages';
+import { FooterComponent, HeaderComponent } from '@core/components';
 
 @NgModule({
-  declarations: [Error404PageComponent, MainPageComponent],
-  imports: [SharedModule, PhotographersModule],
-  exports: [MainPageComponent]
+  declarations: [
+    Error404PageComponent,
+    MainPageComponent,
+    HeaderComponent,
+    FooterComponent
+  ],
+  imports: [SharedModule],
+  exports: [MainPageComponent, HeaderComponent, FooterComponent]
 })
 export class CoreModule {}

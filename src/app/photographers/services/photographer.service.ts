@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
+import { TranslateService } from '@ngx-translate/core';
 import { Author } from '@core/models/author.model';
-import { Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class PhotographerService {

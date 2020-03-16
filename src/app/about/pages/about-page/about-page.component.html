@@ -1,7 +1,24 @@
 <div class="buttons">
-  <a mat-button routerLink="/about" routerLinkActive="">Team</a>
-  <a mat-button routerLink="/about/worklog">WorkLog</a>
-  <a mat-button>StyleGuide</a>
+  <a
+    mat-button
+    [routerLink]="['/about']"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Team</a
+  >
+  <a
+    mat-button
+    [routerLink]="['/about', 'worklog']"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]=""
+    >WorkLog</a
+  >
+  <a
+    mat-button
+    [routerLink]="['/about', 'styleguide']"
+    routerLinkActive="active"
+    >StyleGuide</a
+  >
 </div>
 
 <div>
