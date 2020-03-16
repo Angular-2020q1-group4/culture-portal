@@ -18,8 +18,12 @@ export class PhotographerResolver implements Resolve<Author> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<Author> | Promise<Author> | Author {
-    return this.photographerService
-      .getAuthorById(route.paramMap.get('id'))
-      .pipe(take(1));
+    const id = route.paramMap.get('id');
+
+    return id
+      ? this.photographerService
+          .getAuthorById(route.paramMap.get('id'))
+          .pipe(take(1))
+      : this.photographerService.getAuthorOfTheDay().pipe(take(1));
   }
 }

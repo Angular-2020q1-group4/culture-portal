@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute } from '@angular/router';
-
-import { PhotographerService } from '@photographers/photographer.service';
 import { Subscription } from 'rxjs';
+
 import { Author } from '@core/models';
+import { PhotographerService } from '@photographers/services/photographer.service';
+
 
 @Component({
   selector: 'app-main-page',
@@ -15,16 +15,22 @@ export class MainPageComponent implements OnInit, OnDestroy {
   public author: Author;
   private subscription: Subscription;
 
-  constructor(public photographerService: PhotographerService) {}
+  constructor(
+    private photographerService: PhotographerService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this.author = this.route.snapshot.data.authorOfTheDay;
+
     this.subscription = this.photographerService
       .getAuthorOfTheDay()
       .subscribe(author => {
         this.author = author;
       });
-    console.log(this.author);
   }
 
-  ngOnDestroy(): void {}
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 }
