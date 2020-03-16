@@ -5,7 +5,6 @@ import { Subscription } from 'rxjs';
 import { Author } from '@core/models';
 import { PhotographerService } from '@photographers/services/photographer.service';
 
-
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
