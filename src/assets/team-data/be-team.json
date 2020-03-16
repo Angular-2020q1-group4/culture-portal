@@ -41,11 +41,11 @@
       },
       {
         "task": "Канфігурацыя prettier",
-        "spent": "0.5h"
+        "spent": "1h"
       },
       {
         "task": "Базавая структура праекта. Падзел на модулі",
-        "spent": "2h"
+        "spent": "3h"
       },
       {
         "task": "Модуль Angular Material",
@@ -57,7 +57,7 @@
       },
       {
         "task": "Рэалізацыя сэрвісаў TeamService, PhotographerService, EvaluationService",
-        "spent": "4h"
+        "spent": "8h"
       },
       {
         "task": "Рэфактарынг",

@@ -41,11 +41,11 @@
       },
       {
         "task": "Prettier configuration",
-        "spent": "0.5h"
+        "spent": "1h"
       },
       {
         "task": "Basic Structure of the project. Splitting into Modules",
-        "spent": "2h"
+        "spent": "3h"
       },
       {
         "task": "Angular Material module",
@@ -57,7 +57,7 @@
       },
       {
         "task": "Implementation of TeamService, PhotographerService, EvaluationService services",
-        "spent": "4h"
+        "spent": "8h"
       },
       {
         "task": "Refactoring",
