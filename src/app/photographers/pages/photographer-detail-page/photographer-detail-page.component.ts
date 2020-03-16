@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
-import { PhotographerService } from '@photographers/services/photographer.service';
+import { PhotographerService } from '@photographers/services';
 
 @Component({
   selector: 'app-photographer-detail-page',

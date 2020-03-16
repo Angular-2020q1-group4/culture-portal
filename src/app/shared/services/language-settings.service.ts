@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
 
 import { TranslateService } from '@ngx-translate/core';
-
-import { registerLocaleData } from '@angular/common';
 import localeEn from '@angular/common/locales/en';
 import localeRu from '@angular/common/locales/ru';
 import localeBe from '@angular/common/locales/be';

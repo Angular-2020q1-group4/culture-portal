@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-import { MainPageComponent } from '@core/pages/main-page/main-page.component';
-import { Error404PageComponent } from '@core/pages/error404-page/error404-page.component';
 import { PhotographerResolver } from '@photographers/services/photographer.resolver';
+import { Error404PageComponent } from '@core/pages/error404-page/error404-page.component';
+import { MainPageComponent } from '@core/pages/main-page/main-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
