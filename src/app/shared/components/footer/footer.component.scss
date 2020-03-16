@@ -1,0 +1,31 @@
+.footer {
+  min-height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frooter__text {
+  color: rgba(250, 250, 250, 1);
+  font-family: 'Noto Serif';
+  font-size: 16px;
+  margin: 0 3%;
+  vertical-align: middle;
+}
+
+.footer__img {
+  border-radius: 50%;
+  padding-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__link {
+  margin: 0 3%;
+
+  a {
+    cursor: pointer;
+  }
+}

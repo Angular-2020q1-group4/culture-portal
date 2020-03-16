@@ -1,5 +1,20 @@
-<div class="wrapper">
-  <h2>{{ 'HOME.WELCOM' | translate }}</h2>
-  <p>{{ todo }}</p>
-  <div class="author-of-the-day"></div>
+<div class="main__wrapper">
+  <div class="main__desc-wrapper">
+    <img
+      class="main__header-image"
+      src="http://belarusfacts.by/upload/photos/photo_dostoprimechatelnosty/strusta_lake___panorama.jpg"
+      alt=""
+    />
+    <div class="main__promo">
+      <div class="main__title">
+        <h2>«{{ 'main.quote.text' | translate }}»</h2>
+        <p>{{ 'main.quote.author' | translate }}</p>
+      </div>
+      <p *ngFor="let item of 'main.paragraphs' | translate">{{ item.text }}</p>
+    </div>
+  </div>
+  <div class="main__author">
+    <h2>{{ 'interface.main.day' | translate }}</h2>
+    <app-photographer-item [author]="author"></app-photographer-item>
+  </div>
 </div>

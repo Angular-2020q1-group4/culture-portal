@@ -3,12 +3,16 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { MainPageComponent } from '@core/pages/main-page/main-page.component';
 import { Error404PageComponent } from '@core/pages/error404-page/error404-page.component';
+import { PhotographerResolver } from '@photographers/services/photographer.resolver';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   {
     path: 'main',
-    component: MainPageComponent
+    component: MainPageComponent,
+    resolve: {
+      authorOfTheDay: PhotographerResolver
+    }
   },
   {
     path: 'about',
@@ -27,7 +31,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: 'enabled'
+    })
   ],
   exports: [RouterModule]
 })

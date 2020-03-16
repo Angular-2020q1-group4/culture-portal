@@ -50,6 +50,7 @@ import { SearchPipe } from '@core/pipes/search.pipe';
       },
       extend: true
     })
-  ]
+  ],
+  exports: [PhotographerItemComponent]
 })
 export class PhotographersModule {}
