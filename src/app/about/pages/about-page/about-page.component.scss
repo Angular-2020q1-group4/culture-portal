@@ -1,3 +1,15 @@
+.about-page-container {
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  right: 3px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
 .active {
   background-color: #e5e5e5;
 }

@@ -6,6 +6,12 @@
     transform: rotate(1.5deg);
     transition: all 0.5s;
   }
+
+  @media screen and (max-width: 530px) {
+    :hover {
+      transform: rotate(0deg);
+    }
+  }
 }
 
 .list-element {
