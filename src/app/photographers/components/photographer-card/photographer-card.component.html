@@ -15,8 +15,8 @@
   <mat-card-subtitle>
     <p class="author-dates">
       {{ author?.snippet.birthday | dateTranslate }}
-      <span *ngIf="author?.snippet.death">
-        – {{ author?.snippet.death | dateTranslate }}</span
+      <span *ngIf="author?.snippet.dayOfDeath">
+        – {{ author?.snippet.dayOfDeath | dateTranslate }}</span
       >
     </p>
     <p class="author-birthplace">{{ author?.snippet.birthplace }}</p>

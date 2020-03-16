@@ -1,0 +1,15 @@
+.scope {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0 0 5px 10px;
+    font-weight: 700;
+  }
+}
+
+::ng-deep span {
+  white-space: normal !important;
+}
