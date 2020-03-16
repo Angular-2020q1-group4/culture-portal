@@ -11,7 +11,6 @@ import { SharedModule } from '@shared/shared.module';
 
 import { PhotographersListPageComponent } from '@photographers/pages';
 import { PhotographerDetailPageComponent } from '@photographers/pages';
-import { PhotographerItemComponent } from '@photographers/components';
 import { TimelineComponent } from '@photographers/components';
 import { SearchComponent } from '@photographers/components';
 import { PhotographerCardComponent } from '@photographers/components';
@@ -24,7 +23,6 @@ import { VideoplayerComponent } from '@photographers/components';
     TimelineComponent,
     PhotographersListPageComponent,
     PhotographerDetailPageComponent,
-    PhotographerItemComponent,
     SearchComponent,
     PhotographerCardComponent,
     MapComponent,
@@ -38,7 +36,6 @@ import { VideoplayerComponent } from '@photographers/components';
     YouTubePlayerModule,
     NgImageSliderModule,
     AngularYandexMapsModule.forRoot(environment.ymapsApiKey)
-  ],
-  exports: [PhotographerItemComponent]
+  ]
 })
 export class PhotographersModule {}

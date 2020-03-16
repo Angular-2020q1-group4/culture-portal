@@ -47,6 +47,5 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
           this.imageObjects.push({ image: im, thumbImage: im })
         );
       });
-    console.log(this.author);
   }
 }
