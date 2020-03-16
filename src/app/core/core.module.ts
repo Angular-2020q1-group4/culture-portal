@@ -5,7 +5,6 @@ import { Error404PageComponent } from './pages/error404-page/error404-page.compo
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { PhotographersModule } from '@photographers/photographers.module';
 
-
 @NgModule({
   declarations: [Error404PageComponent, MainPageComponent],
   imports: [SharedModule, PhotographersModule],
