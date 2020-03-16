@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {
-  LanguageSettingsService,
-  LOCALES
-} from '@core/services/language-settings.service';
+import { LanguageSettingsService, LOCALES } from '@shared/services';
 
 @Component({
   selector: 'app-header',

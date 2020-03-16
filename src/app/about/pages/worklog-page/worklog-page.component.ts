@@ -1,9 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { TeamService } from '@about/services/team.service';
 import { Evaluation, TeamMember } from '@about/models';
-import { EvaluationService } from '@about/services/evaluation.service';
+import { EvaluationService, TeamService } from '@about/services';
 
 @Component({
   selector: 'app-worklog-page',
