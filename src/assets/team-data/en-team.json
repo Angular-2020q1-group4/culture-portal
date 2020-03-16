@@ -31,24 +31,44 @@
     "name": "Vladimir Tyagunov",
     "role": "Front-End developer",
     "contacts": {
-      "telegram": "",
+      "telegram": "https://t.me/VaruharaKonbi",
       "github": "https://github.com/VladimirTyagunov"
     },
     "worklog": [
       {
-        "task": "todo",
+        "task": "Project deployment",
+        "spent": "2h"
+      },
+      {
+        "task": "Prettier configuration",
+        "spent": "0.5h"
+      },
+      {
+        "task": "Basic Structure of the project. Splitting into Modules",
+        "spent": "2h"
+      },
+      {
+        "task": "Angular Material module",
         "spent": "1h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Routing, resolvers, lazy-loading",
+        "spent": "4h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Implementation of TeamService, PhotographerService, EvaluationService services",
+        "spent": "4h"
       },
       {
-        "task": "todo",
+        "task": "Refactoring",
+        "spent": "5h"
+      },
+      {
+        "task": "Bug Fixing",
+        "spent": "4h"
+      },
+      {
+        "task": "Translation of information about photographer Viktor Butra",
         "spent": "1h"
       }
     ]

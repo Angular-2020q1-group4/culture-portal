@@ -31,24 +31,44 @@
     "name": "Уладзімір Тягуноў",
     "role": "Front-End распрацоўшчык",
     "contacts": {
-      "telegram": "",
+      "telegram": "https://t.me/VaruharaKonbi",
       "github": "https://github.com/VladimirTyagunov"
     },
     "worklog": [
       {
-        "task": "todo",
+        "task": "Паварочванне праекта",
+        "spent": "2h"
+      },
+      {
+        "task": "Канфігурацыя prettier",
+        "spent": "0.5h"
+      },
+      {
+        "task": "Базавая структура праекта. Падзел на модулі",
+        "spent": "2h"
+      },
+      {
+        "task": "Модуль Angular Material",
         "spent": "1h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Навігацыя",
+        "spent": "4h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Рэалізацыя сэрвісаў TeamService, PhotographerService, EvaluationService",
+        "spent": "4h"
       },
       {
-        "task": "todo",
+        "task": "Рэфактарынг",
+        "spent": "5h"
+      },
+      {
+        "task": "Выпраўленне памылак",
+        "spent": "4h"
+      },
+      {
+        "task": "Падрыхтоўка і пераклад інфармацыі пра фатографа Бутра Віктар Аляксандравiч",
         "spent": "1h"
       }
     ]
