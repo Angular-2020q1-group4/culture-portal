@@ -1,91 +1,85 @@
 {
-  "id": 3,
-  "firstName": "Юрий",
-  "middleName": "Сергеевич",
-  "lastName": "Васильев",
-  "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Yuri_Vasyliev.jpg/548px-Yuri_Vasyliev.jpg",
-  "birthday": "1939-04-25",
-  "death": "2018-01-18",
+  "id": "Vasiliev",
+  "snippet": {
+    "firstName": "Yuriy",
+    "middleName": "Sergeyevich",
+    "lastName": "Vasil'yev",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Yuri_Vasyliev.jpg/548px-Yuri_Vasyliev.jpg",
+    "birthplace": "Petrokrepost, USSR",
+    "birthday": "1939-04-25",
+    "dayOfDeath": "2018-01-18",
+    "shortDescription": "Belarusian photographer and public figure, Honored Worker of Culture of the Republic of Belarus, teacher of the history of photography."
+  },
   "biography": [
     {
       "firstDate": "1939-04-25",
       "lastDate": "",
-      "nameWork": "родился в городе Петрокрепость (Шлиссельбург в Кировском районе Ленинградской области с 1944 по 1992 г., СССР"
+      "title": "Born in the city of Petrokrepost (Shlisselburg in the Kirov district of the Leningrad region from 1944 to 1992, the USSR"
     },
     {
       "firstDate": "1946",
       "lastDate": "1961",
-      "nameWork": "После окончания средней школы в городе Липецк учился в Пензенском политехническом институте по специальности «Вычислительная техника»"
-    },
-    {
-      "firstDate": "1965",
-      "lastDate": "2004",
-      "nameWork": "по всесоюзному конкурсу попал в минский ЦНИИ ТУ и переехал в Минск, а до этого работал в Пензе на оборонном предприятии"
+      "title": "After graduating from high school in the city of Lipetsk, he studied at the Penza Polytechnic Institute with a degree in Computer Engineering"
     },
     {
       "firstDate": "1965",
       "lastDate": "",
-      "nameWork": "Член фотоклуба «Мінск»"
+      "title": "In an all-union competition, he got to the Minsk Central Research Institute of Technical University and moved to Minsk, and before that he worked in a defense enterprise in Penza"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "",
+      "title": "Member of the photo club «Мінск»"
     },
     {
       "firstDate": "1972",
       "lastDate": "1977",
-      "nameWork": "Автор и ведущий цикла телепередач «Фотопанорама» на БТ"
+      "title": "Author and presenter of the TV series “Photopanorama” on BT"
     },
     {
       "firstDate": "1978",
       "lastDate": "1999",
-      "nameWork": "являлся председателем и художественным руководителем фотоклуба «Мінск»"
+      "title": "He was the chairman and artistic director of the photo club «Мінск»"
     },
     {
       "firstDate": "1992",
       "lastDate": "",
-      "nameWork": "получил звание «Заслуженный работник культуры Республики Беларусь»"
-    },
-    {
-      "firstDate": "1993",
-      "lastDate": "",
-      "nameWork": "Автор публикаций о фотографии, консультант энциклопедического справочника «Фотография», БЭС, "
+      "title": "Received the title «Honored Worker of Culture of the Republic of Belarus»"
     },
     {
       "firstDate": "2004",
       "lastDate": "",
-      "nameWork": "стал членом Белорусского общественного объединения «Фотоискусство» (творческий союз), член Совета БОО"
+      "title": "Became a member of the Belarusian public association «Photography» (creative union), member of the Council of BOO"
     }
   ],
   "workList": [
     {
       "firstDate": "1973",
-      "nameWork": "Участие в выставке «Человек и море» (Югославия)"
+      "title": "Participation in the exhibition «Man and the Sea» (Yugoslavia)"
     },
     {
       "firstDate": "1977",
-      "nameWork": "Участие в фестивале «Интерклуб-77» (Потсдам)"
+      "title": "Participation in the festival «Interclub-77» (Potsdam)"
     },
     {
       "firstDate": "1981",
-      "nameWork": "Участие в межреспубликанской выставке портрета в Шауляе (Литва) "
+      "title": "Participation in the inter-republican portrait exhibition in Šiauliai (Lithuania)"
     },
     {
       "firstDate": "1984",
-      "nameWork": "Участие во Всесоюзной выставке «Объектив и жизнь» (Москва)"
+      "title": "Participation in the All-Union Exhibition «Lens and Life» (Москва)"
     },
     {
       "firstDate": "1985",
-      "nameWork": "Участие во Всесоюзной выставке фотографии, посвященной 40-летию Победы над фашизмом"
+      "title": "Participation in the All-Union Exhibition of Photography dedicated to the 40th anniversary of the Victory over fascism"
     },
     {
       "firstDate": "1987",
-      "nameWork": "ІІ-й Всесоюзный фестиваль народного творчества (Москва)"
+      "title": "ІІ-th All-Union Festival of Folk Art (Moscow)"
     },
     {
       "firstDate": "2007",
-      "nameWork": "выступил с докладом «Беларускi шлях Яна Булгака» на международном Семинаре в Вильнюсе"
-    },
-    {
-      "firstDate": "",
-      "lastDate": "",
-      "nameWork": ""
+      "title": "выступил с made a presentation «Belarusian hats of Jan Bulgak» at the Seminars in Vilnius"
     }
   ],
   "galleryImages": [
@@ -117,17 +111,17 @@
     {
       "latitude": 59.93511,
       "longitude": 31.034003,
-      "title": "родился в городе Петрокрепость Ленинградской области"
+      "title": "Born in the city of Petrokrepost of the Leningrad Region"
     },
     {
       "latitude": 55.787527,
       "longitude": 37.632146,
-      "title": "Москва — Всесоюзная выставка «Объектив и жизнь» (1984)"
+      "title": "Moscow - All-Union Exhibition «Lens and Life» (1984)"
     },
     {
       "latitude": 54.699398,
       "longitude": 25.285837,
-      "title": "Вильнюс -  Ю.Васильев выступил с докладом «Беларускi шлях Яна Булгака» на международном Семинаре (2007)"
+      "title": "Vilnius - Yu. Vasiliev made a presentation «Беларускi шлях Яна Булгака» at the International Seminar (2007)"
     }
   ]
 }
