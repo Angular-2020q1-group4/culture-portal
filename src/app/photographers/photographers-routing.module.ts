@@ -12,8 +12,7 @@ const routes: Routes = [
     component: PhotographerDetailPageComponent,
     resolve: {
       author: PhotographerResolver
-    },
-    data: { state: 'id' }
+    }
   }
 ];
 @NgModule({
