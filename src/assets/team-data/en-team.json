@@ -9,19 +9,27 @@
     },
     "worklog": [
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Photographer page",
+        "spent": "10h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Photogallery, videoplayer components",
+        "spent": "5h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Timeline and workslist components",
+        "spent": "5h"
       },
       {
-        "task": "todo",
+        "task": "Map component",
+        "spent": "3h"
+      },
+      {
+        "task": "Refactoring and bugfixing",
+        "spent": "3h"
+      },
+      {
+        "task": "Translation and formatting of information",
         "spent": "1h"
       }
     ]
