@@ -3,11 +3,9 @@
 }
 
 .buttons {
-  position: absolute;
-  right: 3px;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
+  position: sticky;
+  top: 9px;
+  z-index: 11;
 }
 
 .active {

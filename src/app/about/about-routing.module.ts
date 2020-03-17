@@ -13,10 +13,19 @@ const routes: Routes = [
     path: '',
     component: AboutPageComponent,
     children: [
-      { path: '', component: TeamPageComponent },
-      { path: 'worklog', component: WorklogPageComponent },
-      { path: 'styleguide', component: StyleguidePageComponent }
-    ]
+      { path: '', component: TeamPageComponent, data: { state: '' } },
+      {
+        path: 'worklog',
+        component: WorklogPageComponent,
+        data: { state: 'worklog' }
+      },
+      {
+        path: 'styleguide',
+        component: StyleguidePageComponent,
+        data: { state: 'styleguide' }
+      }
+    ],
+    data: { state: '' }
   }
 ];
 

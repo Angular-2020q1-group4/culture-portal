@@ -12,20 +12,27 @@ const routes: Routes = [
     component: MainPageComponent,
     resolve: {
       authorOfTheDay: PhotographerResolver
-    }
+    },
+    data: { state: 'main' }
   },
   {
     path: 'about',
-    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
+    data: { state: 'about' }
   },
   {
     path: 'photographers',
     loadChildren: () =>
       import('./photographers/photographers.module').then(
         m => m.PhotographersModule
-      )
+      ),
+    data: { state: 'photographers' }
   },
-  { path: 'not-found', component: Error404PageComponent },
+  {
+    path: 'not-found',
+    component: Error404PageComponent,
+    data: { state: 'not-found' }
+  },
   { path: '**', redirectTo: 'not-found' }
 ];
 
