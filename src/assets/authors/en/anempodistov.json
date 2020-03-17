@@ -4,7 +4,7 @@
     "firstName": "Michael",
     "middleName": "Vladimirovich",
     "lastName": "Anempodists",
-    "avatarImage": "https://commons.wikimedia.org/wiki/File:Aniempadystau_Michal_2012.jpg?uselang=en",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/3/34/Aniempadystau_Michal_2012.jpg",
     "birthplace": "Minsk, Belorussian SSR",
     "birthday": "1964-03-16",
     "dayOfDeath": "2018-01-23",
@@ -36,7 +36,7 @@
       "title": "He served in the Armed Forces of the USSR"
     },
     {
-      "firstDate": "1987-03",
+      "firstDate": "1987",
       "lastDate": "",
       "title": "He was a member of the Galina art laboratory (an informal art group) in Minsk"
     },
@@ -109,27 +109,6 @@
       "title": "Exhibition «Christmas Exhibition» (Minsk, Belarus)"
     },
     {
-      "firstDate": "2008",
-      "lastDate": "2011",
-      "title": "Exhibition «Belarusian Poster» (Warsaw; Berlin; Dresden; Brussels; Toulouse; Bon)"
-    },
-    {
-      "firstDate": "2011",
-      "title": "Exhibition «Perestroika. The poster is free» (Morges, Switzerland)"
-    },
-    {
-      "firstDate": "2011",
-      "title": "Exhibition «Design Week» (Vilnius, Lithuania)"
-    },
-    {
-      "firstDate": "2011",
-      "title": "Exhibition «Dialog Design» (Minsk, Belarus; Torun, Poland)"
-    },
-    {
-      "firstDate": "2011",
-      "title": "Exhibition «Belarusian Poster 1961-2011» (Minsk, Belarus)"
-    },
-    {
       "firstDate": "1993",
       "title": "Exhibition at the «Pilango Gallery» (Berlin, Germany)"
     },
@@ -150,8 +129,29 @@
       "title": "Exhibition at Horshol (Copenhagen, Denmark)"
     },
     {
+      "firstDate": "2008",
+      "lastDate": "2011",
+      "title": "Exhibition «Belarusian Poster» (Warsaw; Berlin; Dresden; Brussels; Toulouse; Bon)"
+    },
+    {
       "firstDate": "2010",
       "title": "Exhibition in the gallery «Dzyga» (Lviv, Ukraine)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Exhibition «Perestroika. The poster is free» (Morges, Switzerland)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Exhibition «Design Week» (Vilnius, Lithuania)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Exhibition «Dialog Design» (Minsk, Belarus; Torun, Poland)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Exhibition «Belarusian Poster 1961-2011» (Minsk, Belarus)"
     },
     {
       "firstDate": "2011",
