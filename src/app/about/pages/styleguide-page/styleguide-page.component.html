@@ -1,1 +1,139 @@
-<p>styleguide-page works!</p>
+<div class="wrapper">
+  <h2 class="heading">UI Style Guide</h2>
+
+  <div class="style-block">
+    <h2>Typography</h2>
+    <div class="description typography">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h3>Heading 3 weight: 700</h3>
+      <p>Usually</p>
+    </div>
+    <div class="separator"></div>
+  </div>
+
+  <div class="style-block">
+    <h2>Colors</h2>
+    <div class="description colors">
+      <div class="color active" style="background: rgb(103, 58, 183);">
+        <div
+          class="color__shade"
+          style="background: rgb(237, 231, 246); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: black;">50</span>
+          <span class="color__hex" style="color: black;">#ede7f6</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(209, 196, 233); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: black;">100</span>
+          <span class="color__hex" style="color: black;">#d1c4e9</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(179, 157, 219); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: black;">200</span>
+          <span class="color__hex" style="color: black;">#b39ddb</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(149, 117, 205); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">300</span>
+          <span class="color__hex" style="color: white;">#9575cd</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(126, 87, 194); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">400</span>
+          <span class="color__hex" style="color: white;">#7e57c2</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(103, 58, 183); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">500</span>
+          <span class="color__hex" style="color: white;">#673ab7</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(94, 53, 177); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">600</span>
+          <span class="color__hex" style="color: white;">#5e35b1</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(81, 45, 168); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">700</span>
+          <span class="color__hex" style="color: white;">#512da8</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(69, 39, 160); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">800</span>
+          <span class="color__hex" style="color: white;">#4527a0</span>
+        </div>
+        <div
+          class="color__shade"
+          style="background: rgb(49, 27, 146); height: 35.7143px;"
+        >
+          <span class="color__strength" style="color: white;">900</span>
+          <span class="color__hex" style="color: white;">#311b92</span>
+        </div>
+      </div>
+
+      <p>Background color: #f5f5f5</p>
+    </div>
+    <div class="separator"></div>
+  </div>
+
+  <div class="style-block">
+    <h2>Icons</h2>
+    <div class="description">
+      <img class="icon" src="/assets/camera.svg" />
+      <img class="icon" src="/assets/github.svg" />
+      <img class="icon" src="/assets/telegram.svg" />
+      <mat-icon class="icon" color="primary">language</mat-icon>
+    </div>
+    <div class="separator"></div>
+  </div>
+
+  <div class="style-block">
+    <h2>Avatars</h2>
+    <div class="description">
+      <img
+        *ngFor="let link of 'team' | translate"
+        class="avatar"
+        [src]="link.avatar"
+        alt=""
+      />
+    </div>
+    <div class="separator"></div>
+  </div>
+
+  <div class="style-block">
+    <h2>Buttons</h2>
+    <div class="description">
+      <button mat-button>Basic</button>
+      <button class="back-button" mat-fab color="primary">&lt;</button>
+      <button mat-icon-button color="primary">
+        <mat-icon>language</mat-icon>
+      </button>
+    </div>
+    <div class="separator"></div>
+  </div>
+
+  <div class="style-block">
+    <h2>Card component</h2>
+    <div class="description">
+      <app-photographer-item [author]="author"></app-photographer-item>
+    </div>
+  </div>
+</div>
