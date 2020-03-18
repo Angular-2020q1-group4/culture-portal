@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LanguageSettingsService, LOCALES } from '@shared/services';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,16 +11,19 @@ import { LanguageSettingsService, LOCALES } from '@shared/services';
 export class HeaderComponent implements OnInit {
   iconUrl = '/assets/camera.svg';
 
-  public languages;
-  public currentLanguage;
-
   navLinks = [
     { path: '/main', label: 'interface.labels.main' },
     { path: '/photographers', label: 'interface.labels.photographers' },
     { path: '/about', label: 'interface.labels.about' }
   ];
 
-  constructor(private localSettings: LanguageSettingsService) {}
+  public languages;
+  public currentLanguage;
+
+  constructor(
+    private localSettings: LanguageSettingsService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.languages = this.localSettings.getAllLangs();

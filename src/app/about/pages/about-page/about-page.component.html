@@ -1,26 +1,26 @@
-<div class="buttons">
-  <a
-    mat-button
-    [routerLink]="['/about']"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-    >Team</a
-  >
-  <a
-    mat-button
-    [routerLink]="['/about', 'worklog']"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]=""
-    >WorkLog</a
-  >
-  <a
-    mat-button
-    [routerLink]="['/about', 'styleguide']"
-    routerLinkActive="active"
-    >StyleGuide</a
-  >
-</div>
+<div class="about-page-container">
+  <div class="buttons">
+    <a
+      mat-button
+      [routerLink]="['/about']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Team</a
+    >
+    <a
+      mat-button
+      [routerLink]="['/about', 'worklog']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]=""
+      >WorkLog</a
+    >
+    <a
+      mat-button
+      [routerLink]="['/about', 'styleguide']"
+      routerLinkActive="active"
+      >StyleGuide</a
+    >
+  </div>
 
-<div>
   <router-outlet></router-outlet>
 </div>

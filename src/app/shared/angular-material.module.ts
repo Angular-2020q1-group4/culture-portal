@@ -7,6 +7,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTableModule } from '@angular/material/table';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 const componentModules = [
   MatButtonToggleModule,
@@ -15,7 +17,9 @@ const componentModules = [
   MatTabsModule,
   MatInputModule,
   MatCheckboxModule,
-  MatTableModule
+  MatTableModule,
+  MatMenuModule,
+  MatIconModule
 ];
 
 @NgModule({
