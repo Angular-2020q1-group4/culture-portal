@@ -1,0 +1,155 @@
+{
+  "id": "Butra",
+  "snippet": {
+    "firstName": "Viktor",
+    "middleName": "Alexandrovich",
+    "lastName": "Butra",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Victor_Butra_2012.jpg/548px-Victor_Butra_2012.jpg",
+    "birthplace": "Sarapul, Udmurt ASSR",
+    "birthday": "1944-04-07",
+    "dayOfDeath": "",
+    "shortDescription": "Belorussian documentary photographer, doctor. Member of the Belorussian public association of photographers."
+  },
+  "biography": [
+    {
+      "firstDate": "1944-04-07",
+      "lastDate": "",
+      "title": "Born in the city of Sarapul, the Udmurt Autonomous Soviet Socialist Republic, the RSFSR.\nVictor's childhood and youth passed in Latvia."
+    },
+    {
+      "firstDate": "1961",
+      "lastDate": "1963",
+      "title": "Study at the medical faculty of the Riga Medical Institute."
+    },
+    {
+      "firstDate": "1963",
+      "lastDate": "1968",
+      "title": "Study at Vitebsk Medical Institute."
+    },
+    {
+      "firstDate": "1962",
+      "lastDate": "1968",
+      "title": "Making the first photos, which were later exhibited at exhibitions."
+    },
+    {
+      "firstDate": "1974",
+      "lastDate": "",
+      "title": "Becomes a Member of the photo club «Мiнск»."
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "2004",
+      "title": "Simple stories-personal (Minsk, NOVA gallery)"
+    },
+    {
+      "firstDate": "1970",
+      "title": "Regional photo exhibition for The 100th anniversary of Lenin's birth (Vitebsk)"
+    },
+    {
+      "firstDate": "1976",
+      "title": "Photoryumorina (Odessa / USSR)"
+    },
+    {
+      "firstDate": "1977",
+      "title": "First international salon of photography (Bucharest / Romania, Sala Dalles)"
+    },
+    {
+      "firstDate": "1979",
+      "title": "Mir sovremennika-79 (Grodno)"
+    },
+    {
+      "firstDate": "1980",
+      "title": "5th international photo exhibition INTERCLUB’80 (Potsdam / DDR)"
+    },
+    {
+      "firstDate": "1981",
+      "title": "Photograph’81 (Minsk, Palace of Arts)"
+    },
+    {
+      "firstDate": "1982",
+      "title": "28th International Exhibition of Photography (Colombo/Sri Lanka, Lionel Wendt Memorial Gallery)"
+    },
+    {
+      "firstDate": "1990",
+      "title": "The world is for children (Yevpatoriya / Ukrainian SSR)"
+    },
+    {
+      "firstDate": "1992",
+      "title": "Twinned Cities Exhibition (Nottingham/Great Britain)"
+    },
+    {
+      "firstDate": "2000",
+      "title": "Sacrament of Motherhood (Minsk)"
+    },
+    {
+      "firstDate": "2000",
+      "title": "Фотография «решающего момента»: белорусский вариант (Минск, галерея NOVA)"
+    },
+    {
+      "firstDate": "2002",
+      "title": "Photo of the “decisive moment”: Belorussian version (Minsk, NOVA Gallery)"
+    },
+    {
+      "firstDate": "2007",
+      "title": "NOVA TOP 40 (Minsk, NOVA Gallery)"
+    },
+    {
+      "firstDate": "2014",
+      "title": "Minsk School of Photography 1960s - 2000s (St. Petersburg / Russia)"
+    },
+    {
+      "firstDate": "2018",
+      "title": "Archive body / bodies archive (Minsk)"
+    },
+    {
+      "firstDate": "2018",
+      "title": "Girl's night (Minsk)"
+    },
+    {
+      "firstDate": "2018",
+      "title": "«Special Photography» (Minsk)"
+    }
+  ],
+  "galleryImages": [
+    "https://znyata.com/images/stories/interview/butra/butra400_1.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_2.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_3.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_4.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_5.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_15.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_7.jpg",
+    "https://znyata.com/images/stories/interview/butra/butra400_6.jpg",
+    "http://www.museum.ru/img.asp?77728",
+    "http://www.museum.ru/img.asp?77729",
+    "https://photounion.by/images/bap/bap2018/osobennaya_photoraphy_mihalenko-butra.jpg",
+    "http://www.kimpress.by/i/content/pi/cult/708/15505/11.jpg",
+    "http://www.kimpress.by/i/content/pi/cult/708/15505/12.jpg",
+    "http://www.kimpress.by/i/content/pi/cult/708/15505/13.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?time_continue=62&v=aNeoY7hzoPI&feature=emb_logo"
+  ],
+  "mapPlace": [
+    {
+      "latitude": 56.453019,
+      "longitude": 53.778097,
+      "title": "Born in the city of Sarapul, Udmurt ASSSR"
+    },
+    {
+      "latitude": 44.434543,
+      "longitude": 26.101454,
+      "title": "Bucharest, Romania, 1st International Photographic Salon 1977"
+    },
+    {
+      "latitude": 52.222514,
+      "longitude": 21.013086,
+      "title": "Warsaw, Poland, Belarusian Way of Jan Bulgak 2002"
+    },
+    {
+      "latitude": 53.901145,
+      "longitude": 27.549264,
+      "title": "Minsk, «Special Photography» 2018"
+    }
+  ]
+}

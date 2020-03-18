@@ -1,0 +1,127 @@
+{
+  "id": "Vasiliev",
+  "snippet": {
+    "firstName": "Yuriy",
+    "middleName": "Sergeyevich",
+    "lastName": "Vasil'yev",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Yuri_Vasyliev.jpg/548px-Yuri_Vasyliev.jpg",
+    "birthplace": "Petrokrepost, USSR",
+    "birthday": "1939-04-25",
+    "dayOfDeath": "2018-01-18",
+    "shortDescription": "Belarusian photographer and public figure, Honored Worker of Culture of the Republic of Belarus, teacher of the history of photography"
+  },
+  "biography": [
+    {
+      "firstDate": "1939-04-25",
+      "lastDate": "",
+      "title": "Born in the city of Petrokrepost (Shlisselburg in the Kirov district of the Leningrad region from 1944 to 1992, the USSR"
+    },
+    {
+      "firstDate": "1946",
+      "lastDate": "1961",
+      "title": "After graduating from high school in the city of Lipetsk, he studied at the Penza Polytechnic Institute with a degree in Computer Engineering"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "",
+      "title": "In an all-union competition, he got to the Minsk Central Research Institute of Technical University and moved to Minsk, and before that he worked in a defense enterprise in Penza"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "",
+      "title": "Member of the photo club «Мінск»"
+    },
+    {
+      "firstDate": "1972",
+      "lastDate": "1977",
+      "title": "Author and presenter of the TV series “Photopanorama” on BT"
+    },
+    {
+      "firstDate": "1978",
+      "lastDate": "1999",
+      "title": "He was the chairman and artistic director of the photo club «Мінск»"
+    },
+    {
+      "firstDate": "1992",
+      "lastDate": "",
+      "title": "Received the title «Honored Worker of Culture of the Republic of Belarus»"
+    },
+    {
+      "firstDate": "2004",
+      "lastDate": "",
+      "title": "Became a member of the Belarusian public association «Photography» (creative union), member of the Council of BOO"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "1973",
+      "title": "Participation in the exhibition «Man and the Sea» (Yugoslavia)"
+    },
+    {
+      "firstDate": "1977",
+      "title": "Participation in the festival «Interclub-77» (Potsdam)"
+    },
+    {
+      "firstDate": "1981",
+      "title": "Participation in the inter-republican portrait exhibition in Šiauliai (Lithuania)"
+    },
+    {
+      "firstDate": "1984",
+      "title": "Participation in the All-Union Exhibition «Lens and Life» (Москва)"
+    },
+    {
+      "firstDate": "1985",
+      "title": "Participation in the All-Union Exhibition of Photography dedicated to the 40th anniversary of the Victory over fascism"
+    },
+    {
+      "firstDate": "1987",
+      "title": "ІІ-th All-Union Festival of Folk Art (Moscow)"
+    },
+    {
+      "firstDate": "2007",
+      "title": "выступил с made a presentation «Belarusian hats of Jan Bulgak» at the Seminars in Vilnius"
+    }
+  ],
+  "galleryImages": [
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_8.jpg",
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_2.jpg",
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_3_1.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/004.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/005.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/006.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/01.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/IMG_6259.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/Pictures00129-f.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS002.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS003.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS005.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS014.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS024.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS028.jpg",
+    "https://znyata.com/images/stories/interview/vasiliev/vasiliev400_5.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=Nd5v_jKB1GM",
+    "https://www.youtube.com/watch?v=TchldjyexZs",
+    "https://www.youtube.com/watch?v=1XiU7I_TaZU",
+    "https://www.youtube.com/watch?v=6XxWV_a0c-E",
+    "https://www.youtube.com/watch?v=kTjypWMxQmM"
+  ],
+  "mapPlace": [
+    {
+      "latitude": 59.93511,
+      "longitude": 31.034003,
+      "title": "Born in the city of Petrokrepost of the Leningrad Region"
+    },
+    {
+      "latitude": 55.787527,
+      "longitude": 37.632146,
+      "title": "Moscow - All-Union Exhibition «Lens and Life» (1984)"
+    },
+    {
+      "latitude": 54.699398,
+      "longitude": 25.285837,
+      "title": "Vilnius - Yu. Vasiliev made a presentation «Беларускi шлях Яна Булгака» at the International Seminar (2007)"
+    }
+  ]
+}

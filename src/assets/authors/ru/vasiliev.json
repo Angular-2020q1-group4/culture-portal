@@ -1,0 +1,127 @@
+{
+  "id": "Vasiliev",
+  "snippet": {
+    "firstName": "Юрий",
+    "middleName": "Сергеевич",
+    "lastName": "Васильев",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Yuri_Vasyliev.jpg/548px-Yuri_Vasyliev.jpg",
+    "birthplace": "Петрокрепость, СССР",
+    "birthday": "1939-04-25",
+    "dayOfDeath": "2018-01-18",
+    "shortDescription": "Белорусский фотограф и общественный деятель, заслуженный работник культуры Республики Беларусь, преподаватель истории фотографии"
+  },
+  "biography": [
+    {
+      "firstDate": "1939-04-25",
+      "lastDate": "",
+      "title": "Родился в городе Петрокрепость (Шлиссельбург в Кировском районе Ленинградской области с 1944 по 1992 г., СССР"
+    },
+    {
+      "firstDate": "1946",
+      "lastDate": "1961",
+      "title": "После окончания средней школы в городе Липецк учился в Пензенском политехническом институте по специальности «Вычислительная техника»"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "",
+      "title": "По всесоюзному конкурсу попал в минский ЦНИИ ТУ и переехал в Минск, а до этого работал в Пензе на оборонном предприятии"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "",
+      "title": "Член фотоклуба «Мінск»"
+    },
+    {
+      "firstDate": "1972",
+      "lastDate": "1977",
+      "title": "Автор и ведущий цикла телепередач «Фотопанорама» на БТ"
+    },
+    {
+      "firstDate": "1978",
+      "lastDate": "1999",
+      "title": "Являлся председателем и художественным руководителем фотоклуба «Мінск»"
+    },
+    {
+      "firstDate": "1992",
+      "lastDate": "",
+      "title": "Получил звание «Заслуженный работник культуры Республики Беларусь»"
+    },
+    {
+      "firstDate": "2004",
+      "lastDate": "",
+      "title": "Стал членом Белорусского общественного объединения «Фотоискусство» (творческий союз), член Совета БОО"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "1973",
+      "title": "Участие в выставке «Человек и море» (Югославия)"
+    },
+    {
+      "firstDate": "1977",
+      "title": "Участие в фестивале «Интерклуб-77» (Потсдам)"
+    },
+    {
+      "firstDate": "1981",
+      "title": "Участие в межреспубликанской выставке портрета в Шауляе (Литва)"
+    },
+    {
+      "firstDate": "1984",
+      "title": "Участие во Всесоюзной выставке «Объектив и жизнь» (Москва)"
+    },
+    {
+      "firstDate": "1985",
+      "title": "Участие во Всесоюзной выставке фотографии, посвященной 40-летию Победы над фашизмом"
+    },
+    {
+      "firstDate": "1987",
+      "title": "ІІ-й Всесоюзный фестиваль народного творчества (Москва)"
+    },
+    {
+      "firstDate": "2007",
+      "title": "Выступил с докладом «Беларускi шлях Яна Булгака» на международном Семинаре в Вильнюсе"
+    }
+  ],
+  "galleryImages": [
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_8.jpg",
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_2.jpg",
+    "https://belsat.eu/wp-content/uploads/2018/01/vasiliev400_3_1.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/004.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/005.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/006.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/01.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/IMG_6259.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/Pictures00129-f.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS002.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS003.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS005.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS014.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS024.jpg",
+    "http://buro.mfm.by/wp-content/uploads/2018/08/VS028.jpg",
+    "https://znyata.com/images/stories/interview/vasiliev/vasiliev400_5.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=Nd5v_jKB1GM",
+    "https://www.youtube.com/watch?v=TchldjyexZs",
+    "https://www.youtube.com/watch?v=1XiU7I_TaZU",
+    "https://www.youtube.com/watch?v=6XxWV_a0c-E",
+    "https://www.youtube.com/watch?v=kTjypWMxQmM"
+  ],
+  "mapPlace": [
+    {
+      "latitude": 59.93511,
+      "longitude": 31.034003,
+      "title": "Родился в городе Петрокрепость Ленинградской области"
+    },
+    {
+      "latitude": 55.787527,
+      "longitude": 37.632146,
+      "title": "Москва — Всесоюзная выставка «Объектив и жизнь» (1984)"
+    },
+    {
+      "latitude": 54.699398,
+      "longitude": 25.285837,
+      "title": "Вильнюс -  Ю.Васильев выступил с докладом «Беларускi шлях Яна Булгака» на международном Семинаре (2007)"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "id": "Anempodistov",
+  "snippet": {
+    "firstName": "Михаил",
+    "middleName": "Владимирович",
+    "lastName": "Анемподистов",
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/3/34/Aniempadystau_Michal_2012.jpg",
+    "birthplace": "Минск, Белорусская ССР",
+    "birthday": "1964-03-16",
+    "dayOfDeath": "2018-01-23",
+    "shortDescription": "Белорусский художник, дизайнер, поэт, культуролог, искусствовед."
+  },
+  "biography": [
+    {
+      "firstDate": "1964-03-16",
+      "title": "Родился в Минске"
+    },
+    {
+      "firstDate": "1965",
+      "lastDate": "1985",
+      "title": "Учился в детской народной студии изобразительного искусства при Дворце культуры текстильщиков в Минске"
+    },
+    {
+      "firstDate": "1979",
+      "lastDate": "1983",
+      "title": "Учился и окончил Минское художественное училище (ныне — Минский государственный художественный колледж имени А. К. Глебова)"
+    },
+    {
+      "firstDate": "1979",
+      "lastDate": "1984",
+      "title": "Участвовал в молодежном общественном объединении «Белорусская Мастерская»"
+    },
+    {
+      "firstDate": "1983",
+      "lastDate": "1985",
+      "title": "Прошел срочную службу в Вооруженных силах СССР"
+    },
+    {
+      "firstDate": "1987",
+      "lastDate": "",
+      "title": "Был членом арт-лаборатории «Галина» (неформальной художественной группы) в Минске"
+    },
+    {
+      "firstDate": "1989",
+      "lastDate": "1994",
+      "title": "Работал художественным редактором в белорусском журнале «Березка»"
+    },
+    {
+      "firstDate": "1990",
+      "lastDate": "",
+      "title": "Был одним из активных создателей белорусской рок-поэзии."
+    },
+    {
+      "firstDate": "1997",
+      "lastDate": "",
+      "title": "Был членом Белорусского союза дизайнеров"
+    },
+    {
+      "firstDate": "2004",
+      "lastDate": "2011",
+      "title": "Был членом жюри фестиваля «Бардовская Осень» (г. Бельск, Польша)"
+    },
+    {
+      "firstDate": "2006",
+      "lastDate": "",
+      "title": "Целенаправленно делал фотографии города Минска, так хотел зафиксировать в фотографиях современный Минск"
+    },
+    {
+      "firstDate": "2011",
+      "lastDate": "",
+      "title": "Был членом правления Белорусского союза дизайнеров"
+    },
+    {
+      "firstDate": "2011",
+      "lastDate": "",
+      "title": "Дебютировал как фотограф, презентовав фотавыставку «Under Ground»"
+    },
+    {
+      "firstDate": "2013",
+      "lastDate": "",
+      "title": "Выпустил сборник своих стихотворений «Глубоко, глубоко, на дне чашечки кофе»"
+    },
+    {
+      "firstDate": "2013-01-30",
+      "lastDate": "",
+      "title": "Вел авторскую колонку «Простые вещи» на сайте общественной компании «Будем белорусами!»"
+    },
+    {
+      "firstDate": "2018-01-24",
+      "lastDate": "",
+      "title": "Умер в Минске от инсульта"
+    }
+  ],
+  "workList": [
+    {
+      "firstDate": "1987",
+      "title": "Выставка объединения «Галина» на Республиканской выставке плаката (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "1988",
+      "title": "Выставка «Мы» (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "1990",
+      "title": "Выставка «Грюнвальд» (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "1992",
+      "title": "Выставка «Рождественская Выставка» (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "1993",
+      "title": "Выставка в «Pilango Gallery» (г. Берлин, Германия)"
+    },
+    {
+      "firstDate": "1994",
+      "title": "Выставка в «Teatr NN». (г. Люблин, Польша)"
+    },
+    {
+      "firstDate": "1994",
+      "title": "Выставка в «Pilango Gallery» (г. Берлин, Германия)"
+    },
+    {
+      "firstDate": "1994",
+      "title": "Выставка в «Ratz Fatz Gallery» (г. Берлин, Германия)"
+    },
+    {
+      "firstDate": "1995",
+      "title": "Выставка в «Horshol» (г. Копенгаген, Дания)"
+    },
+    {
+      "firstDate": "2008",
+      "lastDate": "2011",
+      "title": "Выставка «Белорусский плакат» (г. Варшава; г. Берлин; г. Дрезден; г. Брюссель; г. Тулуза; г. Бон)"
+    },
+    {
+      "firstDate": "2010",
+      "title": "Выставка в галерее «Dzyga» (г. Львов, Украина)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Выставка «Перестройка. Афиша на свободе» (г. Морж, Швейцария)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Выставка «Неделя Дизайна» (г. Вильнюс, Литва)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Выставка «Диалог Дизайн» (г. Минск, Беларусь; г. Торунь, Польша)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Выставка «Белорусский плакат 1961—2011» (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "2011",
+      "title": "Выставка в Галерее Белорусского союза дизайнеров (г. Минск, Беларусь)"
+    },
+    {
+      "firstDate": "2012",
+      "title": "Фотовыставка «Under Ground» в Café Galerie (г. Леверкузен, Германия)"
+    },
+    {
+      "firstDate": "2013",
+      "title": "Фотовыставка «Under Ground» (г. Торунь, Польша)"
+    }
+  ],
+  "galleryImages": [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Aniempadysta%C5%AD_and_Volski_%28Lviv_2009%29.JPG/440px-Aniempadysta%C5%AD_and_Volski_%28Lviv_2009%29.JPG",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-33.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-1.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-2.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-3.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-4.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-5.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-7.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-8.jpg",
+    "https://www.znyata.com/images/stories/line/anempodystov/michal-9.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0hXt0SD8wX4d5ti-Szb68dEfuwqPplDrBf124oebI4EY8cf_6",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQy66R83s_P4RtyUhLE2USGPA_7WfRTZF6TYB9bRNRBuSzaBnFp",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmFbEkGdPJ39htc8zaiVsmCV-QsqtRdouuB2brfpSDb8KeFXy2"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=-A-1kSc2IXc",
+    "https://www.youtube.com/watch?v=nEmQ8xopSWg"
+  ],
+  "mapPlace": [
+    {
+      "latitude": 53.901145,
+      "longitude": 27.549264,
+      "title": "г. Минск, Беларусь - Место рождения (1964)."
+    },
+    {
+      "latitude": 46.509615,
+      "longitude": 6.494664,
+      "title": "г. Морж, Швейцария - Выставка «Перестройка. Афиша на свободе» в 2011"
+    },
+    {
+      "latitude": 54.667642,
+      "longitude": 25.283091,
+      "title": "г. Вильнюс, Литва - Выставка «Неделя Дизайна» в 2011"
+    },
+    {
+      "latitude": 55.670175,
+      "longitude": 12.581425,
+      "title": "г. Копенгаген, Дания - Выставка в «Horshol» в 1995"
+    },
+    {
+      "latitude": 49.840134,
+      "longitude": 24.026644,
+      "title": "г. Львов, Украина - Выставка в галерее «Dzyga» в 2010"
+    },
+    {
+      "latitude": 53.0205,
+      "longitude": 18.60288,
+      "title": "г. Торунь, Польша - Фотовыставка «Under Ground»  2013"
+    }
+  ]
+}
