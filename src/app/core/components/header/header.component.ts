@@ -16,7 +16,18 @@ export class HeaderComponent implements OnInit {
     { path: '/about', label: 'interface.labels.about' }
   ];
 
-  constructor() {}
+  public languages;
+  public currentLanguage;
 
-  ngOnInit(): void {}
+  constructor(private localSettings: LanguageSettingsService) {}
+
+  ngOnInit(): void {
+    this.languages = this.localSettings.getAllLangs();
+    this.currentLanguage = this.localSettings.getLanguage();
+  }
+
+  public changeLanguage(lang: LOCALES) {
+    this.localSettings.setLanguage(lang);
+    this.currentLanguage = lang;
+  }
 }
