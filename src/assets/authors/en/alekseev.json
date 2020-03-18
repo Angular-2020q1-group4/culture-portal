@@ -1,4 +1,15 @@
 {
+  "id": "Alekseev",
+  "snippet": {
+    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Aliaksandr_Aliakseyeu.jpg/274px-Aliaksandr_Aliakseyeu.jpg",
+    "birthday": "1978-11-14",
+    "birthplace": "Kazan, Russia",
+    "dayOfDeath": "",
+    "firstName": "Alexander",
+    "lastName": "Alekseev",
+    "middleName": "Alexeyevich",
+    "shortDescription": "Belarusian photographer, publisher, designer, journalist, director, candidate of economic sciences."
+  },
   "biography": [
     {
       "firstDate": "1978-11-14",
@@ -56,52 +67,6 @@
       "title": "He graduated from the Belarusian State Academy of Arts with a degree in director"
     }
   ],
-  "galleryImages": [
-    "https://img.tyt.by/720x720s/n/kultura/05/6/alex_kusturitsa_t_1_.jpg",
-    "https://img.tyt.by/720x720s/n/kultura/02/4/alex_waida_t_1_.jpg",
-    "http://www.ctv.by/sites/default/files/inarticle/vystavka_2_13.jpg",
-    "http://www.ctv.by/sites/default/files/imcefiles/art_zabor_2017_2.png",
-    "http://www.ctv.by/sites/default/files/inarticle/spadchyna_belarusi6.jpg",
-    "http: //xn--80aal0bhl9b6a.xn--90ais/assets/album_spadchyna_belarusi.png",
-    "http: //xn--80aal0bhl9b6a.xn--90ais/assets/aliakseyeu_lukashevich_2015.jpg"
-  ],
-  "galleryVideo": [
-    "https://www.youtube.com/watch?v=t9lbUWcN0O8",
-    "https://www.youtube.com/watch?v=S0wNJkC9Wgo&feature"
-  ],
-  "id": "Alekseev",
-  "mapPlace": [
-    {
-      "latitude": 55.796289,
-      "longitude": 49.108795,
-      "title": "Kazan. Born"
-    },
-    {
-      "latitude": 53.901145,
-      "longitude": 27.549264,
-      "title": "Minsk. Life and creation"
-    },
-    {
-      "latitude": 48.856663,
-      "longitude": 2.3488,
-      "title": "Paris. Exhibition «Heritage of Belarus»"
-    },
-    {
-      "latitude": 51.507351,
-      "longitude": -0.12766,
-      "title": "London. Exhibition as part of the «Discover Belarus» campaign"
-    }
-  ],
-  "snippet": {
-    "avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Aliaksandr_Aliakseyeu.jpg/274px-Aliaksandr_Aliakseyeu.jpg",
-    "birthday": "1978-11-14",
-    "birthplace": "Kazan, Russia",
-    "dayOfDeath": "",
-    "firstName": "Alexander",
-    "lastName": "Alekseev",
-    "middleName": "Alexeyevich",
-    "shortDescription": "Belarusian photographer, publisher, designer, journalist, director, candidate of economic sciences."
-  },
   "workList": [
     {
       "firstDate": "2003",
@@ -162,6 +127,45 @@
     {
       "firstDate": "2018",
       "title": "Art project «The Legacy of Belarus» presented in Budapest"
+    }
+  ],
+  "galleryImages": [
+    "https://minsknews.by/wp-content/uploads/2016/03/----1-copy.jpg",
+    "https://minsknews.by/wp-content/uploads/2016/03/----5-copy.jpg",
+    "https://static1-repo.aif.by/1/00/4031/c/609477b03a7e996fe2be232f44429f8e.jpg",
+    "https://static1-repo.aif.by/1/ba/4032/c/03c9f73ad75539d720579efb81c64fd7.jpg",
+    "Https://img.tyt.by/720x720s/n/kultura/05/6/alex_kusturitsa_t_1_.jpg",
+    "http://images.aif.by/007/432/5db5b9bf4f0328d821951addd9d0532b.jpg",
+    "Http://www.ctv.by/sites/default/files/imcefiles/art_zabor_2017_2.png",
+    "https://img.tyt.by/n/shukaylo/06/8/010_spadchyna_belarusi_shuk_tutby_phsl_20140503_7561.jpg",
+    "Http://www.ctv.by/sites/default/files/inarticle/spadchyna_belarusi6.jpg",
+    "Https://img.tyt.by/720x720s/n/kultura/02/4/alex_waida_t_1_.jpg"
+  ],
+  "galleryVideo": [
+    "https://www.youtube.com/watch?v=t9lbUWcN0O8",
+    "https://www.youtube.com/watch?v=S0wNJkC9Wgo&feature"
+  ],
+
+  "mapPlace": [
+    {
+      "latitude": 55.796289,
+      "longitude": 49.108795,
+      "title": "Kazan. Born"
+    },
+    {
+      "latitude": 53.901145,
+      "longitude": 27.549264,
+      "title": "Minsk. Life and creation"
+    },
+    {
+      "latitude": 48.856663,
+      "longitude": 2.3488,
+      "title": "Paris. Exhibition «Heritage of Belarus»"
+    },
+    {
+      "latitude": 51.507351,
+      "longitude": -0.12766,
+      "title": "London. Exhibition as part of the «Discover Belarus» campaign"
     }
   ]
 }
