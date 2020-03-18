@@ -130,20 +130,32 @@
     },
     "worklog": [
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Prepare and translate information about photographers",
+        "spent": "3h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Page with photographers list",
+        "spent": "3h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Connect and configure ngx-translate in the application",
+        "spent": "8h"
       },
       {
-        "task": "todo",
-        "spent": "1h"
+        "task": "Connect and configure work with the Firebase",
+        "spent": "6h"
+      },
+      {
+        "task": "Implement pipe to switch the format for presenting date and translating them",
+        "spent": "2h"
+      },
+      {
+        "task": "Main page",
+        "spent": "3h"
+      },
+      {
+        "task": "Footer",
+        "spent": "2h"
       }
     ]
   },
