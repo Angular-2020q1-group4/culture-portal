@@ -2,31 +2,51 @@
   <h3 class="heading">{{ 'interface.author.events' | translate }}</h3>
 
   <mgl-timeline
-    *ngIf="bio?.length"
+    *ngIf="biography?.length"
     focusOnOpen="false"
-    mobileWidthThreshold="800"
+    mobileWidthThreshold="500"
+    alternate="true"
   >
-    <mgl-timeline-entry *ngFor="let item of bio">
+    <mgl-timeline-entry *ngFor="let item of biography">
       <mgl-timeline-entry-header>
         {{ item.title }}
       </mgl-timeline-entry-header>
 
       <mgl-timeline-entry-content>
         <!-- temporary content, cause there's no other content -->
-        {{ item.firstDate | dateTranslate }}
+        {{
+          item.firstDate.length < 5
+            ? (formatDate(item.firstDate) | dateTranslate: 'yyyy')
+            : (item.firstDate | dateTranslate)
+        }}
         <span *ngIf="item.lastDate">
-          – {{ item.lastDate | dateTranslate }}</span
-        >
+          –
+          {{
+            item.lastDate.length < 5
+              ? (formatDate(item.lastDate) | dateTranslate: 'yyyy')
+              : (item.lastDate | dateTranslate)
+          }}
+        </span>
       </mgl-timeline-entry-content>
 
       <mgl-timeline-entry-dot size="40" style="background-color: #3f51b5">
       </mgl-timeline-entry-dot>
 
       <mgl-timeline-entry-side>
-        {{ item.firstDate | dateTranslate }}
+        {{
+          item.firstDate.length < 5
+            ? (formatDate(item.firstDate) | dateTranslate: 'yyyy')
+            : (item.firstDate | dateTranslate)
+        }}
+
         <span *ngIf="item.lastDate">
-          – {{ item.lastDate | dateTranslate }}</span
-        >
+          –
+          {{
+            item.lastDate.length < 5
+              ? (formatDate(item.lastDate) | dateTranslate: 'yyyy')
+              : (item.lastDate | dateTranslate)
+          }}
+        </span>
       </mgl-timeline-entry-side>
     </mgl-timeline-entry>
   </mgl-timeline>
