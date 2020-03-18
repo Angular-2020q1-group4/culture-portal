@@ -13,4 +13,8 @@ export class TimelineComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  formatDate(dateString: string): Date {
+    return new Date(dateString);
+  }
 }
