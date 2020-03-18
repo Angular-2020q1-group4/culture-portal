@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LanguageSettingsService, LOCALES } from '@shared/services';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -19,7 +20,10 @@ export class HeaderComponent implements OnInit {
   public languages;
   public currentLanguage;
 
-  constructor(private localSettings: LanguageSettingsService) {}
+  constructor(
+    private localSettings: LanguageSettingsService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.languages = this.localSettings.getAllLangs();
