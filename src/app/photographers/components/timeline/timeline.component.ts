@@ -9,8 +9,15 @@ import { Event } from '@core/models';
 })
 export class TimelineComponent implements OnInit {
   @Input() biography: Event[];
+  bio: Event[];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.bio = this.biography.map(item => ({
+      firstDate: new Date(item.firstDate),
+      lastDate: item.lastDate && new Date(item.lastDate),
+      title: item.title
+    }));
+  }
 }

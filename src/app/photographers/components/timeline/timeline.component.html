@@ -2,11 +2,11 @@
   <h3 class="heading">{{ 'interface.author.events' | translate }}</h3>
 
   <mgl-timeline
-    *ngIf="biography?.length"
+    *ngIf="bio?.length"
     focusOnOpen="false"
     mobileWidthThreshold="800"
   >
-    <mgl-timeline-entry *ngFor="let item of biography">
+    <mgl-timeline-entry *ngFor="let item of bio">
       <mgl-timeline-entry-header>
         {{ item.title }}
       </mgl-timeline-entry-header>
