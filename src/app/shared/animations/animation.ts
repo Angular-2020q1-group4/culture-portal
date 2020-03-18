@@ -1,15 +1,29 @@
-// import the required animation functions from the angular animations module
-import { trigger, animate, transition, style } from '@angular/animations';
+import {
+  trigger,
+  animate,
+  transition,
+  style,
+  query,
+  group
+} from '@angular/animations';
 
-export const fadeInAnimation =
-  // trigger name for attaching this animation to an element using the [@triggerName] syntax
-  trigger('fadeInAnimation', [
-    // route 'enter' transition
-    transition(':enter', [
-      // css styles at start of transition
-      style({ opacity: 0 }),
-
-      // animation and styles at end of transition
-      animate('.3s', style({ opacity: 1 }))
+export const routerAnimations = trigger('routerAnimations', [
+  transition('* <=> *', [
+    query(
+      ':enter, :leave',
+      style({ position: 'fixed', left: 0, width: '100%' }),
+      { optional: true }
+    ),
+    group([
+      query(
+        ':enter',
+        [
+          style({ opacity: 0, marginTop: '-5px' }),
+          animate('0.5s ease-in-out', style({ opacity: 1, marginTop: '0px' }))
+        ],
+        { optional: true }
+      ),
+      query(':leave', [style({ opacity: 0 })], { optional: true })
     ])
-  ]);
+  ])
+]);

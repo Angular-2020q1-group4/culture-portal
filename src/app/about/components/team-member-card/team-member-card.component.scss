@@ -8,6 +8,13 @@
     transform: rotate(1.8deg);
     transition: all 0.5s;
   }
+
+  @media screen and (max-width: 530px) {
+    :hover {
+      box-shadow: none;
+      transform: rotate(0deg);
+    }
+  }
 }
 
 .card-element {
