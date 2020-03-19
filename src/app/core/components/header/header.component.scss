@@ -36,14 +36,14 @@
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  top: 0px;
+  top: 0;
   margin-top: -71px;
   padding-bottom: 5px;
   background: white;
   z-index: 10;
 
   @media screen and (max-width: 700px) {
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 0;
   }
 }
@@ -53,16 +53,21 @@
 }
 
 .mat-tab-link {
-  min-width: 130px;
+  min-width: 110px;
 
   @media screen and (max-width: 700px) {
     min-width: 160px;
   }
   @media screen and (max-width: 530px) {
-    min-width: 130px;
+    min-width: 110px;
   }
 }
 
 .mat-icon-button {
   margin-top: 5px;
 }
+
+.lang-menu-container {
+  padding: 4px 0;
+}
+

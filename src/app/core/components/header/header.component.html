@@ -16,22 +16,8 @@
       [active]="rla.isActive"
       >{{ link.label | translate }}</a
     >
-
-    <div>
-      <button mat-icon-button color="primary" [matMenuTriggerFor]="menu">
-        <mat-icon>language</mat-icon>
-      </button>
-
-      <mat-menu #menu="matMenu">
-        <button
-          [disabled]="lang === currentLanguage"
-          *ngFor="let lang of languages"
-          mat-menu-item
-          (click)="changeLanguage(lang)"
-        >
-          {{ lang.toLocaleString().toLocaleUpperCase() }}
-        </button>
-      </mat-menu>
-    </div>
   </nav>
+  <div class="lang-menu-container">
+    <app-lang-menu></app-lang-menu>
+  </div>
 </div>

@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
-import { LanguageSettingsService, LOCALES } from '@shared/services';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   iconUrl = '/assets/camera.svg';
 
   navLinks = [
@@ -16,22 +13,4 @@ export class HeaderComponent implements OnInit {
     { path: '/photographers', label: 'interface.labels.photographers' },
     { path: '/about', label: 'interface.labels.about' }
   ];
-
-  public languages;
-  public currentLanguage;
-
-  constructor(
-    private localSettings: LanguageSettingsService,
-    private router: Router
-  ) {}
-
-  ngOnInit(): void {
-    this.languages = this.localSettings.getAllLangs();
-    this.currentLanguage = this.localSettings.getLanguage();
-  }
-
-  public changeLanguage(lang: LOCALES) {
-    this.localSettings.setLanguage(lang);
-    this.currentLanguage = lang;
-  }
 }
