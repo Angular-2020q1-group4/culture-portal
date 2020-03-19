@@ -20,8 +20,8 @@ export interface Snippet {
 }
 
 export interface Event {
-  firstDate: string;
-  lastDate: string;
+  firstDate: string | Date;
+  lastDate: string | Date;
   title: string;
 }
 

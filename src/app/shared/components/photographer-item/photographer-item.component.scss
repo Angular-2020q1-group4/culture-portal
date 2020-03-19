@@ -1,14 +1,23 @@
 .list-container {
+  transition: all 0.5s;
   :hover {
     cursor: pointer;
     box-shadow: 0 0 50px 0 rgba(79, 79, 79, 0.7);
     transform: rotate(1.5deg);
     transition: all 0.5s;
   }
+
+  @media screen and (max-width: 530px) {
+    :hover {
+      box-shadow: none;
+      transform: rotate(0deg);
+    }
+  }
 }
 
 .list-element {
   width: 300px;
+  min-width: 300px;
   margin: 20px 0;
   min-height: 525px;
 
@@ -22,6 +31,7 @@
   margin: 5px auto;
   object-fit: cover;
   width: 300px;
+  min-width: 300px;
   height: 350px;
 }
 

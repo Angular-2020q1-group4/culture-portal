@@ -1,9 +1,22 @@
-:root {
-  background-color: #ffffff;
+.back-button {
+  position: fixed;
+  line-height: 0px;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 10;
+
+  @media screen and (max-width: 580px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.back-button {
-  font-size: 2rem;
+::ng-deep .mat-button-wrapper {
+  line-height: 0 !important;
 }
 
 .inner-page-wrapper {

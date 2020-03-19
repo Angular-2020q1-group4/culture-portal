@@ -10,7 +10,6 @@ import { TeamMember } from '@about/models';
   styleUrls: ['./team-page.component.scss']
 })
 export class TeamPageComponent implements OnInit, OnDestroy {
-  title = 'Над проектом работала команда из шести разработчиков:';
   private teamSub: Subscription;
   public teamMembers: TeamMember[] = [];
 

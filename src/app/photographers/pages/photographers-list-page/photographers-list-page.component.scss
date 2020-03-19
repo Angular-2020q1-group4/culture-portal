@@ -1,9 +1,14 @@
+.wrapper {
+  margin-top: 0;
+  align-items: center;
+}
+
 .photographers-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem auto;
+  margin: 0 auto;
   list-style: none;
 }
 

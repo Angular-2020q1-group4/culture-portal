@@ -1,0 +1,52 @@
+.heading {
+  margin: 0 0 0 2%;
+}
+
+.style-block {
+  margin: 20px 0 0 4%;
+}
+
+.description {
+  width: 95%;
+  max-width: 400px;
+  margin: 0 0 15px 2%;
+  display: flex;
+  align-items: center;
+}
+
+.typography {
+  display: block;
+}
+
+.colors {
+  display: block;
+}
+
+.icon {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.back-button {
+  line-height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.separator {
+  width: 50%;
+  height: 1px;
+  background: grey;
+}
