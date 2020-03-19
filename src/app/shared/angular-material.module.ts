@@ -9,6 +9,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTableModule } from '@angular/material/table';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const componentModules = [
   MatButtonToggleModule,
@@ -19,7 +20,8 @@ const componentModules = [
   MatCheckboxModule,
   MatTableModule,
   MatMenuModule,
-  MatIconModule
+  MatIconModule,
+  MatDialogModule
 ];
 
 @NgModule({

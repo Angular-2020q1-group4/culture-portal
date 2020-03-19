@@ -17,6 +17,7 @@ import { PhotographerCardComponent } from '@photographers/components';
 import { MapComponent } from '@photographers/components';
 import { WorklistComponent } from '@photographers/components';
 import { VideoplayerComponent } from '@photographers/components';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { VideoplayerComponent } from '@photographers/components';
     PhotographerCardComponent,
     MapComponent,
     WorklistComponent,
-    VideoplayerComponent
+    VideoplayerComponent,
+    ModalComponent
   ],
   imports: [
     SharedModule,
