@@ -42,15 +42,6 @@ export class VideoplayerComponent implements OnInit, AfterViewInit, OnDestroy {
     this.cdr.detectChanges();
   };
 
-  extractVideoId(url: string): string {
-    let videoId = url.split('v=')[1];
-    const ampersandPosition = videoId.indexOf('&');
-    if (ampersandPosition !== -1) {
-      videoId = videoId.substring(0, ampersandPosition);
-    }
-    return videoId;
-  }
-
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);
   }

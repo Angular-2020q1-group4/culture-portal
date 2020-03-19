@@ -1,9 +1,11 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Author } from '@core/models';
 import { PhotographerService } from '@photographers/services';
+import { ModalComponent } from '@photographers/components/modal/modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-photographer-detail-page',
@@ -17,7 +19,8 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
 
   constructor(
     public route: ActivatedRoute,
-    private photographerService: PhotographerService
+    private photographerService: PhotographerService,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -47,5 +50,31 @@ export class PhotographerDetailPageComponent implements OnInit, OnDestroy {
           this.imageObjects.push({ image: im, thumbImage: im })
         );
       });
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      height: 'auto',
+      width: '80%',
+      data: { videoSrc: this.extractVideoId(this.author.galleryVideo[0]) }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  getVideoPreview(url: string): string {
+    const id = this.extractVideoId(url);
+    return `https://img.youtube.com/vi/${id}/0.jpg`;
+  }
+
+  private extractVideoId(url: string): string {
+    let videoId = url.split('v=')[1];
+    const ampersandPosition = videoId.indexOf('&');
+    if (ampersandPosition !== -1) {
+      videoId = videoId.substring(0, ampersandPosition);
+    }
+    return videoId;
   }
 }
