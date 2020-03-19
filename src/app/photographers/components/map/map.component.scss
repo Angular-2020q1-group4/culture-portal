@@ -6,8 +6,14 @@
 }
 
 .heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-align: center;
   margin-bottom: 1rem;
+}
+
+.map-container {
+  height: 500px;
+  margin: 0 10%;
+
+  @media screen and (max-width: 580px) {
+    margin: 0 2%;
+  }
 }

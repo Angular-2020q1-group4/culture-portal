@@ -1,17 +1,19 @@
 <div class="container">
-  <h3 class="heading">{{ 'interface.author.map' | translate }}</h3>
+  <h2 class="heading">{{ 'interface.author.map' | translate }}</h2>
 
-  <angular-yandex-map
-    *ngIf="placeMarks"
-    [center]="calculateCenter()"
-    [zoom]="4"
-  >
-    <angular-yandex-placemark
-      *ngFor="let mark of placeMarks"
-      [geometry]="[mark.latitude, mark.longitude]"
-      [properties]="{ balloonContent: mark.title }"
-      (mouse)="onMarkerHover($event)"
+  <div class="map-container">
+    <angular-yandex-map
+      *ngIf="placeMarks"
+      [center]="calculateCenter()"
+      [zoom]="4"
     >
-    </angular-yandex-placemark>
-  </angular-yandex-map>
+      <angular-yandex-placemark
+        *ngFor="let mark of placeMarks"
+        [geometry]="[mark.latitude, mark.longitude]"
+        [properties]="{ balloonContent: mark.title }"
+        (mouse)="onMarkerHover($event)"
+      >
+      </angular-yandex-placemark>
+    </angular-yandex-map>
+  </div>
 </div>

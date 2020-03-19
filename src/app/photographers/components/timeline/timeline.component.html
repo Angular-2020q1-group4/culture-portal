@@ -1,9 +1,8 @@
-<div class="wrapper">
-  <h3 class="heading">{{ 'interface.author.events' | translate }}</h3>
+<h2 class="heading">{{ 'interface.author.events' | translate }}</h2>
 
+<div class="timeline-wrapper">
   <mgl-timeline
     *ngIf="biography?.length"
-    focusOnOpen="false"
     mobileWidthThreshold="500"
     alternate="true"
   >
