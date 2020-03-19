@@ -30,3 +30,27 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+.video-preview {
+  box-sizing: border-box;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-width: 250px;
+  text-align: center;
+  cursor: pointer;
+
+  .video-pic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-text {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
+}
