@@ -1,3 +1,8 @@
+.wrapper {
+  width: 96% !important;
+  padding: 0 2%;
+}
+
 .back-button {
   position: fixed;
   line-height: 0px;
@@ -8,6 +13,7 @@
   align-items: center;
   font-size: 2rem;
   z-index: 10;
+  transition: all 0.3s;
 
   @media screen and (max-width: 580px) {
     width: 40px;
@@ -19,16 +25,20 @@
   line-height: 0 !important;
 }
 
-.inner-page-wrapper {
-  background-color: rgba(255, 255, 255, 0.8);
-  max-width: 80%;
-  margin: 2rem auto;
-  padding: 1rem;
+.gallery-wrapper {
+  margin: 30px 3%;
+
+  @media screen and (max-width: 580px) {
+    margin: 30px 2%;
+  }
 }
 
-.gallery-wrapper {
-  margin-top: 50px;
-  margin-bottom: 30px;
+::ng-deep .prev {
+  user-select: none !important;
+}
+
+::ng-deep .next {
+  user-select: none !important;
 }
 
 .video-preview {
